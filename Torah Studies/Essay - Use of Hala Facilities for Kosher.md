@@ -6,9 +6,9 @@
 
 As a **Karaite living in rural Canada**, far from major cities, adhering to **biblical dietary laws** **without reliance on rabbinic interpretations** presents significant challenges. Finding **kosher meat**—whether rabbinic or true Torah-based kosher—is often **difficult or entirely unavailable**. Rabbinic kosher options tend to be **overpriced and unsustainable**, and even then, questions remain regarding the **actual kosher status** of the meat.  
 
-I have lived in **Mauritius**, where **Indian cuisine** is highly prevalent, offering a vast range of **vegetarian options**. Over time, I learned to **appreciate some of these foods**, but as an **Albertan meat eater**, it is incredibly difficult to go without **our given lamb and beef**. However, when **kosher is not available**, these vegetarian dishes serve as a **temporary alternative** that allows me to maintain **Torah-based dietary principles** until a proper meat source can be established.  
+I have lived in **Mauritius**, where **Indian cuisine** is highly prevalent, offering a vast range of **vegetarian options**. Over time, I learned to **appreciate some of these foods**, but as a **Canadian meat eater**, it is incredibly difficult to go without **my lamb and beef**. However, when **kosher is not available**, these vegetarian dishes serve as a **temporary alternative** that allows me to maintain **Torah-based dietary principles** until a proper meat source can be established.  
 
-## Navigating Constant Relocation  
+### Navigating Constant Relocation  
 
 Understand this—I **move around a lot** due to **work** and the **freedom to do so**, meaning that each new place requires a fresh **setup** to secure **Torah-compliant food sources**. Wherever I go, I must adapt to the reality of the region:  
 - Finding **where to buy meat**.  
@@ -17,7 +17,9 @@ Understand this—I **move around a lot** due to **work** and the **freedom to d
 
 While **settling in**, my **go-to options** are typically **vegetarian meals** along with **fish**, giving me time to establish my **routine**. Eventually, when I do find a facility, my approach is straightforward—I **buy the whole cow or half a cow**, ensuring I have complete control over its **processing** according to **Torah law**.  
 
-Seeing the **high costs** of rabbinic kosher meat feels **mentally not right**, as the prices imposed by kosher markets can feel like **a form of exploitation** rather than a genuine service for Torah observance.  
+Seeing the **high costs** of related to some rabbinic kosher meat feels **mentally abusive**, as the prices imposed by kosher markets can feel like **a form of exploitation** rather than a genuine service for Torah observance.
+
+Note: I usually buy meat straight from the farm, so I struggle with regular market prices when I see them. So, you can imagine my shock when I saw a $38 steak at a kosher market—one that typically costs $16-$18 at a regular store. It's just heartbreaking.
 
 Add to this the overcomplicated kosher obsession with salting and the phobia of milk, which makes non-Jewish processors afraid to engage with kosher production at all, from knife making to slaughter and meat processing, leaving the market severely restricted.
 
@@ -52,7 +54,7 @@ Unlike **halal slaughter**, where pregnant animals could be **lawfully processed
 
 ### **Key Requirements for Karaite Animal Selection**  
 - **Inspection Before Slaughter** – A trained individual must **examine the animal** before slaughter to ensure it is **healthy, fit, and not pregnant**.  
-- **Avoiding Pregnant Animals** – Unlike certain Muslims, Karaite practice **rejects slaughtering pregnant animals**, prioritizing **respect for life and Torah purity**.  
+- **Avoiding Pregnant Animals** – Unlike certain Muslims, Karaites practice **rejects slaughtering pregnant animals**, prioritizing **respect for life and Torah purity**.  
 - **Inspection After Slaughter** – A trained individual must **examine the animal's organs** after slaughter to ensure it was **healthy and free of diseases**.  
  
 ## The Importance of Proper Slaughter Knives in Karaite Practice  
@@ -63,17 +65,21 @@ Unlike **halal slaughter**, where pregnant animals could be **lawfully processed
 
 While both **Halal** and **Karaite** practices require the use of **razor-sharp blades**, Torah law also mandates a perfectly smooth blade which is free of nicks or defects to ensure a clean cut that minimizes the pain experienced by the animal. 
 
-I have also been told in discussion with some muslim relatives that some Halal facilities rely on mechanized systems, where a simple button press by a Muslim operator initiates the slaughter process. For me, even if the blade of the macine is compliant, this automated method is not kosher. The taking of a life, as intended by Hashem, should be performed manually by a compassionate individual who fully understands and respects the sanctity of each animal that passes through his knife.
+I have also been told in discussion with some muslim relatives that some Halal facilities rely on mechanized systems, where a simple button press by a Muslim operator initiates the slaughter process. 
+
+For me personally, even if the blade of the machine is compliant, this automated method is not kosher. The taking of a life, as intended by Hashem, should be performed manually by a compassionate individual who fully understands and respects the sanctity of each animal that passes through his knife.
 
 ### **Karaite Oversight in Knife Preparation**  
-Karaites **should instruct the facility** regarding the **proper knife specifications** or even **bring our own knife** to guarantee compliance with **Torah-based requirements**. Since **halal slaughter** often follows **Islamic regulations**, the knives used in these facilities may not align with **Karaite scriptural expectations**. By providing the correct knife, Karaites can ensure that the slaughter meets **Torah standards** while utilizing **halal facilities**.  
+Karaites **should instruct the facility** regarding the **proper knife specifications** or even **bring our own knife** to guarantee compliance with **Torah-based requirements**. 
+
+Since **halal slaughter** follows **Islamic regulations**, the knives used in these facilities may not align with **Karaite scriptural expectations**.Therefore, by providing the knife, Karaites can ensure that the slaughter meets **Torah standards** while utilizing **halal facilities**.  
 
 ## Conclusion
 
-In summary, finding Torah-compliant meat while constantly on the move is a challenging endeavor, especially for Karaites who adhere solely to the biblical requirements without the  rabbinic interpretations. 
+In summary, finding Torah-compliant meat while constantly on the move is a challenging endeavor for Karaites who adhere to the biblical requirements. 
 
-Although dedicated kosher slaughterhouses remain ideal, halal facilities offer a practical alternative in regions where traditional kosher options are scarce. With careful oversight—including stringent animal sourcing, thorough pre- and post-slaughter inspections, and the use of perfectly maintained, hand-operated knives and the core Torah principles, particularly regarding to blood removal, can be faithfully observed.
+Although dedicated kosher slaughterhouses remain ideal, halal facilities offer a practical alternative in regions where traditional kosher options are scarce. 
 
-Nonetheless, challenges persist. The complexity of maintaining a sanitized facility that does process non-kosher animals, combined with the reliance on mechanized systems in some halal operations, raises concerns about whether these practices can fully capture the compassion and meticulous care mandated by Torah law. 
+With careful oversight—including stringent animal sourcing, thorough pre- and post-slaughter inspections, and the use of perfectly maintained, hand-operated knives and the core Torah principles, it is possible.
 
-For individuals navigating ever-changing food landscapes, each facility becomes both a challenge and an opportunity to reaffirm what it means to uphold Torah-based dietary purity in our modern world.
+For individuals navigating ever-changing food landscapes, each move becomes both a challenge and an opportunity to reaffirm what it means to uphold Torah-based dietary purity in our modern world.
