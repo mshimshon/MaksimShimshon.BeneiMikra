@@ -69,12 +69,12 @@ We do **not** follow a fixed rabbinic prayer liturgy but instead emphasize **dir
 
 ## Karaite Prayer vs. Rabbinic Prayer
 
-Prayer is a central aspect of Jewish life, but Karaite and Rabbinic Jews approach it **very differently**. While Rabbinic Judaism follows **structured liturgies and rabbinic blessings**, Karaite Judaism emphasizes **direct, personal communication with God** using **biblical texts and spontaneous prayers**.
+Prayer is a central aspect of Jewish life, but Karaite and Rabbinic Jews approach it **very differently**. While Rabbinic Judaism follows **structured liturgies and rabbinic blessings**, Karaite Judaism emphasizes **direct, personal communication with Hashem** using **biblical texts and spontaneous prayers**.
 
 ---
 
 ## Karaite Prayer
-- **Direct and Personal** – Prayer is a **conversation with God**, not bound by fixed rabbinic texts.
+- **Direct and Personal** – Prayer is a **conversation with Hashem**, not bound by fixed rabbinic texts.
 - **No Fixed Liturgy** – We do **not** follow a structured *siddur* (prayer book); prayers are **spontaneous or based on scripture** (e.g., Psalms).
 - **Full Prostration** – We **bow fully to the ground** during prayer, as done in biblical times.
 - **Led by a Hazan** – A **Hazan** leads prayers, but individual Jews may also recite prayers aloud.
@@ -88,7 +88,6 @@ Prayer is a central aspect of Jewish life, but Karaite and Rabbinic Jews approac
 - **Siddur-Based** – Their prayers follow a **fixed liturgy**, including the *Shema*, *Amidah*, and blessings.
 - **Standing Posture** – Most prayers are **recited standing**, with minimal bowing.
 - **Minyan Requirement** – Many prayers require a **quorum of ten men** (*minyan*) to be recited communally.
-- **Rabbinic Blessings** – Rabbinic Jews recite **blessings before and after meals, upon waking, and throughout the day**.
 - **Talmudic Influence** – Their prayers are **shaped by rabbinic rulings**, rather than being solely biblical.
 
 ---
