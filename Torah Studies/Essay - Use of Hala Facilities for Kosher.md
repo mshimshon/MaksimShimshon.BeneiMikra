@@ -86,6 +86,17 @@ As Karaites, we are taught that each person is responsible for learning and appl
 
 Especially for someone like me, who moves often, being able to slaughter according to Torah is a necessity. 
 
+Even though the Torah does not command a blessing before slaughter, the Karaite tradition includes one, and rightfully so. We are about to take a life that God has provided. In my view, not reciting a blessing at that moment would reflect a lack of spiritual awareness and a disconnection from the holiness of the act.
+
+Blessings Before Slaughter
+For Mammals:
+
+> Barukh atah Adonai Eloheinu, melekh haolam, asher kid’shanu b’mitzvotav, vehitir lanu lish’ḥoṭ behemah tehorah.
+
+For Birds:
+
+> Barukh atah Adonai Eloheinu, melekh haolam, asher kid’shanu b’mitzvotav, vehitir lanu lish’ḥoṭ of tahor.
+
 Based on that, the person performing the slaughter must, in my opinion, be a Karaite Jew. Because, even if others who are technically skilled, no one can understand the full weight of invalidating a slaughter like a ben mikra who uphold Torah directly and without compromise.
 
 
