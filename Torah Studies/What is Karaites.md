@@ -12,13 +12,16 @@ What makes Karaite Judaism truly unique is our **openness to meaningful debate**
 ## Our Role in Zionism
 Karaite Jews were among the **first Zionists** to return to the **Promised Land**, long before the modern Zionist movement took shape. Historically, we maintained a **strong presence in Jerusalem and other parts of Israel**, deeply committed to preserving our faith and connection to the land. 
 
-However, centuries of **persecution and massacres** nearly **wiped out our people**, dramatically reducing our numbers. If not for these historical tragedies—including forced conversions and violent campaigns against Karaite communities—our faith would likely be **far more widespread and influential** today.
-
 Despite these hardships, we remain **resilient**. Today, Karaite communities in **Israel, the United States, and Europe** continue to uphold our traditions, ensuring that **our Torah-based approach** remains strong for future generations.
+
+Had we not faced centuries of **massacres, forced conversions, and institutional suppression**, Karaite Judaism would likely be **far more widespread today**, possibly even **rivaling Rabbinic Judaism in influence**. 
+
+Yet, a quiet **revival is underway**: **secular Israelis**, **converts**, and even **some Rabbinic Jews** are rediscovering Karaite way of life, drawn to its **scriptural clarity**, **individual empowerment**, and **unbroken link to the land of Israel**.
 
 ---
 
 ## Our Approach to Torah Interpretation
+
 We believe that **every Jew** has a duty to study and interpret the Torah for themselves. This is not simply reading the text superficially, but rather **engaging in critical analysis**, asking deep questions, and **exploring linguistic, historical, and rational explanations**.
 
 Our study of Torah involves:
@@ -26,6 +29,8 @@ Our study of Torah involves:
 - **Historical Context** – Examining how ancient Israelites understood and practiced the commandments.
 - **Logical Analysis** – Using reason to determine the purpose and spirit of each mitzvah.
 - **Community Guidance** – Seeking insights from **our sages, councils, and historical interpretations**.
+
+For example, classical Karaite works such as “Eshkol haKofer” by Judah Hadassi and “Aderet Eliyahu” by Elijah Bashyazi offer detailed legal reasoning and interpretation grounded in scriptural analysis.
 
 Unlike Rabbinic Judaism, which relies on **oral traditions and rabbinic decrees**, we do **not** accept interpretations that contradict or override the **Torah’s original meaning**.
 
@@ -35,6 +40,8 @@ Unlike Rabbinic Judaism, which relies on **oral traditions and rabbinic decrees*
 While Torah study is an **individual responsibility**, our **Hazan and councils of sages** help guide the community toward a **structured and well-founded understanding**. We respect **accepted interpretations** that have stood the test of time—but unlike Rabbinic Judaism, our tradition remains **open to intellectual challenge**.
 
 If a **young scholar or layperson** presents an interpretation backed by **solid research and clear reasoning**, it is **respected**. This **openness to debate** strengthens our faith, allowing Karaite Judaism to evolve while remaining deeply **rooted in path to righteousness**.
+
+Historically, councils such as the “Bet Din” in Jerusalem (under the leadership of Karaite sages like Solomon ben Jeroham and Yefet ben Ali) provided structured yet responsive guidance for Torah observance.
 
 ---
 
@@ -77,10 +84,13 @@ Prayer is a central aspect of Jewish life, but Karaite and Rabbinic Jews approac
 - **Direct and Personal** – Prayer is a **conversation with Hashem**, not bound by fixed rabbinic texts.
 - **No Fixed Liturgy** – We do **not** follow a structured *siddur* (prayer book); prayers are **spontaneous or based on scripture** (e.g., Psalms).
 - **Full Prostration** – We **bow fully to the ground** during prayer, as done in biblical times.
-- **Led by a Hazan** – A **Hazan** leads prayers, but individual Jews may also recite prayers aloud.
-- **No Amidah or Rabbinic Blessings** – We do **not** recite the *Amidah* (central Rabbinic prayer) or man-made blessings.
+- **No Amidah or Rabbinic Blessings** – We do **not** recite the *Amidah* (central Rabbinic prayer), a practices introduced through rabbinic tradition but not directly rooted in the Torah text.
 - **Biblical Basis** – Our prayers are drawn **directly from scripture**, focusing on **thanksgiving, repentance, and praise**.
 
+**Led by a Hazan** – In Karaite communities, the Hazan serves not only as a prayer leader but also as a teacher, spiritual guide, and community educator. The Hazan preserves the musical and linguistic traditions of Karaite chant, teaches the correct pronunciation and understanding of the Torah, and often provides guidance on legal and ritual matters. In many ways, the Hazan functions as both a cantor and a scholar, playing a vital role in maintaining community cohesion and knowledge transmission.
+
+Historical Hazanim such as Hazan Mordechai Alfandari in Istanbul were known for their dual roles as scholars and prayer leaders, preserving Karaite liturgy and Torah reading customs through centuries of diaspora.
+s
 ---
 
 ## Rabbinic Prayer
@@ -115,7 +125,9 @@ Our **scholarly openness** sets us apart. We uphold **consensus interpretations*
 For Karaite Jews, **Passover (Pesach)** is more than just a celebration of **freedom from Egyptian slavery**—it is a **living memory** that continues to resonate through our history. The **Exodus story** is not just ancient history; it has been **relived by our people**, particularly in times of persecution and exile.
 
 ### **Passover and the Modern Karaite Exodus**
-Throughout history, Karaite Jews have faced displacement, oppression, and exile. One of the most striking parallels to the **biblical Exodus** is the **forced expulsion of Egyptian Karaites** in the mid-20th century. For centuries, vibrant Karaite communities thrived in **Cairo, Alexandria, and other parts of Egypt**, maintaining **faithful Torah observance** and strong ties to our ancestors. But following the **Arab-Israeli conflict**, nearly all Egyptian Karaites were **driven from their homeland**, forced to flee as refugees—mirroring our ancestors’ escape from Pharaoh’s rule.
+Throughout history, Karaite Jews have faced displacement, oppression, and exile. One of the most striking parallels to the **biblical Exodus** is the **forced expulsion of Egyptian Karaites** in the mid-20th century. 
+
+For centuries, vibrant Karaite communities thrived in **Cairo, Alexandria, and other parts of Egypt**, maintaining **faithful Torah observance** and strong ties to our ancestors. But following the **Arab-Israeli conflict**, nearly all Egyptian Karaites were **driven from their homeland**, forced to flee as refugees—mirroring our ancestors’ escape from Pharaoh’s rule.
 
 Just as **Moses led Israel out of bondage**, our Karaite forebears left Egypt seeking **religious freedom and survival**, rebuilding their lives in **Israel, the United States, and Europe**. The memory of their **struggles and resilience** deepens our connection to Passover, reminding us that **liberation is a journey that repeats through generations**.
 
@@ -123,7 +135,7 @@ Just as **Moses led Israel out of bondage**, our Karaite forebears left Egypt se
 Unlike Rabbinic Jews, our Passover traditions stay **true to the Torah**, without rabbinic additions:
 - **Unleavened Bread (Matzot)** – We observe the Torah’s command to eat **matzot** for seven days, avoiding all chametz (leavened food).
 - **Karaite Seder** – Our Passover meal is based entirely on **biblical instructions**, without the **Haggadah** or rabbinic customs.
-- **Counting the Omer** – We begin the **counting of the Omer** on the day **after the weekly Shabbat**, ensuring correct biblical alignment.
+- **Counting the Omer** – We begin the counting of the Omer on the day after the weekly Sabbath during Passover week, unlike the Rabbinic tradition which starts the count on the day after the first festival day.
 
 ### **Passover as a Symbol of Karaite Survival**
 Passover **strengthens our identity**, reminding us that **we have always endured**, despite attempts to erase our presence from Jewish history. Whether escaping Egypt under **Pharaoh**, surviving oppression under **various empires**, or **rebuilding after near-extinction**, we **carry the legacy of the Exodus** in our hearts.
