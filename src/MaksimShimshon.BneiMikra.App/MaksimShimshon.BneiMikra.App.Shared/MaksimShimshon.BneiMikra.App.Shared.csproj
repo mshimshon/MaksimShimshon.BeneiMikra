@@ -15,4 +15,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Flux\Articles\Actions\" />
+    <Folder Include="Flux\Articles\Contracts\Responses\" />
+    <Folder Include="Flux\Articles\Contracts\Requests\" />
+    <Folder Include="Flux\Articles\Effects\" />
+    <Folder Include="Flux\Articles\Stores\" />
+    <Folder Include="Flux\Articles\Reducers\" />
+  </ItemGroup>
+
 </Project>
