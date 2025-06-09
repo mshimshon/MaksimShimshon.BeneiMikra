@@ -47,10 +47,12 @@ Historically, councils such as the “Bet Din” in Jerusalem (under the leaders
 
 ## What We Follow and What We Reject
 ### 1. **We Follow the Written Torah Alone**
-We observe the commandments as they are written in the Torah. We do **not** accept the **Oral Torah** or rabbinic expansions of biblical law.
+We follow the commandments as written in the Torah. We do not accept the Oral Torah or rabbinic additions. Our approach is not blind obedience but thoughtful and critical study of the written word. Karaite Judaism is often misrepresented by rabbinic speakers who claim things like we unplug fridges, mourn every holiday, or that our growth is fake and only attracts disillusioned Christians who reject rabbinic authority. These are false and dismissive stereotypes.
+
+That is why I am writing this. To speak from a Karaite perspective and explain who we truly are. We are B'nei Mikra, people of the Scripture, whose love for God's Torah and His commandments is deep, sincere, and unmatched.
 
 ### 2. **We Determine Laws Through Research, Not Tradition**
-While Rabbinic Jews follow the rulings of rabbinic authorities, we determine the **correct application** of Torah commandments through **logical reasoning and historical research**.
+While Rabbinic Jews follow the rulings of rabbinic authorities, we determine the **"common application"** of Torah commandments through **logical reasoning and historical research**.
 
 ### 3. **Our Calendar is Based on Observation**
 We **watch the moon** to establish the months, unlike Rabbinic Jews, who rely on **fixed mathematical calculations**. This means our holidays may fall on **different dates** from the Rabbinic calendar.
@@ -60,7 +62,13 @@ We **watch the moon** to establish the months, unlike Rabbinic Jews, who rely on
 - We **do not** accept rabbinic stringencies that have no basis in the Torah.
 
 ### 5. **Our Prayer Practices are Different**
-We do **not** follow a fixed rabbinic prayer liturgy but instead emphasize **direct, personal communication with God**, using biblical psalms and blessings.
+We do not follow a fixed rabbinic prayer liturgy. Instead, we focus on direct and personal communication with God, often through biblical psalms and blessings. This does not mean we cannot create our own traditions, but we must remember they are our customs, not commandments from the Torah.
+
+Some note that even Karaites have adopted practices like Havdalah or Bat Mitzvah from the Rabbanites. While Havdalah is not required, it is a beautiful way to close Shabbat and honor the Torah we love.
+
+Culture and tradition are not wrong, as long as they are not forced or used to shame those who choose simply to follow the Torah.
+
+Unlike the Rabbanites, who often treat inherited customs as divine law, we draw a clear line between what is written and what is developed. Our loyalty is to the Torah, not to human authority.
 
 ---
 
@@ -82,7 +90,10 @@ Prayer is a central aspect of Jewish life, but Karaite and Rabbinic Jews approac
 
 ## Karaite Prayer
 - **Direct and Personal** – Prayer is a **conversation with Hashem**, not bound by fixed rabbinic texts.
-- **No Fixed Liturgy** – We do **not** follow a structured *siddur* (prayer book); prayers are **spontaneous or based on scripture** (e.g., Psalms).
+- **No Fixed Liturgy**
+
+We do not follow a structured siddur (prayer book). Our prayers are spontaneous or based on scripture, especially from the Psalms. Although we have blessing and prayer collections for convenience, all of our texts are rooted in the Torah. This is unlike the rabbinic siddur, which includes invented passages such as the line thanking God for not making one a woman. This has no basis in the Torah and can be seen as demeaning to women.
+
 - **Full Prostration** – We **bow fully to the ground** during prayer, as done in biblical times.
 - **No Amidah or Rabbinic Blessings** – We do **not** recite the *Amidah* (central Rabbinic prayer), a practices introduced through rabbinic tradition but not directly rooted in the Torah text.
 - **Biblical Basis** – Our prayers are drawn **directly from scripture**, focusing on **thanksgiving, repentance, and praise**.
@@ -90,7 +101,7 @@ Prayer is a central aspect of Jewish life, but Karaite and Rabbinic Jews approac
 **Led by a Hazan** – In Karaite communities, the Hazan serves not only as a prayer leader but also as a teacher, spiritual guide, and community educator. The Hazan preserves the musical and linguistic traditions of Karaite chant, teaches the correct pronunciation and understanding of the Torah, and often provides guidance on legal and ritual matters. In many ways, the Hazan functions as both a cantor and a scholar, playing a vital role in maintaining community cohesion and knowledge transmission.
 
 Historical Hazanim such as Hazan Mordechai Alfandari in Istanbul were known for their dual roles as scholars and prayer leaders, preserving Karaite liturgy and Torah reading customs through centuries of diaspora.
-s
+
 ---
 
 ## Rabbinic Prayer
@@ -115,21 +126,25 @@ s
 ---
 
 ## Our Modern Community
-Though our numbers are smaller than the Rabbinic Jewish population, we are a **thriving and dedicated community**. Our faith is alive and strong in **Israel and United States**. We continue to **study, practice, and preserve our traditions**, ensuring that future generations understand our **Torah-based approach** to Jewish law and identity.
+Though our numbers are smaller than the Rabbinic Jewish population, we are a **thriving and dedicated community**. Our faith is alive and strong in **Israel, United States** and here in my home wherever that migth be today. We continue to **study, practice, and preserve our traditions**, ensuring that future generations understand our **Torah-based approach** to Jewish law and identity.
 
-Our **scholarly openness** sets us apart. We uphold **consensus interpretations**, but **new understandings**—if backed by sound research and analysis—are welcomed. This ensures that Karaite Judaism is **both rooted in tradition and adaptable to deeper knowledge**.
+Our **scholarly openness** sets us apart. We uphold **consensus interpretations**, but **new understandings**, if backed by sound research and analysis, are welcomed. This ensures that Karaite Judaism is **both rooted in tradition and adaptable to deeper knowledge**.
 
 ---
+
 ## The Deeper Meaning of Passover for Karaite Jews
 
-For Karaite Jews, **Passover (Pesach)** is more than just a celebration of **freedom from Egyptian slavery**—it is a **living memory** that continues to resonate through our history. The **Exodus story** is not just ancient history; it has been **relived by our people**, particularly in times of persecution and exile.
+For Karaite Jews, **Passover (Pesach)** is more than just a celebration of **freedom from Egyptian slavery**, it is a **living memory** that continues to resonate through our history. The **Exodus story** is not just ancient history; it has been **relived by our people**, particularly in times of persecution and exile.
 
 ### **Passover and the Modern Karaite Exodus**
-Throughout history, Karaite Jews have faced displacement, oppression, and exile. One of the most striking parallels to the **biblical Exodus** is the **forced expulsion of Egyptian Karaites** in the mid-20th century. 
+Throughout history, Jews have faced displacement, oppression, and exile. One of the most striking parallels to the **biblical Exodus** is the **forced expulsion of Egyptian Jews** in the mid-20th century. 
 
-For centuries, vibrant Karaite communities thrived in **Cairo, Alexandria, and other parts of Egypt**, maintaining **faithful Torah observance** and strong ties to our ancestors. But following the **Arab-Israeli conflict**, nearly all Egyptian Karaites were **driven from their homeland**, forced to flee as refugees—mirroring our ancestors’ escape from Pharaoh’s rule.
+For centuries, vibrant Karaite communities thrived in **Cairo, Alexandria, and other parts of Egypt**, maintaining **faithful Torah observance** and strong ties to our ancestors. But following the **Arab-Israeli conflict**, nearly all Egyptian Karaites were **driven from their homeland**, forced to flee as refugees, mirroring our ancestors’ escape from Pharaoh’s rule.
 
 Just as **Moses led Israel out of bondage**, our Karaite forebears left Egypt seeking **religious freedom and survival**, rebuilding their lives in **Israel, the United States, and Europe**. The memory of their **struggles and resilience** deepens our connection to Passover, reminding us that **liberation is a journey that repeats through generations**.
+
+> "May all those affected by these events, in Israel or elsewhere, find comfort and healing. I pray that God has guided you to where you need to be, and that this journey brings you closer in spirit to the Promised Land. This is not to excuse or diminish the wrongs our people endured in Egypt, then or now, but to honor their resilience and the path they walked."
+
 
 ### **Our Unique Approach to Passover**
 Unlike Rabbinic Jews, our Passover traditions stay **true to the Torah**, without rabbinic additions:
@@ -146,15 +161,15 @@ Just as our ancestors crossed the **Red Sea** to freedom, we **continue to walk 
 ## Conclusion
 As Karaites, we believe that **God’s word in the Torah is complete**. It is **our responsibility** to study and understand it **honestly**, without adding traditions that lack biblical foundation. By interpreting the Torah through **reason, historical research, and direct analysis**, we preserve the **true essence** of our faith.
 
-We honor **our community, our sages, and our traditions**, but we also **embrace thoughtful debate**—ensuring that Karaite Judaism remains **a living and vibrant community**, rooted in the **teachings of the Torah**.
+We honor **our community, our sages, and our traditions**, but we also **embrace thoughtful debate**, ensuring that Karaite Judaism remains **a living and vibrant community**, rooted in the **teachings of the Torah**.
 
 As the **first Zionists** to return to the **Promised Land**, we have preserved our heritage despite **centuries of persecution**. If history had taken a different path, Karaite Judaism would likely be **far more widespread today**, but we remain steadfast in our commitment to **our people and our faith**.
 
-Yet, even as we recall the struggles our people have endured, we must also reflect on **how we treat one another**. It is painful that despite sharing the same origins, history, and love for Torah, **Karaite and Rabbinic Jews have often been divided**—sometimes by misunderstanding, sometimes by deliberate dismissal, sometimes by fear of change.
+Yet, even as we recall the struggles our people have endured, we must also reflect on **how we treat one another**. It is painful that despite sharing the same origins, history, and love for Torah, **Karaite and Rabbinic Jews have often been divided**, sometimes by misunderstanding, sometimes by deliberate dismissal, sometimes by fear of change.
 
-Despite receiving **snarky comments, dismissals, and misinformation**, we **respect and admire** the commitment of Rabbinic Jews to their faith. **We love our people—Karaites and Rabbanites alike—and i wish we could close the gap instead of deepening the divide**. 
+Despite receiving **snarky comments, dismissals, and misinformation**, i **respect and admire** the commitment of Rabbinic Jews to their faith. **I love our people, Karaites and Rabbanites alike, and i wish we could close the gap instead of deepening the divide**. 
 
-At the heart of Torah is **truth**, but truth cannot flourish without **respect, dialogue, and willingness to listen**. Perhaps this is a foolish hope, or perhaps it is the very essence of what being a Jew means—to **seek understanding, challenge injustice, and strive for unity**, even when the path forward seems difficult. 
+At the heart of Torah is **truth**, but truth cannot flourish without **respect, dialogue, and willingness to listen**. Perhaps this is a foolish hope, or perhaps it is the very essence of what being a Jew means, to **seek understanding, challenge injustice, and strive for unity**, even when the path forward seems difficult. 
 
 Whatever the future holds, we will **continue to study, to grow, and to respect all who dedicate their lives to Torah**. And maybe, just maybe, one day the divide will no longer feel so wide.
 
