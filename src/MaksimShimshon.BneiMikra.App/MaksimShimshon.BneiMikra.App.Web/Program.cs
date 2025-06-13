@@ -1,3 +1,5 @@
+
+using MaksimShimshon.BneiMikra.App.Shared;
 using MaksimShimshon.BneiMikra.App.Web.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
-
+builder.Services.AddUIServices();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -31,4 +33,4 @@ app.MapRazorComponents<App>()
         typeof(MaksimShimshon.BneiMikra.App.Shared._Imports).Assembly,
         typeof(MaksimShimshon.BneiMikra.App.Web.Client._Imports).Assembly);
 
-app.Run();
+await app.RunAsync();

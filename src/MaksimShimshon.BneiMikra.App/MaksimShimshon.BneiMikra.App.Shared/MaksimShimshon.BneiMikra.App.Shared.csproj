@@ -26,6 +26,9 @@
     <Folder Include="Flux\Articles\Effects\" />
     <Folder Include="Flux\Articles\Stores\" />
     <Folder Include="Flux\Articles\Reducers\" />
+    <Folder Include="Flux\System\Contracts\Responses\" />
+    <Folder Include="Flux\System\Contracts\Requests\" />
+    <Folder Include="Flux\System\Effects\" />
   </ItemGroup>
 
 </Project>

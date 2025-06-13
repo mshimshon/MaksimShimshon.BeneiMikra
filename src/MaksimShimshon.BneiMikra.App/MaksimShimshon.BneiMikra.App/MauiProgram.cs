@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MaksimShimshon.BneiMikra.App.Shared;
+using Microsoft.Extensions.Logging;
 
 namespace MaksimShimshon.BneiMikra.App;
 
@@ -15,7 +16,7 @@ public static class MauiProgram
             });
 
         builder.Services.AddMauiBlazorWebView();
-
+        builder.Services.AddUIServices();
 #if DEBUG
         builder.Services.AddBlazorWebViewDeveloperTools();
         builder.Logging.AddDebug();
