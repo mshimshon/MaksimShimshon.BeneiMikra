@@ -1,6 +1,9 @@
 ﻿global using Fluxor;
+global using MaksimShimshon.BneiMikra.App.Shared.Resources;
+global using MaksimShimshon.BneiMikra.App.Shared.Services.Interfaces;
 global using MudBlazor;
 global using MudBlazor.Services;
+using MaksimShimshon.BneiMikra.App.Shared.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace MaksimShimshon.BneiMikra.App.Shared;
@@ -9,19 +12,14 @@ public static class ServiceRegisterExt
     public static void AddUIServices(this IServiceCollection serviceDescriptors)
     {
         serviceDescriptors.AddMudServices(ConfigureMudService);
-        //        serviceDescriptors.AddScoped<IResourceProvider<AuthenticationResource>, GenericResourceProvider<AuthenticationResource>>();
-        //        serviceDescriptors.AddScoped<IResourceProvider<BetaWarningResource>, GenericResourceProvider<BetaWarningResource>>();
-        //        serviceDescriptors.AddScoped<IResourceProvider<CodedExceptionsResource>, GenericResourceProvider<CodedExceptionsResource>>();
-        //        serviceDescriptors.AddScoped<IResourceProvider<ApplicationResource>, GenericResourceProvider<ApplicationResource>>();
-        //        serviceDescriptors.AddScoped<IResourceProvider<CustomIngredientResource>, GenericResourceProvider<CustomIngredientResource>>();
-        //        serviceDescriptors.AddScoped<IResourceProvider<FormulationResource>, GenericResourceProvider<FormulationResource>>();
-        //        serviceDescriptors.AddScoped<IDispatcherClient, DispatcherClient>();
-        //        serviceDescriptors.AddScoped<IJSProvider, JavaScriptProvider>();
-        //        serviceDescriptors.AddScoped<IEnvironmentProvider, EnvironmentProvider>();
-        //        serviceDescriptors.AddScoped<ILocalStorageProvider, LocalStorageProvider>();
-        //        serviceDescriptors.AddScoped<IStartupProvider, StartupProvider>();
-        //        serviceDescriptors.AddScoped<IHttpClientProvider, HttpClientProvider>();
-        //        serviceDescriptors.RegisterProtocolLinks();
+        serviceDescriptors.AddScoped<IResourceProvider<ApplicationResource>, ResourceProvider<ApplicationResource>>();
+        serviceDescriptors.AddScoped<IDispatcherClient, DispatcherClient>();
+        serviceDescriptors.AddScoped<IJSProvider, JavaScriptProvider>();
+        serviceDescriptors.AddScoped<IEnvironmentProvider, EnvironmentProvider>();
+        serviceDescriptors.AddScoped<ILocalStorageProvider, LocalStorageProvider>();
+        serviceDescriptors.AddScoped<IStartupProvider, StartupProvider>();
+        serviceDescriptors.AddScoped<IHttpClientProvider, HttpClientProvider>();
+        //serviceDescriptors.RegisterProtocolLinks();
         serviceDescriptors.AddFluxor(options =>
         {
             options.ScanAssemblies(typeof(ServiceRegisterExt).Assembly);
