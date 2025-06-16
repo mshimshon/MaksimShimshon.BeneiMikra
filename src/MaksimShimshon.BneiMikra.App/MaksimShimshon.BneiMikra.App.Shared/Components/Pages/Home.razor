@@ -1,7 +1,23 @@
-﻿@page "/"
+﻿@inherits FluxorComponent
+@page "/"
 
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
 Welcome to your new app.
+@if (!LatestArticle.Value.IsLoading)
+{
+    @if(LatestArticle.Value.Result != default)
+    {
+        @foreach (var item in LatestArticle.Value.Result.Result)
+        {
+            <p>@item.Title</p>
+        }
+    }
+
+}
+else
+{
+    <p>Loading...</p>
+}

@@ -13,7 +13,7 @@ internal class SnackPushNotificationEffect : Effect<SnackPushNotificationAction>
 
     public override Task HandleAsync(SnackPushNotificationAction action, IDispatcher dispatcher)
     {
-        if (action.Fragment == default || action.Message == default) return Task.CompletedTask;
+        if (action.Fragment == default && action.Message == default) return Task.CompletedTask;
         if (action.Message != default) Snackbar.Add((MarkupString)action.Message, action.Severity);
         else Snackbar.Add(action.Fragment, action.Severity);
         return Task.CompletedTask;
