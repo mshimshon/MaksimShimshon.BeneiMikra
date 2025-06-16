@@ -16,11 +16,13 @@ internal class ArticleSearchEffect : Effect<ArticleSearchAction>
     }
     public override async Task HandleAsync(ArticleSearchAction action, IDispatcher dispatcher)
     {
+        // filters[category][name][$eq]=Essays
         await _dispatcherClient.DispatchApi(async client =>
         {
+            string cat = action.Category != default ? $"&filters[category][name][$eq]={action.Category}" : string.Empty;
             var nextAction = new ArticleSearchResultAction() { IsLoading = true };
             dispatcher.Dispatch(nextAction);
-            return await client.GetAsync($"api/articles?_q={action.Keywords}&sort={action.SortBy}&locale=en&populate=author");
+            return await client.GetAsync($"api/articles?_q={action.Keywords}&sort={action.SortBy}{cat}&locale=en&populate=author");
         }, async response =>
         {
             var result = await response.Content.ReadFromJsonAsync<StrapiResponse<List<ArticleLiteResponse>>>();

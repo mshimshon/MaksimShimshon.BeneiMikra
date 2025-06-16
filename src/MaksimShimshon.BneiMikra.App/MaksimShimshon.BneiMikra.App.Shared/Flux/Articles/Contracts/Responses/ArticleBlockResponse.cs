@@ -1,9 +1,11 @@
-﻿namespace MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Contracts.Responses;
+﻿using System.Text.Json.Serialization;
+
+namespace MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Contracts.Responses;
 public record ArticleBlockResponse
 {
-    private string __component = default!;
-    public string Component { get => __component; }
+    [JsonPropertyName("__component")]
+    public string Component { get; set; } = default!;
 
     public int Id { get; set; }
-    public string Body { get; set; }
+    public string Body { get; set; } = default!;
 }

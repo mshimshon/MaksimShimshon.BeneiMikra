@@ -24,9 +24,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Components\Shared\" />
     <Folder Include="Flux\Articles\Contracts\Requests\" />
     <Folder Include="Flux\System\Contracts\Responses\" />
     <Folder Include="Flux\System\Contracts\Requests\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Components\Pages\HomePage.razor" />
   </ItemGroup>
 
   <ItemGroup>

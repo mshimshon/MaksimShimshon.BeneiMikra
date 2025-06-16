@@ -21,13 +21,10 @@
                             <MudText Typo="Typo.body2">@item.Description</MudText>
                         </MudCardContent>
                         <MudCardActions >
-
-                            <MudButton Variant="Variant.Text" Color="Color.Primary">Read more</MudButton>
-
+                            <MudButton Href=@($"/article/{item.DocumentId}") Variant="Variant.Text" Color="Color.Primary">Read more</MudButton>
                         </MudCardActions>
                     </MudCard>
                 </MudItem>
-
             }
         }
     }

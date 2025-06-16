@@ -4,7 +4,7 @@ using MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Stores;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Pages;
-public partial class Home : FluxorComponent
+public partial class HomePage : FluxorComponent
 {
     [Inject] private IState<ArticleSearchState> LatestArticle { get; set; } = default!;
     [Inject] private IDispatcher Dispatcher { get; set; } = default!;

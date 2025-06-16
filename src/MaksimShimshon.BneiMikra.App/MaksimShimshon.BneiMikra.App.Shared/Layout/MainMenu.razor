@@ -1,11 +1,28 @@
 @using MaksimShimshon.BneiMikra.App.Shared.Flux.System.Actions
 @inherits FluxorComponent
 <MudDrawer @ref=Menu Open=@MainMenuStore.Value.IsOpened OpenChanged=@OnMenuExternalChanged 
-    Overlay=true OverlayAutoClose=true>
+    Overlay=true OverlayAutoClose=false>
     <MudNavMenu onclick=@(()=>Dispatcher.Dispatch(new MainMenuCloseAction()))>
         <MudNavLink Ripple=true Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
         <MudNavGroup Ripple=true Title="Articles" Icon=@Icons.Material.Filled.Inbox Expanded="true">
-            <MudNavLink Ripple=true Href="/users" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Send">News</MudNavLink>
+            <MudNavLink Ripple=true Href="/articles?cat=news" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Send">
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryNews)
+            </MudNavLink>
+            <MudNavLink Ripple=true Href="/articles?cat=scripture" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Send">
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryScripture)
+            </MudNavLink>
+            <MudNavLink Ripple=true Href="/articles?cat=stories" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Send">
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryStories)
+            </MudNavLink>
+            <MudNavLink Ripple=true Href="/articles?cat=consensus" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Send">
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryConsensus)
+            </MudNavLink>
+            <MudNavLink Ripple=true Href="/articles?cat=essays" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Send">
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryEssays)
+            </MudNavLink>
+            <MudNavLink Ripple=true Href="/articles?cat=history" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Send">
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryHistory)
+            </MudNavLink>
             <MudNavLink Ripple=true Href="/security" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Drafts">Studies</MudNavLink>
         </MudNavGroup>
         <MudNavLink Ripple=true Href=@($"/formula/{Guid.NewGuid()}") Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Science">Formula</MudNavLink>

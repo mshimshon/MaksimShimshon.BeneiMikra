@@ -1,0 +1,27 @@
+@inherits FluxorComponent
+@page "/article/{Id}"
+
+<PageTitle>@($"B'nei Mikra - {Id}")</PageTitle>
+<MudGrid>
+    @if (ArticleState.Value.IsLoading)
+    {
+        <MudItem xs="12" sm="6" md="4" lg="3">
+            <MudText>Loading...</MudText>
+        </MudItem>
+    }
+    else if (ArticleState.Value.Result != default)
+    {
+        <MudItem xs="12">
+            <MudText Align=@Align.Center Typo=Typo.h3>@ArticleState.Value.Result.Title</MudText>
+            <MudText Align=@Align.Center Typo=Typo.body1>@ArticleState.Value.Result.Description</MudText>
+            @foreach (var block in ArticleState.Value.Result.Blocks)
+            {
+                @if (block.Component == "shared.rich-text")
+                {
+                    <MudMarkdown Value=@block.Body />
+                }
+            }
+        </MudItem>
+
+    }
+</MudGrid>

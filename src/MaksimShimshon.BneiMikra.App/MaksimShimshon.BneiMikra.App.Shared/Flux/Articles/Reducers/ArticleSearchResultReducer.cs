@@ -2,7 +2,7 @@
 using MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Stores;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Reducers;
-internal class ArticleSearchEffectResultAction : Reducer<ArticleSearchState, ArticleSearchResultAction>
+internal class ArticleSearchResultReducer : Reducer<ArticleSearchState, ArticleSearchResultAction>
 {
     public override ArticleSearchState Reduce(ArticleSearchState state, ArticleSearchResultAction action)
     => state with

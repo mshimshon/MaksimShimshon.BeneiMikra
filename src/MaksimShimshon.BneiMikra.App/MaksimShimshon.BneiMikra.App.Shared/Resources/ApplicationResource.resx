@@ -117,6 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ArticleCategoryConsensus" xml:space="preserve">
+    <value>Consensus</value>
+  </data>
+  <data name="ArticleCategoryConsensusDescription" xml:space="preserve">
+    <value>Historical Karaite interpretations, halakhic development, and ancient commentaries.</value>
+  </data>
+  <data name="ArticleCategoryEssays" xml:space="preserve">
+    <value>Essays</value>
+  </data>
+  <data name="ArticleCategoryEssaysDescription" xml:space="preserve">
+    <value>Personal studies, interpretations, and Scriptural research from a Karaite lens.</value>
+  </data>
+  <data name="ArticleCategoryHistory" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="ArticleCategoryHistoryDescription" xml:space="preserve">
+    <value>Exploration of religious origins, movements, and influential figures.</value>
+  </data>
+  <data name="ArticleCategoryNews" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="ArticleCategoryNewsDescription" xml:space="preserve">
+    <value>Current events, religious perspectives on global issues, and updates.</value>
+  </data>
+  <data name="ArticleCategoryScripture" xml:space="preserve">
+    <value>Scripture</value>
+  </data>
   <data name="ArticleWrittenBy" xml:space="preserve">
     <value>Written by {0}.</value>
   </data>
@@ -128,5 +155,14 @@
   </data>
   <data name="HttpStatusCodeUnknown" xml:space="preserve">
     <value>Unknown error occured during server communication</value>
+  </data>
+  <data name="ArticleCategoryScriptureDescription" xml:space="preserve">
+    <value>Articles exploring sacred texts and interpretations.</value>
+  </data>
+  <data name="ArticleCategoryStories" xml:space="preserve">
+    <value>Stories</value>
+  </data>
+  <data name="ArticleCategoryStoriesDescription" xml:space="preserve">
+    <value>Life stories, interviews, and experiences of Karaites jews.</value>
   </data>
 </root>

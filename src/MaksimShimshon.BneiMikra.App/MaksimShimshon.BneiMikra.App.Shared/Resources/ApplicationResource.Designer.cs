@@ -61,6 +61,114 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Consensus.
+        /// </summary>
+        public static string ArticleCategoryConsensus {
+            get {
+                return ResourceManager.GetString("ArticleCategoryConsensus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Historical Karaite interpretations, halakhic development, and ancient commentaries..
+        /// </summary>
+        public static string ArticleCategoryConsensusDescription {
+            get {
+                return ResourceManager.GetString("ArticleCategoryConsensusDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Essays.
+        /// </summary>
+        public static string ArticleCategoryEssays {
+            get {
+                return ResourceManager.GetString("ArticleCategoryEssays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Personal studies, interpretations, and Scriptural research from a Karaite lens..
+        /// </summary>
+        public static string ArticleCategoryEssaysDescription {
+            get {
+                return ResourceManager.GetString("ArticleCategoryEssaysDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to History.
+        /// </summary>
+        public static string ArticleCategoryHistory {
+            get {
+                return ResourceManager.GetString("ArticleCategoryHistory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exploration of religious origins, movements, and influential figures..
+        /// </summary>
+        public static string ArticleCategoryHistoryDescription {
+            get {
+                return ResourceManager.GetString("ArticleCategoryHistoryDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to News.
+        /// </summary>
+        public static string ArticleCategoryNews {
+            get {
+                return ResourceManager.GetString("ArticleCategoryNews", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current events, religious perspectives on global issues, and updates..
+        /// </summary>
+        public static string ArticleCategoryNewsDescription {
+            get {
+                return ResourceManager.GetString("ArticleCategoryNewsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scripture.
+        /// </summary>
+        public static string ArticleCategoryScripture {
+            get {
+                return ResourceManager.GetString("ArticleCategoryScripture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Articles exploring sacred texts and interpretations..
+        /// </summary>
+        public static string ArticleCategoryScriptureDescription {
+            get {
+                return ResourceManager.GetString("ArticleCategoryScriptureDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stories.
+        /// </summary>
+        public static string ArticleCategoryStories {
+            get {
+                return ResourceManager.GetString("ArticleCategoryStories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Life stories, interviews, and experiences of Karaites jews..
+        /// </summary>
+        public static string ArticleCategoryStoriesDescription {
+            get {
+                return ResourceManager.GetString("ArticleCategoryStoriesDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Written by {0}..
         /// </summary>
         public static string ArticleWrittenBy {

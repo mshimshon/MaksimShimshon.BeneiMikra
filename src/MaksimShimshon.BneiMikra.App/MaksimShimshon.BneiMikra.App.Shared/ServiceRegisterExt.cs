@@ -12,6 +12,7 @@ public static class ServiceRegisterExt
     public static void AddUIServices(this IServiceCollection serviceDescriptors)
     {
         serviceDescriptors.AddMudServices(ConfigureMudService);
+        serviceDescriptors.AddMudMarkdownServices();
         serviceDescriptors.AddScoped<IResourceProvider<ApplicationResource>, ResourceProvider<ApplicationResource>>();
         serviceDescriptors.AddScoped<IDispatcherClient, DispatcherClient>();
         serviceDescriptors.AddScoped<IJSProvider, JavaScriptProvider>();
