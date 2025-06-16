@@ -1,23 +1,38 @@
 ﻿@inherits FluxorComponent
 @page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>@("B'nei Mikra - Home")</PageTitle>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
-@if (!LatestArticle.Value.IsLoading)
-{
-    @if(LatestArticle.Value.Result != default)
+<MudGrid >
+    @if (!LatestArticle.Value.IsLoading)
     {
-        @foreach (var item in LatestArticle.Value.Result.Result)
+        @if(LatestArticle.Value.Result != default)
         {
-            <p>@item.Title</p>
+            @foreach (var item in LatestArticle.Value.Result.Result)
+            {
+                <MudItem xs="12" sm="6" md="4" lg="3">
+                    <MudCard Class="d-flex justify-center ">
+                        <MudCardHeader>
+                            <CardHeaderContent>
+                                <MudText Typo="Typo.h6">@item.Title</MudText>
+                            </CardHeaderContent>
+                        </MudCardHeader>
+                        <MudCardContent>
+                            <MudText Typo="Typo.body2">@item.Description</MudText>
+                        </MudCardContent>
+                        <MudCardActions >
+
+                            <MudButton Variant="Variant.Text" Color="Color.Primary">Read more</MudButton>
+
+                        </MudCardActions>
+                    </MudCard>
+                </MudItem>
+
+            }
         }
     }
-
-}
-else
-{
-    <p>Loading...</p>
-}
+    else
+    {
+        <p>Loading...</p>
+    }
+</MudGrid>

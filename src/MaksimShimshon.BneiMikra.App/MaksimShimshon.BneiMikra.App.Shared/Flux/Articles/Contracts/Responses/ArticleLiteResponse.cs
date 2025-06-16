@@ -7,5 +7,5 @@ public record ArticleLiteResponse : BaseEntityResponse
     public string Description { get; set; } = default!;
     public string Slug { get; set; } = default!;
     public string Locale { get; set; } = default!;
-
+    public AuthorResponse Author { get; set; } = default!;
 }

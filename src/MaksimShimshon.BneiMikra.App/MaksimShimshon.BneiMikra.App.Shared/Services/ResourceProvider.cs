@@ -29,5 +29,9 @@ internal class ResourceProvider<TResource> : IResourceProvider<TResource> where 
 
     public string GetString(Expression<Func<string>> prop, CultureInfo? cultureInfo = default)
         => GetString(prop.GetPropetyName(), cultureInfo);
+    public string GetString(Expression<Func<string>> prop, CultureInfo? cultureInfo = null, params string[] formatVars)
+        => string.Format(GetString(prop, cultureInfo), formatVars);
+    public string GetString(Expression<Func<string>> prop, params string[] formatVars)
+        => string.Format(GetString(prop), formatVars);
 }
 

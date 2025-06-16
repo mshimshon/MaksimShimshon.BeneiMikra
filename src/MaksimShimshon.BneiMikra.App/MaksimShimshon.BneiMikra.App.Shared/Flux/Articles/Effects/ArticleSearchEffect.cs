@@ -23,7 +23,6 @@ internal class ArticleSearchEffect : Effect<ArticleSearchAction>
             return await client.GetAsync($"api/articles?_q={action.Keywords}&sort={action.SortBy}&locale=en&populate=author");
         }, async response =>
         {
-            var str = await response.Content.ReadAsStringAsync();
             var result = await response.Content.ReadFromJsonAsync<StrapiResponse<List<ArticleLiteResponse>>>();
             var nextAction = new ArticleSearchResultAction()
             {

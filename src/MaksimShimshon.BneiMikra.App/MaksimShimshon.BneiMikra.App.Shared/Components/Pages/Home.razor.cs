@@ -8,6 +8,7 @@ public partial class Home : FluxorComponent
 {
     [Inject] private IState<ArticleSearchState> LatestArticle { get; set; } = default!;
     [Inject] private IDispatcher Dispatcher { get; set; } = default!;
+    [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
     protected override Task OnParametersSetAsync()
     {
         var action = new ArticleSearchAction(string.Empty, "publishedAt:desc");

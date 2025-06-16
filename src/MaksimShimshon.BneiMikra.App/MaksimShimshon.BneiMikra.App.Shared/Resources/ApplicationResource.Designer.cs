@@ -61,6 +61,15 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Written by {0}..
+        /// </summary>
+        public static string ArticleWrittenBy {
+            get {
+                return ResourceManager.GetString("ArticleWrittenBy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You do not have sufficient permissions to perform this request..
         /// </summary>
         public static string HttpStatusCodeForbidden {
