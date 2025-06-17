@@ -203,5 +203,68 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Resources {
                 return ResourceManager.GetString("HttpStatusCodeUnknown", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not Found.
+        /// </summary>
+        public static string HttpStatusNotFound {
+            get {
+                return ResourceManager.GetString("HttpStatusNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There is nothing to be found here..
+        /// </summary>
+        public static string HttpStatusNotFoundDescription {
+            get {
+                return ResourceManager.GetString("HttpStatusNotFoundDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        public static string MainMenuAbout {
+            get {
+                return ResourceManager.GetString("MainMenuAbout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Articles.
+        /// </summary>
+        public static string MainMenuArticleCategories {
+            get {
+                return ResourceManager.GetString("MainMenuArticleCategories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blessings.
+        /// </summary>
+        public static string MainMenuBlessing {
+            get {
+                return ResourceManager.GetString("MainMenuBlessing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string MainMenuHome {
+            get {
+                return ResourceManager.GetString("MainMenuHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Teaching.
+        /// </summary>
+        public static string MainMenuTeachings {
+            get {
+                return ResourceManager.GetString("MainMenuTeachings", resourceCulture);
+            }
+        }
     }
 }

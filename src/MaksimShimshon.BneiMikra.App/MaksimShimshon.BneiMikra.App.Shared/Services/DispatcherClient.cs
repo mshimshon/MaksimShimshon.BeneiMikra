@@ -1,4 +1,5 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Flux.System.Actions;
+using System.Diagnostics;
 using System.Net;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Services;
@@ -36,9 +37,21 @@ internal class DispatcherClient : IDispatcherClient
                 if (overridePermissionDenied != default) await overridePermissionDenied(httpResult);
                 else
                     SnackPushError(ApplicationResourceProvider.GetString(() => ApplicationResource.HttpStatusCodeForbidden));
+            else
+            {
+#if DEBUG
+                var message = await httpResult.Content.ReadAsStringAsync();
+                var url = httpResult.RequestMessage.RequestUri;
+                Debugger.Break();
+#endif
+                SnackPushError(ApplicationResourceProvider.GetString(() => ApplicationResource.HttpStatusCodeUnknown));
+            }
         }
-        catch (Exception)
+        catch (Exception ex)
         {
+#if DEBUG
+            Console.WriteLine(ex.Message);
+#endif
             await whenAnyFailure();
             SnackPushError(ApplicationResourceProvider.GetString(() => ApplicationResource.HttpStatusCodeUnknown));
         }

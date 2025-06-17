@@ -7,12 +7,10 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Effects;
 internal class ArticleGetOneEffect : Effect<ArticleGetOneAction>
 {
     private readonly IDispatcherClient _dispatcherClient;
-    private readonly IDispatcher _dispatcher;
 
-    public ArticleGetOneEffect(IDispatcherClient dispatcherClient, IDispatcher dispatcher)
+    public ArticleGetOneEffect(IDispatcherClient dispatcherClient)
     {
         _dispatcherClient = dispatcherClient;
-        _dispatcher = dispatcher;
     }
     public override async Task HandleAsync(ArticleGetOneAction action, IDispatcher dispatcher)
     {

@@ -165,4 +165,25 @@
   <data name="ArticleCategoryStoriesDescription" xml:space="preserve">
     <value>Life stories, interviews, and experiences of Karaites jews.</value>
   </data>
+  <data name="MainMenuHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MainMenuArticleCategories" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="MainMenuTeachings" xml:space="preserve">
+    <value>Teaching</value>
+  </data>
+  <data name="MainMenuAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="HttpStatusNotFound" xml:space="preserve">
+    <value>Not Found</value>
+  </data>
+  <data name="HttpStatusNotFoundDescription" xml:space="preserve">
+    <value>There is nothing to be found here.</value>
+  </data>
+  <data name="MainMenuBlessing" xml:space="preserve">
+    <value>Blessings</value>
+  </data>
 </root>

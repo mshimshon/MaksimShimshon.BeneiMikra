@@ -21,6 +21,7 @@ public partial class ArticlesPage : FluxorComponent
     {
         var action = new ArticleSearchAction(Keywords ?? string.Empty, SortBy ?? string.Empty)
         {
+
             Category = Category ?? default
         };
         Dispatcher.Dispatch(action);

@@ -5,8 +5,8 @@
 <MudGrid>
     @if (ArticleState.Value.IsLoading)
     {
-        <MudItem xs="12" sm="6" md="4" lg="3">
-            <MudText>Loading...</MudText>
+        <MudItem xs="12">
+            <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
         </MudItem>
     }
     else if (ArticleState.Value.Result != default)

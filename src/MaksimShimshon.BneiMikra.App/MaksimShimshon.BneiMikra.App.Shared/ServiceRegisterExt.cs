@@ -1,8 +1,11 @@
 ﻿global using Fluxor;
+global using MaksimShimshon.BneiMikra.App.Shared.Extensions;
+global using MaksimShimshon.BneiMikra.App.Shared.Flux.Shared.Contracts;
 global using MaksimShimshon.BneiMikra.App.Shared.Resources;
 global using MaksimShimshon.BneiMikra.App.Shared.Services.Interfaces;
 global using MudBlazor;
 global using MudBlazor.Services;
+global using System.Net.Http.Json;
 using MaksimShimshon.BneiMikra.App.Shared.Services;
 using Microsoft.Extensions.DependencyInjection;
 
