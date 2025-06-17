@@ -1,7 +1,5 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Flux.Bacha.Actions;
 using MaksimShimshon.BneiMikra.App.Shared.Flux.Bracha.Contracts.Responses;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.Shared.Contracts;
-using System.Net.Http.Json;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Flux.Bacha.Effects;
 internal class BrachaGetEffect : Effect<BrachaGetAction>
@@ -29,6 +27,7 @@ internal class BrachaGetEffect : Effect<BrachaGetAction>
             var result = await response.Content.ReadFromJsonAsync<StrapiResponse<List<BrachaLiteResponse>>>();
             var nextAction = new BrachaGetResultAction()
             {
+                IsLoading = false,
                 Result = result?.Data
             };
             dispatcher.Dispatch(nextAction);

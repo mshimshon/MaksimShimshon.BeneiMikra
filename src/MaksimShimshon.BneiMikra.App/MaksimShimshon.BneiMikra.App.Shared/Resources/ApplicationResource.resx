@@ -186,4 +186,181 @@
   <data name="MainMenuBlessing" xml:space="preserve">
     <value>Blessings</value>
   </data>
+  <data name="TanakhBookBereshit" xml:space="preserve">
+    <value>Genesis</value>
+  </data>
+  <data name="TanakhBookShemot" xml:space="preserve">
+    <value>Exodus</value>
+  </data>
+  <data name="TanakhBookVayikra" xml:space="preserve">
+    <value>Leviticus</value>
+  </data>
+  <data name="TanakhBookBamidbar" xml:space="preserve">
+    <value>Numbers</value>
+  </data>
+  <data name="TanakhBookDevarim" xml:space="preserve">
+    <value>Deuteronomy</value>
+  </data>
+  <data name="TanakhBookNevi'im" xml:space="preserve">
+    <value>Prophets</value>
+  </data>
+  <data name="TanakhBookKetuvim" xml:space="preserve">
+    <value>Writings</value>
+  </data>
+  <data name="TanakhBookBamidbarShort" xml:space="preserve">
+    <value>Num</value>
+  </data>
+  <data name="TanakhBookBereshitShort" xml:space="preserve">
+    <value>Gen</value>
+  </data>
+  <data name="TanakhBookDevarimShort" xml:space="preserve">
+    <value>Deut</value>
+  </data>
+  <data name="TanakhBookKetuvimShort" xml:space="preserve">
+    <value>Writ</value>
+  </data>
+  <data name="TanakhBookNevi'imShort" xml:space="preserve">
+    <value>Pro</value>
+  </data>
+  <data name="TanakhBookShemotShort" xml:space="preserve">
+    <value>Exo</value>
+  </data>
+  <data name="TanakhBookVayikraShort" xml:space="preserve">
+    <value>Lev</value>
+  </data>
+  <data name="TanakhBookYehoshua" xml:space="preserve">
+    <value>Joshua</value>
+  </data>
+  <data name="TanakhBookYehoshuaShort" xml:space="preserve">
+    <value>Josh</value>
+  </data>
+  <data name="TanakhBookShoftim" xml:space="preserve">
+    <value>Judges</value>
+  </data>
+  <data name="TanakhBookShoftimShort" xml:space="preserve">
+    <value>Jud</value>
+  </data>
+  <data name="TanakhBookShmuel" xml:space="preserve">
+    <value>Samuel</value>
+  </data>
+  <data name="TanakhBookShmuelShort" xml:space="preserve">
+    <value>Sam</value>
+  </data>
+  <data name="TanakhBookMelakhim" xml:space="preserve">
+    <value>Kings</value>
+  </data>
+  <data name="TanakhBookMelakhimShort" xml:space="preserve">
+    <value>Kings</value>
+  </data>
+  <data name="TanakhBookYeshayahu" xml:space="preserve">
+    <value>Isaiah</value>
+  </data>
+  <data name="TanakhBookYeshayahuShort" xml:space="preserve">
+    <value>Isa</value>
+  </data>
+  <data name="TanakhBookYirmeyahu" xml:space="preserve">
+    <value>Jeremiah</value>
+  </data>
+  <data name="TanakhBookYirmeyahuShort" xml:space="preserve">
+    <value>Jer</value>
+  </data>
+  <data name="TanakhBookYechezkel" xml:space="preserve">
+    <value>Ezekiel</value>
+  </data>
+  <data name="TanakhBookYechezkelShort" xml:space="preserve">
+    <value>Eze</value>
+  </data>
+  <data name="TanakhBookTrei Asar" xml:space="preserve">
+    <value>Twelve Prophets</value>
+  </data>
+  <data name="TanakhBookTrei AsarShort" xml:space="preserve">
+    <value>12Prophets</value>
+  </data>
+  <data name="TanakhBookTehillim" xml:space="preserve">
+    <value>Psalms</value>
+  </data>
+  <data name="TanakhBookTehillimShort" xml:space="preserve">
+    <value>Ps</value>
+  </data>
+  <data name="TanakhBookMishlei" xml:space="preserve">
+    <value>Proverbs</value>
+  </data>
+  <data name="TanakhBookMishleiShort" xml:space="preserve">
+    <value>Prov</value>
+  </data>
+  <data name="TanakhBookIyov" xml:space="preserve">
+    <value>Job</value>
+  </data>
+  <data name="TanakhBookIyovShort" xml:space="preserve">
+    <value>Job</value>
+  </data>
+  <data name="TanakhBookShir HaShirim" xml:space="preserve">
+    <value>Song of Songs</value>
+  </data>
+  <data name="TanakhBookShir HaShirimShort" xml:space="preserve">
+    <value>Song</value>
+  </data>
+  <data name="TanakhBookRut" xml:space="preserve">
+    <value>Ruth</value>
+  </data>
+  <data name="TanakhBookRutShort" xml:space="preserve">
+    <value>Ruth</value>
+  </data>
+  <data name="TanakhBookEikhah" xml:space="preserve">
+    <value>Lamentations</value>
+  </data>
+  <data name="TanakhBookEikhahShort" xml:space="preserve">
+    <value>Lam</value>
+  </data>
+  <data name="TanakhBookKohelet" xml:space="preserve">
+    <value>Ecclesiastes</value>
+  </data>
+  <data name="TanakhBookKoheletShort" xml:space="preserve">
+    <value>Ecc</value>
+  </data>
+  <data name="TanakhBookEsther" xml:space="preserve">
+    <value>Esther</value>
+  </data>
+  <data name="TanakhBookEstherShort" xml:space="preserve">
+    <value>Est</value>
+  </data>
+  <data name="TanakhBookDaniel" xml:space="preserve">
+    <value>Daniel</value>
+  </data>
+  <data name="TanakhBookDanielShort" xml:space="preserve">
+    <value>Dan</value>
+  </data>
+  <data name="TanakhBookEzra" xml:space="preserve">
+    <value>Ezra</value>
+  </data>
+  <data name="TanakhBookEzraShort" xml:space="preserve">
+    <value>Ezra</value>
+  </data>
+  <data name="TanakhBookNechemyah" xml:space="preserve">
+    <value>Nehemiah</value>
+  </data>
+  <data name="TanakhBookNechemyahShort" xml:space="preserve">
+    <value>Neh</value>
+  </data>
+  <data name="TanakhBookDivrei HaYamim" xml:space="preserve">
+    <value>Chronicles</value>
+  </data>
+  <data name="TanakhBookDivrei HaYamimShort" xml:space="preserve">
+    <value>Chron</value>
+  </data>
+  <data name="TanakhReferenceUnavailable" xml:space="preserve">
+    <value>Seems like there's no tanakh reference available at this time.</value>
+  </data>
+  <data name="TanakhReferenceTransationSource" xml:space="preserve">
+    <value>This verse was translated to the {0} translation.</value>
+  </data>
+  <data name="BrachaTitle" xml:space="preserve">
+    <value>The Blessing</value>
+  </data>
+  <data name="BarachReferenceTitle" xml:space="preserve">
+    <value>Tanakh References</value>
+  </data>
+  <data name="TanakhReferenceSeeRefButton" xml:space="preserve">
+    <value>Open Reference</value>
+  </data>
 </root>

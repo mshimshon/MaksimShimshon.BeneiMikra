@@ -4,22 +4,28 @@
 <PageTitle>@("B'nei Mikra - Home")</PageTitle>
 
 <MudGrid >
-    @if (!LatestArticle.Value.IsLoading)
+    @if (LatestArticle.Value.IsLoading)
     {
-        @if(LatestArticle.Value.Result != default)
+        <MudItem xs="12">
+            <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
+        </MudItem>
+
+    }
+    else if (LatestArticle.Value.Result != default && LatestArticle.Value.Result.Result.Count > 0)
+    {
+        @foreach (var item in LatestArticle.Value.Result.Result)
         {
-            @foreach (var item in LatestArticle.Value.Result.Result)
-            {
-                <MudItem xs="12" sm="6" md="4" lg="3">
-                    <ArticleLiteItem Data=item />
-                </MudItem>
-            }
+            <MudItem xs="12" sm="6" md="4" lg="3">
+                <ArticleLiteItem Data=item />
+            </MudItem>
         }
     }
     else
     {
         <MudItem xs="12">
-            <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
+            <MudText>
+                @AppResourceProvider.GetString(() => ApplicationResource.HttpStatusNotFoundDescription)
+            </MudText>
         </MudItem>
     }
 </MudGrid>

@@ -1,15 +1,58 @@
 @inherits FluxorComponent
-<MudExpansionPanels MultiExpansion="true">
-    <MudExpansionPanel Text="Panel One">
-        Panel One Content
-    </MudExpansionPanel>
-    <MudExpansionPanel Text="Panel Two">
-        Panel Two Content
-    </MudExpansionPanel>
-    <MudExpansionPanel Text="Panel Three">
-        Panel Three Content
-    </MudExpansionPanel>
-    <MudExpansionPanel Text="Panel Four">
-        Panel Four Content
-    </MudExpansionPanel>
-</MudExpansionPanels>
+@page "/bracha/{Id}"
+
+<PageTitle>@("B'nei Mikra - Blessings")</PageTitle>
+<MudGrid>
+@if (BrachaState.Value.IsLoading)
+{
+    <MudItem xs="12">
+        <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
+    </MudItem>
+}
+else if (BrachaState.Value.Result != default)
+{
+    <MudItem xs="12">
+        <MudText Align=@Align.Center>
+            @BrachaState.Value.Result.Name
+        </MudText>
+    </MudItem>
+    
+    <MudItem xs="12" sm="6">
+            <MudText Align=@Align.Center Typo=@Typo.subtitle1>
+                @AppResourceProvider.GetString(() => ApplicationResource.BrachaTitle)
+            </MudText>
+        <MudPaper Style="padding:1em">
+                <MudText Align=@Align.Right> @BrachaState.Value.Result.Hebrew </MudText>
+                <MudText Align=@Align.Left> @BrachaState.Value.Result.Transliteration </MudText>
+                @if (!string.IsNullOrWhiteSpace(BrachaState.Value.Result.Translated))
+                {
+                    <MudText Align=@Align.Left> @BrachaState.Value.Result.Translated </MudText>
+                }
+        </MudPaper>
+
+    </MudItem>
+
+        @if (BrachaState.Value.Result.TanakhReferences != default && BrachaState.Value.Result.TanakhReferences.Count > 0)
+        {
+
+            <MudItem xs="12" sm="6">
+                <MudText Align=@Align.Center Typo=@Typo.subtitle1>
+                    @AppResourceProvider.GetString(() => ApplicationResource.BarachReferenceTitle)
+                </MudText>
+                @foreach (var item in BrachaState.Value.Result.TanakhReferences)
+                {
+                    <TanakhReference Data=@item />
+                }
+            </MudItem>
+   
+        }
+}
+else
+{
+    <MudItem xs="12">
+        <MudText>
+            @AppResourceProvider.GetString(() => ApplicationResource.HttpStatusNotFoundDescription)
+        </MudText>
+    </MudItem>
+}
+</MudGrid>

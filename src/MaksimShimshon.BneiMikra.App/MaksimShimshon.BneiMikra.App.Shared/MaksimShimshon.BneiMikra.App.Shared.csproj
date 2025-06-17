@@ -24,7 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Components\Shared\" />
     <Folder Include="Flux\Articles\Contracts\Requests\" />
     <Folder Include="Flux\System\Contracts\Responses\" />
     <Folder Include="Flux\System\Contracts\Requests\" />

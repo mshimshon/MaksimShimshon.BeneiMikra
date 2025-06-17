@@ -28,6 +28,7 @@ internal class BrachaGetOneEffect : Effect<BrachaGetOneAction>
             var result = await response.Content.ReadFromJsonAsync<StrapiResponse<BrachaResponse>>();
             var nextAction = new BrachaGetOneResultAction()
             {
+                IsLoading = false,
                 Result = result?.Data
             };
             dispatcher.Dispatch(nextAction);

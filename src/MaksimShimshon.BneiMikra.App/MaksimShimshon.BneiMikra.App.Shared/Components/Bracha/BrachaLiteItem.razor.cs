@@ -1,7 +1,7 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Flux.Bracha.Contracts.Responses;
 using Microsoft.AspNetCore.Components;
 
-namespace MaksimShimshon.BneiMikra.App.Shared.Components.Article;
+namespace MaksimShimshon.BneiMikra.App.Shared.Components.Bracha;
 public partial class BrachaLiteItem
 {
     [Parameter]

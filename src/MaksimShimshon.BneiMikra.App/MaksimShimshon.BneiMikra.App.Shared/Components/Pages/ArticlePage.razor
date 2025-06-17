@@ -24,4 +24,12 @@
         </MudItem>
 
     }
+    else
+    {
+        <MudItem xs="12">
+            <MudText>
+                @AppResourceProvider.GetString(() => ApplicationResource.HttpStatusNotFoundDescription)
+            </MudText>
+        </MudItem>
+    }
 </MudGrid>

@@ -1,7 +1,5 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Flux.Shared.Contracts;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.Teachings.Actions;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Flux.Teachings.Actions;
 using MaksimShimshon.BneiMikra.App.Shared.Flux.Teachings.Contracts.Responses;
-using System.Net.Http.Json;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Flux.Teachings.Effects;
 internal class TeachingGetEffect : Effect<TeachingGetAction>
@@ -16,7 +14,7 @@ internal class TeachingGetEffect : Effect<TeachingGetAction>
     {
         await _dispatcherClient.DispatchApi(async client =>
         {
-            var urlBuilder = client.CreateEndpoint("api/articles");
+            var urlBuilder = client.CreateEndpoint("api/teachings");
             var query = urlBuilder.Query;
             query["locale"] = "en";
             query["populate[0]"] = "article";

@@ -1,0 +1,27 @@
+@inherits FluxorComponent
+@if (State.Value.IsLoading)
+{
+    <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+}
+else if (State.Value.Verse != default)
+{
+    <MudText Align=@Align.Right> @State.Value.Verse.Hebrew </MudText>
+    <MudText Align=@Align.Left> @State.Value.Verse.Transliteration </MudText>
+    @if (!string.IsNullOrWhiteSpace(State.Value.Verse.Translated))
+    {
+        <MudText Align=@Align.Left> @State.Value.Verse.Translated </MudText>
+        @if (!string.IsNullOrWhiteSpace(State.Value.Verse.TranslationSource))
+        {
+            <MudDivider />
+            <MudText Align=@Align.Left>
+                @AppResourceProvider.GetString(() => ApplicationResource.TanakhReferenceTransationSource, State.Value.Verse.TranslationSource!)
+            </MudText>
+        }
+    }
+}
+else
+{
+    <MudText Align=@Align.Center>
+        @AppResourceProvider.GetString(() => ApplicationResource.TanakhReferenceUnavailable)
+    </MudText>
+}

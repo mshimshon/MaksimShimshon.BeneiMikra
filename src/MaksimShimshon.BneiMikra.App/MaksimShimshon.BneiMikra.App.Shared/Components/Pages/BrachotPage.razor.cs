@@ -8,6 +8,7 @@ public partial class BrachotPage : FluxorComponent
 {
     [Inject] IState<BrachaListingState> ListingState { get; set; } = default!;
     [Inject] IDispatcher Dispatcher { get; set; } = default!;
+    [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
     protected override Task OnInitializedAsync()
     {
         Dispatcher.Dispatch(new BrachaGetAction());

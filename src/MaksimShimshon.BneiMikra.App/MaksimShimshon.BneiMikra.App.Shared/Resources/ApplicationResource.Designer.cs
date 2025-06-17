@@ -178,6 +178,24 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tanakh References.
+        /// </summary>
+        public static string BarachReferenceTitle {
+            get {
+                return ResourceManager.GetString("BarachReferenceTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Blessing.
+        /// </summary>
+        public static string BrachaTitle {
+            get {
+                return ResourceManager.GetString("BrachaTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You do not have sufficient permissions to perform this request..
         /// </summary>
         public static string HttpStatusCodeForbidden {
@@ -264,6 +282,519 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Resources {
         public static string MainMenuTeachings {
             get {
                 return ResourceManager.GetString("MainMenuTeachings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Numbers.
+        /// </summary>
+        public static string TanakhBookBamidbar {
+            get {
+                return ResourceManager.GetString("TanakhBookBamidbar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Num.
+        /// </summary>
+        public static string TanakhBookBamidbarShort {
+            get {
+                return ResourceManager.GetString("TanakhBookBamidbarShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Genesis.
+        /// </summary>
+        public static string TanakhBookBereshit {
+            get {
+                return ResourceManager.GetString("TanakhBookBereshit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gen.
+        /// </summary>
+        public static string TanakhBookBereshitShort {
+            get {
+                return ResourceManager.GetString("TanakhBookBereshitShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Daniel.
+        /// </summary>
+        public static string TanakhBookDaniel {
+            get {
+                return ResourceManager.GetString("TanakhBookDaniel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dan.
+        /// </summary>
+        public static string TanakhBookDanielShort {
+            get {
+                return ResourceManager.GetString("TanakhBookDanielShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deuteronomy.
+        /// </summary>
+        public static string TanakhBookDevarim {
+            get {
+                return ResourceManager.GetString("TanakhBookDevarim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deut.
+        /// </summary>
+        public static string TanakhBookDevarimShort {
+            get {
+                return ResourceManager.GetString("TanakhBookDevarimShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chronicles.
+        /// </summary>
+        public static string TanakhBookDivrei_HaYamim {
+            get {
+                return ResourceManager.GetString("TanakhBookDivrei HaYamim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chron.
+        /// </summary>
+        public static string TanakhBookDivrei_HaYamimShort {
+            get {
+                return ResourceManager.GetString("TanakhBookDivrei HaYamimShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lamentations.
+        /// </summary>
+        public static string TanakhBookEikhah {
+            get {
+                return ResourceManager.GetString("TanakhBookEikhah", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lam.
+        /// </summary>
+        public static string TanakhBookEikhahShort {
+            get {
+                return ResourceManager.GetString("TanakhBookEikhahShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Esther.
+        /// </summary>
+        public static string TanakhBookEsther {
+            get {
+                return ResourceManager.GetString("TanakhBookEsther", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Est.
+        /// </summary>
+        public static string TanakhBookEstherShort {
+            get {
+                return ResourceManager.GetString("TanakhBookEstherShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ezra.
+        /// </summary>
+        public static string TanakhBookEzra {
+            get {
+                return ResourceManager.GetString("TanakhBookEzra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ezra.
+        /// </summary>
+        public static string TanakhBookEzraShort {
+            get {
+                return ResourceManager.GetString("TanakhBookEzraShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job.
+        /// </summary>
+        public static string TanakhBookIyov {
+            get {
+                return ResourceManager.GetString("TanakhBookIyov", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job.
+        /// </summary>
+        public static string TanakhBookIyovShort {
+            get {
+                return ResourceManager.GetString("TanakhBookIyovShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Writings.
+        /// </summary>
+        public static string TanakhBookKetuvim {
+            get {
+                return ResourceManager.GetString("TanakhBookKetuvim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Writ.
+        /// </summary>
+        public static string TanakhBookKetuvimShort {
+            get {
+                return ResourceManager.GetString("TanakhBookKetuvimShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ecclesiastes.
+        /// </summary>
+        public static string TanakhBookKohelet {
+            get {
+                return ResourceManager.GetString("TanakhBookKohelet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ecc.
+        /// </summary>
+        public static string TanakhBookKoheletShort {
+            get {
+                return ResourceManager.GetString("TanakhBookKoheletShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kings.
+        /// </summary>
+        public static string TanakhBookMelakhim {
+            get {
+                return ResourceManager.GetString("TanakhBookMelakhim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kings.
+        /// </summary>
+        public static string TanakhBookMelakhimShort {
+            get {
+                return ResourceManager.GetString("TanakhBookMelakhimShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Proverbs.
+        /// </summary>
+        public static string TanakhBookMishlei {
+            get {
+                return ResourceManager.GetString("TanakhBookMishlei", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prov.
+        /// </summary>
+        public static string TanakhBookMishleiShort {
+            get {
+                return ResourceManager.GetString("TanakhBookMishleiShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nehemiah.
+        /// </summary>
+        public static string TanakhBookNechemyah {
+            get {
+                return ResourceManager.GetString("TanakhBookNechemyah", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Neh.
+        /// </summary>
+        public static string TanakhBookNechemyahShort {
+            get {
+                return ResourceManager.GetString("TanakhBookNechemyahShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prophets.
+        /// </summary>
+        public static string TanakhBookNevi_im {
+            get {
+                return ResourceManager.GetString("TanakhBookNevi\'im", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pro.
+        /// </summary>
+        public static string TanakhBookNevi_imShort {
+            get {
+                return ResourceManager.GetString("TanakhBookNevi\'imShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ruth.
+        /// </summary>
+        public static string TanakhBookRut {
+            get {
+                return ResourceManager.GetString("TanakhBookRut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ruth.
+        /// </summary>
+        public static string TanakhBookRutShort {
+            get {
+                return ResourceManager.GetString("TanakhBookRutShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exodus.
+        /// </summary>
+        public static string TanakhBookShemot {
+            get {
+                return ResourceManager.GetString("TanakhBookShemot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exo.
+        /// </summary>
+        public static string TanakhBookShemotShort {
+            get {
+                return ResourceManager.GetString("TanakhBookShemotShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Song of Songs.
+        /// </summary>
+        public static string TanakhBookShir_HaShirim {
+            get {
+                return ResourceManager.GetString("TanakhBookShir HaShirim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Song.
+        /// </summary>
+        public static string TanakhBookShir_HaShirimShort {
+            get {
+                return ResourceManager.GetString("TanakhBookShir HaShirimShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Samuel.
+        /// </summary>
+        public static string TanakhBookShmuel {
+            get {
+                return ResourceManager.GetString("TanakhBookShmuel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sam.
+        /// </summary>
+        public static string TanakhBookShmuelShort {
+            get {
+                return ResourceManager.GetString("TanakhBookShmuelShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Judges.
+        /// </summary>
+        public static string TanakhBookShoftim {
+            get {
+                return ResourceManager.GetString("TanakhBookShoftim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jud.
+        /// </summary>
+        public static string TanakhBookShoftimShort {
+            get {
+                return ResourceManager.GetString("TanakhBookShoftimShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Psalms.
+        /// </summary>
+        public static string TanakhBookTehillim {
+            get {
+                return ResourceManager.GetString("TanakhBookTehillim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ps.
+        /// </summary>
+        public static string TanakhBookTehillimShort {
+            get {
+                return ResourceManager.GetString("TanakhBookTehillimShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Twelve Prophets.
+        /// </summary>
+        public static string TanakhBookTrei_Asar {
+            get {
+                return ResourceManager.GetString("TanakhBookTrei Asar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 12Prophets.
+        /// </summary>
+        public static string TanakhBookTrei_AsarShort {
+            get {
+                return ResourceManager.GetString("TanakhBookTrei AsarShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Leviticus.
+        /// </summary>
+        public static string TanakhBookVayikra {
+            get {
+                return ResourceManager.GetString("TanakhBookVayikra", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lev.
+        /// </summary>
+        public static string TanakhBookVayikraShort {
+            get {
+                return ResourceManager.GetString("TanakhBookVayikraShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ezekiel.
+        /// </summary>
+        public static string TanakhBookYechezkel {
+            get {
+                return ResourceManager.GetString("TanakhBookYechezkel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Eze.
+        /// </summary>
+        public static string TanakhBookYechezkelShort {
+            get {
+                return ResourceManager.GetString("TanakhBookYechezkelShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Joshua.
+        /// </summary>
+        public static string TanakhBookYehoshua {
+            get {
+                return ResourceManager.GetString("TanakhBookYehoshua", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Josh.
+        /// </summary>
+        public static string TanakhBookYehoshuaShort {
+            get {
+                return ResourceManager.GetString("TanakhBookYehoshuaShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Isaiah.
+        /// </summary>
+        public static string TanakhBookYeshayahu {
+            get {
+                return ResourceManager.GetString("TanakhBookYeshayahu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Isa.
+        /// </summary>
+        public static string TanakhBookYeshayahuShort {
+            get {
+                return ResourceManager.GetString("TanakhBookYeshayahuShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jeremiah.
+        /// </summary>
+        public static string TanakhBookYirmeyahu {
+            get {
+                return ResourceManager.GetString("TanakhBookYirmeyahu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jer.
+        /// </summary>
+        public static string TanakhBookYirmeyahuShort {
+            get {
+                return ResourceManager.GetString("TanakhBookYirmeyahuShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Reference.
+        /// </summary>
+        public static string TanakhReferenceSeeRefButton {
+            get {
+                return ResourceManager.GetString("TanakhReferenceSeeRefButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This verse was translated to the {0} translation..
+        /// </summary>
+        public static string TanakhReferenceTransationSource {
+            get {
+                return ResourceManager.GetString("TanakhReferenceTransationSource", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seems like there&apos;s no tanakh reference available at this time..
+        /// </summary>
+        public static string TanakhReferenceUnavailable {
+            get {
+                return ResourceManager.GetString("TanakhReferenceUnavailable", resourceCulture);
             }
         }
     }

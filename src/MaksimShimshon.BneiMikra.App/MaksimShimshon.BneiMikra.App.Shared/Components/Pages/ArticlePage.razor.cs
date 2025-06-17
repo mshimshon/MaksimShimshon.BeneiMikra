@@ -11,6 +11,7 @@ public partial class ArticlePage : FluxorComponent
 
     [Inject] private IState<ArticleViewState> ArticleState { get; set; } = default!;
     [Inject] IDispatcher Dispatcher { get; set; } = default!;
+    [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
     protected override Task OnInitializedAsync()
     {
         var action = new ArticleGetOneAction(Id);

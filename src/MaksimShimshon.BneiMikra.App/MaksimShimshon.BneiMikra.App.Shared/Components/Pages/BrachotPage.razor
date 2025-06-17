@@ -4,22 +4,27 @@
 <PageTitle>@("B'nei Mikra - Blessings")</PageTitle>
 
 <MudGrid>
-    @if (!ListingState.Value.IsLoading)
-    {
-        @if (ListingState.Value.Result != default)
-        {
-            @foreach (var item in ListingState.Value.Result)
-            {
-                <MudItem xs="12" sm="6" >
-                    <BrachaLiteItem Data=@item />
-                </MudItem>
-            }
-        }
-    }
-    else
+    @if (ListingState.Value.IsLoading)
     {
         <MudItem xs="12">
             <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
         </MudItem>
+    }
+    else if (ListingState.Value.Result != default && ListingState.Value.Result.Count >0)
+    {
+        @foreach (var item in ListingState.Value.Result)
+        {
+            <MudItem xs="12" sm="6">
+                <BrachaLiteItem Data=@item />
+            </MudItem>
+        }
+    }
+    else
+    {
+    <MudItem xs="12">
+        <MudText>
+            @AppResourceProvider.GetString(() => ApplicationResource.HttpStatusNotFoundDescription)
+        </MudText>
+    </MudItem>
     }
 </MudGrid>
