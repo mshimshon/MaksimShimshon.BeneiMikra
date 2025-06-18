@@ -19,6 +19,7 @@ public static class ServiceRegisterExt
         serviceDescriptors.AddMudMarkdownServices();
         serviceDescriptors.AddScoped<IResourceProvider<ApplicationResource>, ResourceProvider<ApplicationResource>>();
         serviceDescriptors.AddScoped<IDispatcherClient, DispatcherClient>();
+        serviceDescriptors.AddSingleton<ITransliterationProvider, TrasliterationProvider>();
         serviceDescriptors.AddScoped<IJSProvider, JavaScriptProvider>();
         serviceDescriptors.AddScoped<IEnvironmentProvider, EnvironmentProvider>();
         serviceDescriptors.AddScoped<ILocalStorageProvider, LocalStorageProvider>();

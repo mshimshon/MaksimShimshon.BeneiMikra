@@ -342,6 +342,20 @@
   <data name="TanakhBookNechemyahShort" xml:space="preserve">
     <value>Neh</value>
   </data>
+  <data name="TanakhBookMelakhimAleph" xml:space="preserve">
+  <value>1 Kings</value>
+</data>
+<data name="TanakhBookMelakhimAlephShort" xml:space="preserve">
+  <value>1Ki</value>
+</data>
+
+<data name="TanakhBookMelakhimBet" xml:space="preserve">
+  <value>2 Kings</value>
+</data>
+<data name="TanakhBookMelakhimBetShort" xml:space="preserve">
+  <value>2Ki</value>
+</data>
+
   <data name="TanakhBookDivrei HaYamim" xml:space="preserve">
     <value>Chronicles</value>
   </data>

@@ -14,18 +14,15 @@
         }
         else if (State.Value.Verse != default)
         {
-            <MudText Typo=@Typo.body1 Align=@Align.Right> @State.Value.Verse.Hebrew </MudText>
-            <MudText Typo=@Typo.subtitle1 Align=@Align.Left> @State.Value.Verse.Transliteration </MudText>
+            <MudText Typo=@Typo.body1 Align=@Align.Right> @((MarkupString)State.Value.Verse.Hebrew)</MudText>
+            <Divider VerticalSpacing="0.3em" Invisible=true />
+            <MudText Typo=@Typo.body2 Align=@Align.Left> @((MarkupString)TransliterationProvider.Transliterate(State.Value.Verse.Hebrew))</MudText>
+
             @if (!string.IsNullOrWhiteSpace(State.Value.Verse.Translated))
             {
-                <MudText Typo=@Typo.body2 Align=@Align.Left> @State.Value.Verse.Translated </MudText>
-                @if (!string.IsNullOrWhiteSpace(State.Value.Verse.TranslationSource))
-                {
-                    <Divider VerticalSpacing="0.3em" />
-                    <MudText Typo=@Typo.subtitle2 Align=@Align.Left>
-                        @AppResourceProvider.GetString(() => ApplicationResource.TanakhReferenceTransationSource, State.Value.Verse.TranslationSource!)
-                    </MudText>
-                }
+                <Divider VerticalSpacing="0.3em" Invisible=true />
+                <MudText Typo=@Typo.body2 Align=@Align.Left> @((MarkupString)State.Value.Verse.Translated)</MudText>
+
             }
             @if (!string.IsNullOrWhiteSpace(Note))
             {
@@ -34,7 +31,7 @@
                     @AppResourceProvider.GetString(() => ApplicationResource.TanakhReferenceNoteTitle)
                 </MudText>
                 <MudText Typo=@Typo.subtitle1>
-                    @Note
+                    @((MarkupString)Note)
                 </MudText>
 
             }
