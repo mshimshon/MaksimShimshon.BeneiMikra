@@ -2,7 +2,7 @@
 @page "/bracha/{Id}"
 
 <PageTitle>@("B'nei Mikra - Blessings")</PageTitle>
-<MudGrid>
+<MudGrid Justify=@Justify.Center>
 @if (BrachaState.Value.IsLoading)
 {
     <MudItem xs="12">
@@ -21,6 +21,8 @@ else if (BrachaState.Value.Result != default)
             <MudText Align=@Align.Center Typo=@Typo.subtitle1>
                 @AppResourceProvider.GetString(() => ApplicationResource.BrachaTitle)
             </MudText>
+            <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
+
         <MudPaper Style="padding:1em">
                 <MudText Align=@Align.Right> @BrachaState.Value.Result.Hebrew </MudText>
                 <MudText Align=@Align.Left> @BrachaState.Value.Result.Transliteration </MudText>
@@ -30,22 +32,24 @@ else if (BrachaState.Value.Result != default)
                 }
         </MudPaper>
 
-    </MudItem>
-
         @if (BrachaState.Value.Result.TanakhReferences != default && BrachaState.Value.Result.TanakhReferences.Count > 0)
         {
+            <Divider VerticalSpacing="2em" DividerType=@DividerType.Middle />
 
-            <MudItem xs="12" sm="6">
-                <MudText Align=@Align.Center Typo=@Typo.subtitle1>
-                    @AppResourceProvider.GetString(() => ApplicationResource.BarachReferenceTitle)
-                </MudText>
-                @foreach (var item in BrachaState.Value.Result.TanakhReferences)
-                {
-                    <TanakhReference Data=@item />
-                }
-            </MudItem>
-   
+            <MudText Align=@Align.Center Typo=@Typo.subtitle1>
+                @AppResourceProvider.GetString(() => ApplicationResource.BarachReferenceTitle)
+
+            </MudText>
+            <Divider VerticalSpacing="1em" Invisible=true DividerType=@DividerType.Middle />
+            @foreach (var item in BrachaState.Value.Result.TanakhReferences)
+            {
+                <TanakhReference Data=@item />
+            }
+
         }
+    </MudItem>
+
+
 }
 else
 {

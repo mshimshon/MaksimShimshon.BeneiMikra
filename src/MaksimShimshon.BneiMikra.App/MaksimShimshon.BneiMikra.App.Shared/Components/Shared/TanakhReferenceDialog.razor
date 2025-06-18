@@ -1,27 +1,49 @@
 @inherits FluxorComponent
-@if (State.Value.IsLoading)
-{
-    <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
-}
-else if (State.Value.Verse != default)
-{
-    <MudText Align=@Align.Right> @State.Value.Verse.Hebrew </MudText>
-    <MudText Align=@Align.Left> @State.Value.Verse.Transliteration </MudText>
-    @if (!string.IsNullOrWhiteSpace(State.Value.Verse.Translated))
-    {
-        <MudText Align=@Align.Left> @State.Value.Verse.Translated </MudText>
-        @if (!string.IsNullOrWhiteSpace(State.Value.Verse.TranslationSource))
+
+<MudDialog>
+    <DialogContent>
+
+        @if (State.Value.IsLoading)
         {
-            <MudDivider />
-            <MudText Align=@Align.Left>
-                @AppResourceProvider.GetString(() => ApplicationResource.TanakhReferenceTransationSource, State.Value.Verse.TranslationSource!)
+            <Loader>
+                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+                <MudText Align=@Align.Center Typo=@Typo.subtitle1>
+                    @AppResourceProvider.GetString(() => ApplicationResource.GenericLoadingTitle)
+                </MudText>
+            </Loader>
+        }
+        else if (State.Value.Verse != default)
+        {
+            <MudText Typo=@Typo.body1 Align=@Align.Right> @State.Value.Verse.Hebrew </MudText>
+            <MudText Typo=@Typo.subtitle1 Align=@Align.Left> @State.Value.Verse.Transliteration </MudText>
+            @if (!string.IsNullOrWhiteSpace(State.Value.Verse.Translated))
+            {
+                <MudText Typo=@Typo.body2 Align=@Align.Left> @State.Value.Verse.Translated </MudText>
+                @if (!string.IsNullOrWhiteSpace(State.Value.Verse.TranslationSource))
+                {
+                    <Divider VerticalSpacing="0.3em" />
+                    <MudText Typo=@Typo.subtitle2 Align=@Align.Left>
+                        @AppResourceProvider.GetString(() => ApplicationResource.TanakhReferenceTransationSource, State.Value.Verse.TranslationSource!)
+                    </MudText>
+                }
+            }
+            @if (!string.IsNullOrWhiteSpace(Note))
+            {
+                <Divider VerticalSpacing="1em" />
+                <MudText Typo=@Typo.overline>
+                    @AppResourceProvider.GetString(() => ApplicationResource.TanakhReferenceNoteTitle)
+                </MudText>
+                <MudText Typo=@Typo.subtitle1>
+                    @Note
+                </MudText>
+
+            }
+        }
+        else
+        {
+            <MudText Align=@Align.Center>
+                @AppResourceProvider.GetString(() => ApplicationResource.TanakhReferenceUnavailable)
             </MudText>
         }
-    }
-}
-else
-{
-    <MudText Align=@Align.Center>
-        @AppResourceProvider.GetString(() => ApplicationResource.TanakhReferenceUnavailable)
-    </MudText>
-}
+    </DialogContent>
+</MudDialog>

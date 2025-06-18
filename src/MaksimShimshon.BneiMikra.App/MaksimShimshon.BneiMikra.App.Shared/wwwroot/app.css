@@ -5,6 +5,28 @@
     padding-top: calc(var(--mud-appbar-height) + 2em);
 }
 
+.loader-warp {
+    padding: unset;
+    width: 100%;
+    min-width: 280px;
+    height: 180px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    display: flex;
+    align-items: center;
+}
+.parallax {
+    /* The image used */
+
+    /* Set a specific height */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 h1:focus {
     outline: none;
 }

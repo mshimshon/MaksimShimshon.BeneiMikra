@@ -45,11 +45,11 @@ internal class TanakhGetOneEffect : Effect<TanakhGetOneAction>
         {
             if (action.Verse != default)
             {
-                var result = await response.Content.ReadFromJsonAsync<StrapiResponse<TanakhVerseResponse>>();
+                var result = await response.Content.ReadFromJsonAsync<StrapiResponse<List<TanakhVerseResponse>>>();
                 var nextAction = new TanakhGetOneVerseResultAction()
                 {
                     IsLoading = false,
-                    Result = result?.Data
+                    Result = result?.Data?.FirstOrDefault()
                 };
                 dispatcher.Dispatch(nextAction);
             }

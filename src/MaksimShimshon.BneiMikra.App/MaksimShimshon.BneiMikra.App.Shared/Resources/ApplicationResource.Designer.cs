@@ -196,6 +196,15 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Loading.
+        /// </summary>
+        public static string GenericLoadingTitle {
+            get {
+                return ResourceManager.GetString("GenericLoadingTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You do not have sufficient permissions to perform this request..
         /// </summary>
         public static string HttpStatusCodeForbidden {
@@ -268,11 +277,29 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Knives.
+        /// </summary>
+        public static string MainMenuChalef {
+            get {
+                return ResourceManager.GetString("MainMenuChalef", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string MainMenuHome {
             get {
                 return ResourceManager.GetString("MainMenuHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Support.
+        /// </summary>
+        public static string MainMenuSupport {
+            get {
+                return ResourceManager.GetString("MainMenuSupport", resourceCulture);
             }
         }
         
@@ -768,6 +795,15 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Resources {
         public static string TanakhBookYirmeyahuShort {
             get {
                 return ResourceManager.GetString("TanakhBookYirmeyahuShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note from what you were reading:.
+        /// </summary>
+        public static string TanakhReferenceNoteTitle {
+            get {
+                return ResourceManager.GetString("TanakhReferenceNoteTitle", resourceCulture);
             }
         }
         

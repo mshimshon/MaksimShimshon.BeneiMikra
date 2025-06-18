@@ -7,6 +7,7 @@ public partial class TanakhReference : FluxorComponent
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
     [Inject] private IDialogService Dialog { get; set; } = default!;
     [Parameter] public TanakhReferenceResponse Data { get; set; } = default!;
+    [Parameter] public bool UseShortName { get; set; } = false;
     private string BookName { get => AppResourceProvider.GetString($"TanakhBook{Data.Book}"); }
     private string BookNameShort { get => AppResourceProvider.GetString($"TanakhBook{Data.Book}Short"); }
 
@@ -22,10 +23,13 @@ public partial class TanakhReference : FluxorComponent
             CloseButton = true,
             Position = DialogPosition.Center
         };
-        var parameters = new DialogParameters();
-        parameters.Add(nameof(TanakhReferenceDialog.BookName), Data.Book);
-        parameters.Add(nameof(TanakhReferenceDialog.Verse), Data.Verse);
-        parameters.Add(nameof(TanakhReferenceDialog.Chapiter), Data.Chapiter);
+        var parameters = new DialogParameters
+        {
+            { nameof(TanakhReferenceDialog.BookName), Data.Book },
+            { nameof(TanakhReferenceDialog.Verse), Data.Verse },
+            { nameof(TanakhReferenceDialog.Chapiter), Data.Chapiter },
+            { nameof(TanakhReferenceDialog.Note), Data.Note }
+        };
         await Dialog.ShowAsync<TanakhReferenceDialog>(BookRefName, parameters, option);
 
     }

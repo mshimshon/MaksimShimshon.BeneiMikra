@@ -1,0 +1,58 @@
+@page "/chalef"
+
+<PageTitle>@("B'nei Mikra - Chalef")</PageTitle>
+
+<MudGrid>
+    <MudItem sm="12" md="6">
+        <img src="https://dalstrong.com/cdn/shop/files/side-min.webp" style="width:100%;" />
+    </MudItem>
+    <MudItem sm="12" md="6">
+        <MudText Typo=Typo.h6>
+            Why This Knife?
+        </MudText>
+        <MudText Typo=Typo.body1>
+            This handmade set of three slaughter knives: for chicken, lamb, and cattle, is crafted with precision and care, inspired by the proven efficiency of the rabbinic chalef but without the excess price. Made for Torah observance rooted in practicality and integrity, each blade is honed to exceptional sharpness for a swift, humane cut. You’re not just buying a tool—you’re investing in a reliable, handcrafted solution that upholds the commandment to the letter of sharpness and the spirit of minimizing suffering during the procedure.
+        </MudText>
+        <MudDivider DividerType=DividerType.Middle Style="margin-top:1em; margin-bottom:1em;"/>
+        <MudText Typo=Typo.h6>
+            !?! Frequently Asked Questions !?!
+        </MudText>
+        <MudExpansionPanels>
+            <MudExpansionPanel Text="Are These Knives Required by Torah?" MaxHeight="150" Expanded="true">
+                <MudText Typo=Typo.body2>
+                    No, From a Torah perspective, this blade isn’t inherently better than any other sharp blade. However, there are several practical reasons to choose this design, which i explain further below.
+                </MudText>
+                <TanakhReference UseShortName=true Data=@(CreateTanakhRef("Devarim", 22, 6)) />
+            </MudExpansionPanel>
+            <MudExpansionPanel Text="Are Those Chalef Kosher?" MaxHeight="500">
+                <MudText Typo=Typo.body2>
+                    Yes, while not certified by a rabbinic kosher agency, our knives are fully kosher according to Torah-only standards. Interestingly, our supplier also makes chalef blades for rabbinic slaughterers in Israel and our blades meet the same specifications.
+                </MudText>
+            </MudExpansionPanel>
+            <MudExpansionPanel Text="What is the Shipping Time?" MaxHeight="1000">
+                <MudText Typo=Typo.body2>
+                    This is a small-scale production, so please expect a shipping time of 2–4 weeks depending on your location. If the item is on backorder, delivery may take 1–3 months from production to your door.
+                </MudText>
+            </MudExpansionPanel>
+            <MudExpansionPanel Text="Do you recommand Mortal Combat?">
+                <MudText Typo=Typo.body2>
+                    These blades are for slaughtering animals, not for dueling your neighbors, so please don’t start any mortal combat tournaments! And definitely keep them away from kids, this isn’t a toy set.
+                </MudText>
+            </MudExpansionPanel>
+        </MudExpansionPanels>
+
+        <TanakhReference Data=@(CreateTanakhRef("Devarim", 22, 7)) />
+    </MudItem>
+    <MudItem sm="12" >
+        <MudText Typo=Typo.body2>
+            The Torah mentions a blade but doesn’t give specific measurements, those came later as rabbinic safeguards. While any sharp, smooth blade can reduce the animal’s pain, I use a rabbinic-inspired design because it guarantees a single, swift cut to complete the slaughter without multiple strokes, a point still debated in terms of validity. With one clean stroke, you can’t go wrong, and as a non-expert slaughterer, I prefer to avoid risks when it comes to respecting God’s commandment of compassion.
+        </MudText>
+        <MudText Typo=Typo.body2>
+            This blade is long enough and shaped flat with rounded edges to prevent poking or injuring the animal with the tip, which could invalidate the slaughter. Most blades available are shorter and less reliably sharp. My motto is: “Why take the risk?”
+        </MudText>
+        <MudText Typo=Typo.body2>
+            I try to honor the Torah’s teachings and help others avoid unnecessary rabbinic price premium with one precise, effective tool.
+        </MudText>
+        <img src="https://dalstrong.com/cdn/shop/files/SGS_features_1.webp" style="width:100%;" />
+    </MudItem>
+</MudGrid>

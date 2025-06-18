@@ -1,19 +1,7 @@
 @inherits FluxorComponent
-<MudPaper Class="pa-4">
-    <MudStack Spacing="2">
-        <MudButtonGroup >
-            <MudButton  OnClick=OnExpandCollapseClick>
-                @BookRefName
-            </MudButton>
-            <MudButton OnClick=OpenDialog>
-                @AppResourceProvider.GetString(() => ApplicationResource.TanakhReferenceSeeRefButton)
-            </MudButton>
-        </MudButtonGroup>
-        @if (!string.IsNullOrWhiteSpace(Data.Note))
-        {
-            <MudDivider />
-            <MudCollapse Expanded=@Expanded> @Data.Note </MudCollapse>
-        }
 
-    </MudStack>
-</MudPaper>
+
+<MudChip T="string" Color="Color.Primary" OnClose=OpenDialog CloseIcon="@Icons.Material.Filled.Link">
+    @(UseShortName ? BookRefNameAbrev : BookRefName)
+</MudChip>
+
