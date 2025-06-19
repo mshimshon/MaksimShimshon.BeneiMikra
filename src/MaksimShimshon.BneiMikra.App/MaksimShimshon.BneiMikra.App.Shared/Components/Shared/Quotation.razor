@@ -1,0 +1,9 @@
+<blockquote cite=@(Cite ?? "")>
+    <MudText Typo=@Typo.caption>
+        @((MarkupString) Quote)
+    </MudText>
+    @if (!string.IsNullOrWhiteSpace(Cite))
+    {
+        <cite>@Cite</cite>
+    }
+</blockquote>

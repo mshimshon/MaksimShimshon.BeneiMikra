@@ -7,6 +7,7 @@ global using MaksimShimshon.BneiMikra.App.Shared.Utils;
 global using MudBlazor;
 global using MudBlazor.Services;
 global using System.Net.Http.Json;
+using MaksimShimshon.BneiMikra.App.Shared.Flux.Shared.Mapping;
 using MaksimShimshon.BneiMikra.App.Shared.Services;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -25,6 +26,10 @@ public static class ServiceRegisterExt
         serviceDescriptors.AddScoped<ILocalStorageProvider, LocalStorageProvider>();
         serviceDescriptors.AddScoped<IStartupProvider, StartupProvider>();
         serviceDescriptors.AddScoped<IHttpClientProvider, HttpClientProvider>();
+        GlobalJsonOptions.RegisterCustomConverters(o =>
+        {
+            o.Add(new BlockResponseJsonConverter());
+        });
         //serviceDescriptors.RegisterProtocolLinks();
         serviceDescriptors.AddFluxor(options =>
         {

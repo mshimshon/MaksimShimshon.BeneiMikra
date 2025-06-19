@@ -14,13 +14,7 @@
         <MudItem xs="12">
             <MudText Align=@Align.Center Typo=Typo.h3>@ArticleState.Value.Result.Title</MudText>
             <MudText Align=@Align.Center Typo=Typo.body1>@ArticleState.Value.Result.Description</MudText>
-            @foreach (var block in ArticleState.Value.Result.Blocks)
-            {
-                @if (block.Component == "shared.rich-text")
-                {
-                    <MudMarkdown Value=@block.Body />
-                }
-            }
+            <ArticleBlockRenderer Blocks=@ArticleState.Value.Result.Blocks />
         </MudItem>
 
     }

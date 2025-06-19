@@ -14,16 +14,7 @@
         }
         else if (State.Value.Verse != default)
         {
-            <MudText Typo=@Typo.body1 Align=@Align.Right> @((MarkupString)State.Value.Verse.Hebrew)</MudText>
-            <Divider VerticalSpacing="0.3em" Invisible=true />
-            <MudText Typo=@Typo.body2 Align=@Align.Left> @((MarkupString)TransliterationProvider.Transliterate(State.Value.Verse.Hebrew))</MudText>
-
-            @if (!string.IsNullOrWhiteSpace(State.Value.Verse.Translated))
-            {
-                <Divider VerticalSpacing="0.3em" Invisible=true />
-                <MudText Typo=@Typo.body2 Align=@Align.Left> @((MarkupString)State.Value.Verse.Translated)</MudText>
-
-            }
+            <HebrewSentence Hebrew=@State.Value.Verse.Hebrew Translation=@State.Value.Verse.Translated/>
             @if (!string.IsNullOrWhiteSpace(Note))
             {
                 <Divider VerticalSpacing="1em" />
@@ -33,7 +24,6 @@
                 <MudText Typo=@Typo.subtitle1>
                     @((MarkupString)Note)
                 </MudText>
-
             }
         }
         else

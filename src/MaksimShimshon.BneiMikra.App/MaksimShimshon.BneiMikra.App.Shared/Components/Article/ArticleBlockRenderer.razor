@@ -1,0 +1,11 @@
+@using MaksimShimshon.BneiMikra.App.Shared.Components.Shared
+@foreach (var block in Blocks)
+{
+    <DynamicBlock TEntity=@(BlockMarkdownResponse) BlockResp=@block WhenComponent="shared.rich-text">
+        <MudMarkdown Value=@context.Body />
+    </DynamicBlock>
+
+    <DynamicBlock TEntity=@(BlockQuotationResponse) BlockResp=@block WhenComponent="shared.quote">
+        <Quotation Cite=@context.Title Quote=@context.Body />
+    </DynamicBlock>
+}

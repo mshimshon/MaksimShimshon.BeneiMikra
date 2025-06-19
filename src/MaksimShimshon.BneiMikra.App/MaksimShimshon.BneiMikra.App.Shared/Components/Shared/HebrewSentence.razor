@@ -1,0 +1,22 @@
+@inherits FluxorComponent
+
+<MudText dir="rtl" lang="he" Align=@Align.Right> @Hebrew </MudText>
+<Divider VerticalSpacing="0.3em" Invisible=true />
+<MudText Align=@Align.Left>
+    @((MarkupString)TransliterationProvider.Transliterate(Hebrew))
+</MudText>
+@if (!string.IsNullOrWhiteSpace(Translation))
+{
+    <Divider VerticalSpacing="0.3em" Invisible=true />
+    <MudText Align=@Align.Left> @Translation </MudText>
+}
+
+@if (ScripturalReferences != default && ScripturalReferences.Count > 0)
+{
+    <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
+    @foreach (var item in ScripturalReferences)
+    {
+        <TanakhReference Data=@item />
+    }
+
+}

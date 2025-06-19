@@ -1,4 +1,4 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Flux.Shared.Contracts;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Flux.Author.Contracts.Responses;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Contracts.Responses;
 public record ArticleLiteResponse : BaseEntityResponse
@@ -7,5 +7,5 @@ public record ArticleLiteResponse : BaseEntityResponse
     public string Description { get; set; } = default!;
     public string Slug { get; set; } = default!;
     public string Locale { get; set; } = default!;
-    public AuthorResponse Author { get; set; } = default!;
+    public AuthorLiteResponse Author { get; set; } = default!;
 }

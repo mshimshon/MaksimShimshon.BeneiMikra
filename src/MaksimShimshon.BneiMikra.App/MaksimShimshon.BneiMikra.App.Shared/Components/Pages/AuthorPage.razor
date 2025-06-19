@@ -1,0 +1,29 @@
+@inherits FluxorComponent
+@page "/author/{Id}"
+
+<PageTitle>@($"B'nei Mikra - ")</PageTitle>
+<MudGrid>
+
+    <MudItem xs="10">
+        @if (ViewState.Value.IsLoading)
+        {
+            <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
+
+        }
+        else if (ViewState.Value.Result?.Biography != default)
+        {
+            <MudText Typo=@Typo.h5>
+                @ViewState.Value.Result.Name
+            </MudText>
+            <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
+            <ArticleBlockRenderer Blocks=@ViewState.Value.Result.Biography.Blocks />
+        }
+        else
+        {
+            <MudText Typo=@Typo.body1 >
+                @AppResourceProvider.GetString(()=>ApplicationResource.GenericIncompleSection)
+            </MudText>
+        }
+
+    </MudItem>
+</MudGrid>

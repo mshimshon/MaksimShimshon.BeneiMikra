@@ -196,6 +196,15 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This section is not yet fully completed..
+        /// </summary>
+        public static string GenericIncompleSection {
+            get {
+                return ResourceManager.GetString("GenericIncompleSection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Loading.
         /// </summary>
         public static string GenericLoadingTitle {
@@ -516,6 +525,42 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Resources {
         public static string TanakhBookMelakhim {
             get {
                 return ResourceManager.GetString("TanakhBookMelakhim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 Kings.
+        /// </summary>
+        public static string TanakhBookMelakhimAleph {
+            get {
+                return ResourceManager.GetString("TanakhBookMelakhimAleph", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1Ki.
+        /// </summary>
+        public static string TanakhBookMelakhimAlephShort {
+            get {
+                return ResourceManager.GetString("TanakhBookMelakhimAlephShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 Kings.
+        /// </summary>
+        public static string TanakhBookMelakhimBet {
+            get {
+                return ResourceManager.GetString("TanakhBookMelakhimBet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2Ki.
+        /// </summary>
+        public static string TanakhBookMelakhimBetShort {
+            get {
+                return ResourceManager.GetString("TanakhBookMelakhimBetShort", resourceCulture);
             }
         }
         
