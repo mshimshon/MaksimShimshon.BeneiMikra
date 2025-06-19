@@ -2,7 +2,7 @@
 @page "/article/{Id}"
 
 <PageTitle>@($"B'nei Mikra - {Id}")</PageTitle>
-<MudGrid>
+<MudGrid Justify=@Justify.Center>
     @if (ArticleState.Value.IsLoading)
     {
         <MudItem xs="12">
@@ -11,12 +11,14 @@
     }
     else if (ArticleState.Value.Result != default)
     {
-        <MudItem xs="12">
+        <MudItem xs="12" md="6">
             <MudText Align=@Align.Center Typo=Typo.h3>@ArticleState.Value.Result.Title</MudText>
             <MudText Align=@Align.Center Typo=Typo.body1>@ArticleState.Value.Result.Description</MudText>
+        </MudItem>
+        <MudFlexBreak/>
+        <MudItem md="6">
             <ArticleBlockRenderer Blocks=@ArticleState.Value.Result.Blocks />
         </MudItem>
-
     }
     else
     {

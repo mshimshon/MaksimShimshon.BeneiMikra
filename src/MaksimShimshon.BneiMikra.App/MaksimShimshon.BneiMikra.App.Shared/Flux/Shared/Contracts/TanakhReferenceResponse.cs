@@ -6,4 +6,5 @@ public record TanakhReferenceResponse
     public int Chapiter { get; set; }
     public int Verse { get; set; }
     public string? Note { get; set; }
+    public bool DirectPrint { get; set; }
 }

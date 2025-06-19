@@ -12,6 +12,6 @@ public partial class DynamicBlock<TEntity>
     protected override void OnInitialized()
     {
         base.OnInitialized();
-        Instance = JsonSerializer.Deserialize<TEntity>(BlockResp.RawContent, GlobalJsonOptions.UserGlobal())!;
+        Instance = JsonSerializer.Deserialize<TEntity>(BlockResp.RawContent, GlobalJsonOptions.UseGlobal())!;
     }
 }

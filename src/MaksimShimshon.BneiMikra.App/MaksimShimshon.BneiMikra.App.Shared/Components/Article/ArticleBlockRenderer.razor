@@ -8,4 +8,16 @@
     <DynamicBlock TEntity=@(BlockQuotationResponse) BlockResp=@block WhenComponent="shared.quote">
         <Quotation Cite=@context.Title Quote=@context.Body />
     </DynamicBlock>
+
+    <DynamicBlock TEntity=@(TanakhReferenceResponse) BlockResp=@block WhenComponent="shared.tanakh-reference">
+        @if (context.DirectPrint)
+        {
+
+            <TanakhReferencePrint BookName=@context.Book Chapiter=@context.Chapiter Verse=@context.Verse Note=@context.Note />
+        }
+        else
+        {
+            <TanakhReference Data=@context />
+        }
+    </DynamicBlock>
 }

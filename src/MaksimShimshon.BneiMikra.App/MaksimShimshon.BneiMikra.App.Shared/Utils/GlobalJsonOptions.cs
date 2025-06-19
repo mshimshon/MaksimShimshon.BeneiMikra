@@ -12,5 +12,5 @@ public static class GlobalJsonOptions
     }
     public static void SetupGlobalBehavior(Action<JsonSerializerOptions> o) => o(_globalOptions);
 
-    public static JsonSerializerOptions UserGlobal() => _globalOptions;
+    public static JsonSerializerOptions UseGlobal() => _globalOptions;
 }

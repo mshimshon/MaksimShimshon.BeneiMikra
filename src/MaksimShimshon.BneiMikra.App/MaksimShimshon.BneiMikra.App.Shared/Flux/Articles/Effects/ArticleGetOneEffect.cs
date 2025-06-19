@@ -1,7 +1,6 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Actions;
 using MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Contracts.Responses;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.Shared.Contracts;
-using System.Net.Http.Json;
+using System.Text.Json;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Effects;
 internal class ArticleGetOneEffect : Effect<ArticleGetOneAction>
@@ -21,7 +20,8 @@ internal class ArticleGetOneEffect : Effect<ArticleGetOneAction>
             return await client.GetAsync($"api/articles/{action.Id}?&locale=en&populate=*");
         }, async response =>
         {
-            var result = await response.Content.ReadFromJsonAsync<StrapiResponse<ArticleResponse>>();
+            var json = await response.Content.ReadAsStringAsync();
+            var result = JsonSerializer.Deserialize<StrapiResponse<ArticleResponse>>(json, GlobalJsonOptions.UseGlobal());
             var nextAction = new ArticleGetOneResultAction()
             {
                 IsLoading = false,
