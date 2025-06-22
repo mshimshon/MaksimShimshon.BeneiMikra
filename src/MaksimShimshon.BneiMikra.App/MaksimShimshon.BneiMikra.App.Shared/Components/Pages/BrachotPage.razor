@@ -1,18 +1,18 @@
-@inherits FluxorComponent
+@inherits ComponentBase
 @page "/brachot"
 
 <PageTitle>@("B'nei Mikra - Blessings")</PageTitle>
 
 <MudGrid>
-    @if (ListingState.Value.IsLoading)
+    @if (ListingState.IsLoading)
     {
         <MudItem xs="12">
             <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
         </MudItem>
     }
-    else if (ListingState.Value.Result != default && ListingState.Value.Result.Count >0)
+    else if (ListingState.Result != default && ListingState.Result.Count >0)
     {
-        @foreach (var item in ListingState.Value.Result)
+        @foreach (var item in ListingState.Result)
         {
             <MudItem xs="12" sm="6">
                 <BrachaLiteItem Data=@item />

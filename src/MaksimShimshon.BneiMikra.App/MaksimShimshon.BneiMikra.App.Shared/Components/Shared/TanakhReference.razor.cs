@@ -1,8 +1,8 @@
-﻿using Fluxor.Blazor.Web.Components;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Shared.Contracts;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Shared;
-public partial class TanakhReference : FluxorComponent
+public partial class TanakhReference : ComponentBase
 {
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
     [Inject] private IDialogService Dialog { get; set; } = default!;
@@ -14,8 +14,6 @@ public partial class TanakhReference : FluxorComponent
     private string BookRefName { get => $"{BookName} {Data.Chapiter}:{Data.Verse}"; }
     private string BookRefNameAbrev { get => $"{BookNameShort} {Data.Chapiter}:{Data.Verse}"; }
 
-    [Parameter] public bool Expanded { get; set; } = false;
-    private void OnExpandCollapseClick() => Expanded = !Expanded;
     private async Task OpenDialog()
     {
         var option = new DialogOptions()

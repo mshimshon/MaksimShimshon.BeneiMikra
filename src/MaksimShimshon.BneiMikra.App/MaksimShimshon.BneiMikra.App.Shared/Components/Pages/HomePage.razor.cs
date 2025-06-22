@@ -1,18 +1,17 @@
-﻿using Fluxor.Blazor.Web.Components;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Articles.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Articles.Stores;
 using Microsoft.AspNetCore.Components;
+using StatePulse.Net.Blazor;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Pages;
-public partial class HomePage : FluxorComponent
+public partial class HomePage : ComponentBase
 {
-    [Inject] private IState<ArticleSearchState> LatestArticle { get; set; } = default!;
-    [Inject] private IDispatcher Dispatcher { get; set; } = default!;
+    [Inject] IPulse Pulsar { get; set; } = default!;
+    [Inject] private ArticleSearchState LatestArticle => Pulsar.StateOf<ArticleSearchState>(this);
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
-    protected override Task OnParametersSetAsync()
+    protected override async Task OnParametersSetAsync()
     {
         var action = new ArticleSearchAction(string.Empty, "publishedAt:desc");
-        Dispatcher.Dispatch(action);
-        return Task.CompletedTask;
+        await Dispatcher.Prepare(() => action).DispatchAsync();
     }
 }

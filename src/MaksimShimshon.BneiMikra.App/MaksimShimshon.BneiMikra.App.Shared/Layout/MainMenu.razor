@@ -1,5 +1,5 @@
 @using MaksimShimshon.BneiMikra.App.Shared.Flux.System.Actions
-@inherits FluxorComponent
+@inherits ComponentBase
 <MudDrawer @ref=Menu Open=@MainMenuStore.Value.IsOpened OpenChanged=@OnMenuExternalChanged 
 Overlay=true OverlayAutoClose=true>
     <MudNavMenu >

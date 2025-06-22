@@ -1,19 +1,19 @@
-@inherits FluxorComponent
+@inherits ComponentBase
 @page "/bracha/{Id}"
 
 <PageTitle>@("B'nei Mikra - Blessings")</PageTitle>
 <MudGrid Justify=@Justify.Center>
-@if (BrachaState.Value.IsLoading)
+@if (BrachaState.IsLoading)
 {
     <MudItem xs="12">
         <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
     </MudItem>
 }
-else if (BrachaState.Value.Result != default)
+else if (BrachaState.Result != default)
 {
     <MudItem xs="12">
         <MudText Align=@Align.Center>
-            @BrachaState.Value.Result.Name
+            @BrachaState.Result.Name
         </MudText>
     </MudItem>
     
@@ -25,7 +25,7 @@ else if (BrachaState.Value.Result != default)
             <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
 
         <MudPaper Style="padding:1em">
-            <HebrewSentence Hebrew=@BrachaState.Value.Result.Hebrew Translation=@BrachaState.Value.Result.Translated ScripturalReferences=@BrachaState.Value.Result.TanakhReferences />
+            <HebrewSentence Hebrew=@BrachaState.Result.Hebrew Translation=@BrachaState.Result.Translated ScripturalReferences=@BrachaState.Result.TanakhReferences />
         </MudPaper>
     </MudItem>
 }

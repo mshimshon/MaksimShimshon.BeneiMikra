@@ -1,23 +1,23 @@
-@inherits FluxorComponent
+@inherits ComponentBase
 @page "/article/{Id}"
 
 <PageTitle>@($"B'nei Mikra - {Id}")</PageTitle>
 <MudGrid Justify=@Justify.Center>
-    @if (ArticleState.Value.IsLoading)
+    @if (ArticleState.IsLoading)
     {
         <MudItem xs="12">
             <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
         </MudItem>
     }
-    else if (ArticleState.Value.Result != default)
+    else if (ArticleState.Result != default)
     {
         <MudItem xs="12" md="6">
-            <MudText Align=@Align.Center Typo=Typo.h3>@ArticleState.Value.Result.Title</MudText>
-            <MudText Align=@Align.Center Typo=Typo.body1>@ArticleState.Value.Result.Description</MudText>
+            <MudText Align=@Align.Center Typo=Typo.h3>@ArticleState.Result.Title</MudText>
+            <MudText Align=@Align.Center Typo=Typo.body1>@ArticleState.Result.Description</MudText>
         </MudItem>
         <MudFlexBreak/>
         <MudItem md="6">
-            <ArticleBlockRenderer Blocks=@ArticleState.Value.Result.Blocks />
+            <ArticleBlockRenderer Blocks=@ArticleState.Result.Blocks />
         </MudItem>
     }
     else

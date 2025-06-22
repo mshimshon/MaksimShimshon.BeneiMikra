@@ -1,8 +1,7 @@
-﻿using Fluxor.Blazor.Web.Components;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Shared;
-public partial class TanakhReferenceDialog : FluxorComponent
+public partial class TanakhReferenceDialog : ComponentBase
 {
     [Parameter]
     public string BookName { get; set; } = default!;

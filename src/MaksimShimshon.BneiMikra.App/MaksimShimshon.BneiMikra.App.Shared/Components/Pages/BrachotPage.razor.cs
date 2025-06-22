@@ -1,17 +1,17 @@
-﻿using Fluxor.Blazor.Web.Components;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.Bacha.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.Bracha.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Bacha.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Bacha.Stores;
 using Microsoft.AspNetCore.Components;
+using StatePulse.Net.Blazor;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Pages;
-public partial class BrachotPage : FluxorComponent
+public partial class BrachotPage : ComponentBase
 {
-    [Inject] IState<BrachaListingState> ListingState { get; set; } = default!;
-    [Inject] IDispatcher Dispatcher { get; set; } = default!;
+    [Inject] IPulse Pulsar { get; set; } = default!;
+    [Inject] BrachaListingState ListingState => Pulsar.StateOf<BrachaListingState>(this);
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
     protected override Task OnInitializedAsync()
     {
-        Dispatcher.Dispatch(new BrachaGetAction());
+        Dispatcher.Prepare<BrachaGetAction>().DispatchAsync();
         return base.OnInitializedAsync();
     }
 }

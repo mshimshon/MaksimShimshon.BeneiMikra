@@ -1,10 +1,8 @@
-﻿using Fluxor.Blazor.Web.Components;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.TanakhReferences.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.TanakhReferences.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Shared.Contracts;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Shared;
-public partial class TanakhReferencePrint : FluxorComponent
+public partial class TanakhReferencePrint : ComponentBase
 {
     [Parameter]
     public string BookName { get; set; } = default!;
@@ -17,9 +15,11 @@ public partial class TanakhReferencePrint : FluxorComponent
 
     [Parameter]
     public string? Note { get; set; }
-    [Inject] public IState<TanakhViewState> State { get; set; } = default!;
+
+    private TanakhReferenceResponse? Result { get; set; }
+
+    public bool IsLoading { get; set; } = true;
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
-    [Inject] private IDispatcher Dispatcher { get; set; } = default!;
     [Inject] private ITransliterationProvider TransliterationProvider { get; set; } = default!;
     protected override Task OnInitializedAsync()
     {

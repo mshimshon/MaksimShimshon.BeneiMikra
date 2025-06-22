@@ -1,4 +1,4 @@
-﻿namespace MiniChemist.Client.Web.UI.Abstractions.Providers.Event;
+﻿namespace MaksimShimshon.BneiMikra.App.Shared.Services;
 public abstract record LinkProtocolBaseRequest : ILinkProtocolRequest
 {
     public IDictionary<string, string> Query { get; set; } = default!;
@@ -16,7 +16,7 @@ public abstract record LinkProtocolBaseRequest : ILinkProtocolRequest
         if (typeof(TValue) == typeof(double)) obj = double.Parse(Get(key));
         if (typeof(TValue) == typeof(float)) obj = float.Parse(Get(key));
         if (typeof(TValue) == typeof(decimal)) obj = decimal.Parse(Get(key));
-        return obj != default ? (TValue)obj : default(TValue);
+        return obj != default ? (TValue)obj : default;
     }
 
 }

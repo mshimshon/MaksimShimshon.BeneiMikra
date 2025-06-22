@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Shared.Contracts;
+using System.Text.Json;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Extensions;
 internal static class BlockResponseExt

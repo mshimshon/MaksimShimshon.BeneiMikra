@@ -1,22 +1,22 @@
-@inherits FluxorComponent
+@inherits ComponentBase
 @page "/author/{Id}"
 
 <PageTitle>@($"B'nei Mikra - ")</PageTitle>
 <MudGrid>
 
     <MudItem xs="10">
-        @if (ViewState.Value.IsLoading)
+        @if (ViewState.IsLoading)
         {
             <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
 
         }
-        else if (ViewState.Value.Result?.Biography != default)
+        else if (ViewState.Result?.Biography != default)
         {
             <MudText Typo=@Typo.h5>
-                @ViewState.Value.Result.Name
+                @ViewState.Result.Name
             </MudText>
             <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
-            <ArticleBlockRenderer Blocks=@ViewState.Value.Result.Biography.Blocks />
+            <ArticleBlockRenderer Blocks=@ViewState.Result.Biography.Blocks />
         }
         else
         {

@@ -1,15 +1,15 @@
-﻿global using Fluxor;
-global using MaksimShimshon.BneiMikra.App.Shared.Extensions;
-global using MaksimShimshon.BneiMikra.App.Shared.Flux.Shared.Contracts;
+﻿global using MaksimShimshon.BneiMikra.App.Shared.Extensions;
 global using MaksimShimshon.BneiMikra.App.Shared.Resources;
 global using MaksimShimshon.BneiMikra.App.Shared.Services.Interfaces;
 global using MaksimShimshon.BneiMikra.App.Shared.Utils;
 global using MudBlazor;
 global using MudBlazor.Services;
+global using StatePulse.Net;
 global using System.Net.Http.Json;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.Shared.Mapping;
+using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Shared.Mapping;
 using MaksimShimshon.BneiMikra.App.Shared.Services;
 using Microsoft.Extensions.DependencyInjection;
+using StatePulse.Net.Blazor;
 using System.Text.Json;
 
 namespace MaksimShimshon.BneiMikra.App.Shared;
@@ -38,18 +38,13 @@ public static class ServiceRegisterExt
             o.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
         });
         //serviceDescriptors.RegisterProtocolLinks();
-        serviceDescriptors.AddFluxor(options =>
-        {
-            options.ScanAssemblies(typeof(ServiceRegisterExt).Assembly);
-#if DEBUG
-            //options.UseReduxDevTools(opt =>
-            //{
 
-            //    opt.Name = "My application";
-            //    opt.EnableStackTrace();
-            //});
-#endif
+        serviceDescriptors.AddStatePulseServices(o =>
+        {
+            o.ScanAssemblies = new Type[] { typeof(ServiceRegisterExt) };
         });
+        serviceDescriptors.AddStatePulseBlazor();
+
         // Register Protocol Commands
         //serviceDescriptors.AddScoped<ILinkProtocolHandler<AuthenticatedRequest>, AuthenticatedHandler>();
         serviceDescriptors.AddHttpClient();

@@ -1,16 +1,16 @@
-@inherits FluxorComponent
+@inherits ComponentBase
 @page "/articles"
 
 <PageTitle>@("B'nei Mikra - Home")</PageTitle>
 <MudGrid>
-@if (SearchState.Value.IsLoading)
+@if (SearchState.IsLoading)
 {
     <MudItem xs="12">
         <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
     </MudItem>
-}else if (SearchState.Value.Result != default)
+}else if (SearchState.Result != default)
 {
-    @if (SearchState.Value.Result.Result.Count <= 0)
+    @if (SearchState.Result.Result.Count <= 0)
     {
         <MudItem xs="12">
             <MudText>
@@ -20,7 +20,7 @@
     }
     else
     {
-        @foreach (var item in SearchState.Value.Result.Result)
+        @foreach (var item in SearchState.Result.Result)
         {
             <MudItem xs="12" sm="6" md="4" lg="3">
                 <ArticleLiteItem Data=item />

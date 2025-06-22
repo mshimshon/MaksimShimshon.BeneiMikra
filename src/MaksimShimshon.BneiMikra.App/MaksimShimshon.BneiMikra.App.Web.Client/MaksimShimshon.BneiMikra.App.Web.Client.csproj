@@ -6,8 +6,14 @@
     <Nullable>enable</Nullable>
     <NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
     <StaticWebAssetProjectMode>Default</StaticWebAssetProjectMode>
+	  <BlazorWasmPrerenderingEnvironment>Production</BlazorWasmPrerenderingEnvironment>
+	  
   </PropertyGroup>
-
+	
+    <PropertyGroup>
+		<BlazorWasmPrerenderingOutputStyle>AppendHtmlExtension</BlazorWasmPrerenderingOutputStyle>
+    </PropertyGroup>
+	
   <ItemGroup>
     <Content Remove="Properties\launchSettings.json" />
   </ItemGroup>
@@ -17,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="BlazorWasmPreRendering.Build" Version="5.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.5" />
   </ItemGroup>
 

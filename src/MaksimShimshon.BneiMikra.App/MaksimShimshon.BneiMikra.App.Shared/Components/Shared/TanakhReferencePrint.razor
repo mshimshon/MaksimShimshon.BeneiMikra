@@ -1,5 +1,5 @@
-@inherits FluxorComponent
-@if (State.Value.IsLoading)
+@inherits ComponentBase
+@if (IsLoading)
 {
     <Loader>
         <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
@@ -8,9 +8,9 @@
         </MudText>
     </Loader>
 }
-else if (State.Value.Verse != default)
+else if (Verse != default)
 {
-    <HebrewSentence Hebrew=@State.Value.Verse.Hebrew Translation=@State.Value.Verse.Translated />
+    <HebrewSentence Hebrew=@Hebrew Translation=@Translated />
     @if (!string.IsNullOrWhiteSpace(Note))
     {
         <Divider VerticalSpacing="1em" />

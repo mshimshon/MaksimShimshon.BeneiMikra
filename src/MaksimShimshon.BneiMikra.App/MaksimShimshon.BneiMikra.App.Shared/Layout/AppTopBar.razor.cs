@@ -1,10 +1,10 @@
 ﻿using Fluxor.Blazor.Web.Components;
 using MaksimShimshon.BneiMikra.App.Shared.Flux.System.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.System.Stores;
+using MaksimShimshon.BneiMikra.App.Shared.Pulsars.System.Stores;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Layout;
-public partial class AppTopBar : FluxorComponent
+public partial class AppTopBar : ComponentBase
 {
     [Inject] private IServiceProvider PRovider { get; set; } = default!;
     [Inject] private IDispatcher Dispatcher { get; set; } = default!;

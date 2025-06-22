@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace MiniChemist.Client.Web.UI.Abstractions.Providers.Event;
+namespace MaksimShimshon.BneiMikra.App.Shared.Services;
 public static class LinkProtocolExt
 {
     private static Dictionary<Type, Type> ProtocolLinks { get; set; } = new();

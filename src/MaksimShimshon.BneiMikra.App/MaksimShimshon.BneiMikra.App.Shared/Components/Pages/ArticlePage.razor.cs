@@ -1,21 +1,22 @@
-﻿using Fluxor.Blazor.Web.Components;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Flux.Articles.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Articles.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Articles.Stores;
 using Microsoft.AspNetCore.Components;
+using StatePulse.Net.Blazor;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Pages;
-public partial class ArticlePage : FluxorComponent
+public partial class ArticlePage : ComponentBase
 {
     [Parameter]
     public string Id { get; set; } = default!;
+    [Inject] IPulse Pulsar { get; set; } = default!;
+    private ArticleViewState ArticleState => Pulsar.StateOf<ArticleViewState>(this);
 
-    [Inject] private IState<ArticleViewState> ArticleState { get; set; } = default!;
-    [Inject] IDispatcher Dispatcher { get; set; } = default!;
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
-    protected override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
+
         var action = new ArticleGetOneAction(Id);
-        Dispatcher.Dispatch(action);
-        return base.OnInitializedAsync();
+        await Dispatcher.Prepare(() => action).DispatchAsync();
+        await base.OnInitializedAsync();
     }
 }
