@@ -1,4 +1,4 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Shared.Contracts;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Contracts.Shared.Responses;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Article;

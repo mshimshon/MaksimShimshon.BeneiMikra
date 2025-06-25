@@ -1,36 +1,44 @@
-﻿global using MaksimShimshon.BneiMikra.App.Shared.Extensions;
-global using MaksimShimshon.BneiMikra.App.Shared.Resources;
-global using MaksimShimshon.BneiMikra.App.Shared.Services.Interfaces;
-global using MaksimShimshon.BneiMikra.App.Shared.Utils;
+﻿global using MediatR;
 global using MudBlazor;
 global using MudBlazor.Services;
 global using StatePulse.Net;
+global using SwizzleV;
 global using System.Net.Http.Json;
-using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Shared.Mapping;
-using MaksimShimshon.BneiMikra.App.Shared.Services;
+using MaksimShimshon.BneiMikra.App.Shared.Application;
+using MaksimShimshon.BneiMikra.App.Shared.Infrastructure;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Articles.ViewModels;
+using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources;
+using MaksimShimshon.BneiMikra.App.Shared.Shared.Services;
+using MaksimShimshon.BneiMikra.App.Shared.Shared.Services.Interfaces;
+using MaksimShimshon.BneiMikra.App.Shared.Shared.Utils;
+using Mapster;
 using Microsoft.Extensions.DependencyInjection;
-using StatePulse.Net.Blazor;
 using System.Text.Json;
-
 namespace MaksimShimshon.BneiMikra.App.Shared;
 public static class ServiceRegisterExt
 {
-    public static void AddUIServices(this IServiceCollection serviceDescriptors)
+    public static void AddUIServices(this IServiceCollection services)
     {
-        serviceDescriptors.AddMudServices(ConfigureMudService);
-        serviceDescriptors.AddMudMarkdownServices();
-        serviceDescriptors.AddScoped<IResourceProvider<ApplicationResource>, ResourceProvider<ApplicationResource>>();
-        serviceDescriptors.AddScoped<IDispatcherClient, DispatcherClient>();
-        serviceDescriptors.AddSingleton<ITransliterationProvider, TrasliterationProvider>();
-        serviceDescriptors.AddScoped<IJSProvider, JavaScriptProvider>();
-        serviceDescriptors.AddScoped<IEnvironmentProvider, EnvironmentProvider>();
-        serviceDescriptors.AddScoped<ILocalStorageProvider, LocalStorageProvider>();
-        serviceDescriptors.AddScoped<IStartupProvider, StartupProvider>();
-        serviceDescriptors.AddScoped<IHttpClientProvider, HttpClientProvider>();
         GlobalJsonOptions.RegisterCustomConverters(o =>
         {
             o.Add(new BlockResponseJsonConverter());
         });
+
+        services.AddMudServices(ConfigureMudService);
+        services.AddMudMarkdownServices();
+        services.AddScoped<IResourceProvider<ApplicationResource>, ResourceProvider<ApplicationResource>>();
+        services.AddScoped<IDispatcherClient, DispatcherClient>();
+        services.AddSingleton<ITransliterationProvider, TrasliterationProvider>();
+        services.AddScoped<IJSProvider, JavaScriptProvider>();
+        services.AddScoped<IEnvironmentProvider, EnvironmentProvider>();
+        services.AddScoped<ILocalStorageProvider, LocalStorageProvider>();
+        services.AddScoped<IStartupProvider, StartupProvider>();
+        services.AddScoped<IHttpClientProvider, HttpClientProvider>();
+        services.AddScoped<ArticleViewModel>();
+        //services.AddStrapi();
+        services.AddMapster();
+        services.AddSwizzleV();
+        services.AddApplicationServices();
 
         GlobalJsonOptions.SetupGlobalBehavior(o =>
         {
@@ -39,15 +47,14 @@ public static class ServiceRegisterExt
         });
         //serviceDescriptors.RegisterProtocolLinks();
 
-        serviceDescriptors.AddStatePulseServices(o =>
+        services.AddStatePulseServices(o =>
         {
             o.ScanAssemblies = new Type[] { typeof(ServiceRegisterExt) };
         });
-        serviceDescriptors.AddStatePulseBlazor();
 
         // Register Protocol Commands
         //serviceDescriptors.AddScoped<ILinkProtocolHandler<AuthenticatedRequest>, AuthenticatedHandler>();
-        serviceDescriptors.AddHttpClient();
+        services.AddHttpClient();
     }
     private static void ConfigureMudService(MudServicesConfiguration config)
     {

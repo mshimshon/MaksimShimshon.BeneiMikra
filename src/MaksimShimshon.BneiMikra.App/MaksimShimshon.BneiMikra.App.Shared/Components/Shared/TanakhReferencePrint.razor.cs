@@ -1,4 +1,6 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Shared.Contracts;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Contracts.Tanakh.Responses;
+using MaksimShimshon.BneiMikra.App.Shared.Pulsars.TanakhReferences.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Shared.Services.Interfaces;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Shared;
@@ -21,10 +23,10 @@ public partial class TanakhReferencePrint : ComponentBase
     public bool IsLoading { get; set; } = true;
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
     [Inject] private ITransliterationProvider TransliterationProvider { get; set; } = default!;
-    protected override Task OnInitializedAsync()
+    [Inject] private TanakhReferencePrint ViewModel => SwizzleFactory.GetViewModel<TanakhReferencePrint>(this);
+    protected override async Task OnInitializedAsync()
     {
         var action = new TanakhGetOneAction(BookName, Chapiter) { Verse = Verse };
-        Dispatcher.Dispatch(action);
-        return base.OnInitializedAsync();
+        await Dispatcher.Prepare(() => action).DispatchAsync();
     }
 }

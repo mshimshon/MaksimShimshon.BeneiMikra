@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Shared.Utils;
+using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Shared;
 public partial class Divider : MudDivider

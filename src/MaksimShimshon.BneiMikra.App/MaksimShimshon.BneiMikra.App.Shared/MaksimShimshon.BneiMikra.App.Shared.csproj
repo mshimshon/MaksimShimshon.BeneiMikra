@@ -14,20 +14,30 @@
     <PackageReference Include="BlazorWasmPreRendering.Build" Version="5.0.1" />
     <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
+    <PackageReference Include="MediatR" Version="12.5.0" />
+    <PackageReference Include="MediatR.Extensions.FluentValidation.AspNetCore" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.6" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.6" />
     <PackageReference Include="MudBlazor" Version="8.7.0" />
     <PackageReference Include="MudBlazor.Markdown" Version="8.7.0" />
     <PackageReference Include="MudBlazor.ThemeManager" Version="3.0.0" />
-    <PackageReference Include="StatePulse.Net" Version="0.9.2" />
-    <PackageReference Include="StatePulse.Net.Blazor" Version="0.9.2" />
+    <PackageReference Include="StatePulse.Net" Version="0.9.3" />
+    <PackageReference Include="SwizzleV" Version="0.9.112" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pulsars\Articles\Contracts\Requests\" />
-    <Folder Include="Pulsars\System\Contracts\Responses\" />
-    <Folder Include="Pulsars\System\Contracts\Requests\" />
+    <Folder Include="Application\Articles\Queries\Handlers\" />
+    <Folder Include="Application\Authors\" />
+    <Folder Include="Application\Brachot\" />
+    <Folder Include="Application\Pulses\Articles\" />
+    <Folder Include="Application\Pulses\Shared\Contracts\" />
+    <Folder Include="Application\Pulses\Shared\Mapping\" />
+    <Folder Include="Application\Pulses\TanakhReferences\Contracts\" />
+    <Folder Include="Shared\Services\Client\Articles\Dto\Responses\Validators\" />
+    <Folder Include="Shared\Services\Client\Articles\Queries\Handlers\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,7 +45,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Resources\ApplicationResource.Designer.cs">
+    <Compile Update="Shared\Resources\ApplicationResource.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>ApplicationResource.resx</DependentUpon>
@@ -43,7 +53,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Resources\ApplicationResource.resx">
+    <EmbeddedResource Update="Shared\Resources\ApplicationResource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ApplicationResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>

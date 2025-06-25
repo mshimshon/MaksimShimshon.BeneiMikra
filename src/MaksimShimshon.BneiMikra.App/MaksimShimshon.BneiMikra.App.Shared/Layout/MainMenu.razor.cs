@@ -1,8 +1,9 @@
 ﻿using Fluxor.Blazor.Web.Components;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.System.Stores;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.Teachings.Stores;
 using MaksimShimshon.BneiMikra.App.Shared.Flux.System.Actions;
 using MaksimShimshon.BneiMikra.App.Shared.Flux.Teachings.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Pulsars.System.Stores;
-using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Teachings.Stores;
+using MaksimShimshon.BneiMikra.App.Shared.Shared.Services.Interfaces;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Layout;

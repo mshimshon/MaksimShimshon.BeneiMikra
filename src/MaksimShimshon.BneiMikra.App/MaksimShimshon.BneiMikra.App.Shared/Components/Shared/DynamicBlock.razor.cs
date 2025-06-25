@@ -1,4 +1,5 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Shared.Contracts;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Contracts.Shared.Responses;
+using MaksimShimshon.BneiMikra.App.Shared.Shared.Utils;
 using Microsoft.AspNetCore.Components;
 using System.Text.Json;
 

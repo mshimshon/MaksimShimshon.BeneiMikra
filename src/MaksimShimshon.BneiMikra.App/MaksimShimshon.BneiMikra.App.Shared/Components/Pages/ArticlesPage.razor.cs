@@ -1,5 +1,6 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Articles.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Articles.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Pulses.Stores;
+using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Articles.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Shared.Services.Interfaces;
 using Microsoft.AspNetCore.Components;
 using StatePulse.Net.Blazor;
 
@@ -14,7 +15,7 @@ public partial class ArticlesPage : ComponentBase
 
     [SupplyParameterFromQuery(Name = "q")]
     public string? Keywords { get; set; }
-    [Inject] IPulse Pulsar { get; set; } = default!;
+    [Inject] IStatePulse Pulsar { get; set; } = default!;
     ArticleSearchState SearchState => Pulsar.StateOf<ArticleSearchState>(this);
     [Inject] IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
     protected override async Task OnParametersSetAsync()

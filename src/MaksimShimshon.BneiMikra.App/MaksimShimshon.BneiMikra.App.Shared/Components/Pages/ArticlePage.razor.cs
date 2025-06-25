@@ -1,5 +1,6 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Articles.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Articles.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Pulses.Stores;
+using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Articles.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Shared.Services.Interfaces;
 using Microsoft.AspNetCore.Components;
 using StatePulse.Net.Blazor;
 
@@ -8,7 +9,7 @@ public partial class ArticlePage : ComponentBase
 {
     [Parameter]
     public string Id { get; set; } = default!;
-    [Inject] IPulse Pulsar { get; set; } = default!;
+    [Inject] IStatePulse Pulsar { get; set; } = default!;
     private ArticleViewState ArticleState => Pulsar.StateOf<ArticleViewState>(this);
 
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;

@@ -1,4 +1,4 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Shared.Contracts;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Contracts.Tanakh.Responses;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Pages;
 public partial class ChalefStorePage
