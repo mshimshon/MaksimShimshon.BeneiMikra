@@ -12,7 +12,7 @@ public partial class Article : ComponentBase
 
     protected override async Task OnInitializedAsync()
     {
-        var articleVMHook = SwizzleFactory
+        var articleVMHook = SwizzleFact
             .CreateOrGet<ArticleViewModel>(() => this, () => InvokeAsync(() => StateHasChanged()));
         _articleViewModel = articleVMHook.GetViewModel<ArticleViewModel>()!;
         await _articleViewModel.LoadAsync(Id);

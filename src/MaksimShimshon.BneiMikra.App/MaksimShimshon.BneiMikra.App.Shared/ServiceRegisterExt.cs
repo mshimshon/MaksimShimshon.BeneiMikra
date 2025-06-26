@@ -6,6 +6,7 @@ global using SwizzleV;
 global using System.Net.Http.Json;
 using MaksimShimshon.BneiMikra.App.Shared.Application;
 using MaksimShimshon.BneiMikra.App.Shared.Infrastructure;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Articles.ViewModels;
 using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources;
 using MaksimShimshon.BneiMikra.App.Shared.Shared.Services;
@@ -34,12 +35,12 @@ public static class ServiceRegisterExt
         services.AddScoped<ILocalStorageProvider, LocalStorageProvider>();
         services.AddScoped<IStartupProvider, StartupProvider>();
         services.AddScoped<IHttpClientProvider, HttpClientProvider>();
-        services.AddScoped<ArticleViewModel>();
+        services.AddScoped<ArticleViewModel>()
         //services.AddStrapi();
         services.AddMapster();
-        services.AddSwizzleV();
         services.AddApplicationServices();
-
+        services.AddInfrastructureService();
+        services.AddPresentationServices();
         GlobalJsonOptions.SetupGlobalBehavior(o =>
         {
             o.PropertyNameCaseInsensitive = true;

@@ -41,10 +41,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Components\Pages\HomePage.razor" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Shared\Resources\ApplicationResource.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
