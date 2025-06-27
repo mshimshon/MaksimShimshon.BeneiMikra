@@ -12,5 +12,8 @@ internal class GetManyArticlesHandler : IRequestHandler<GetManyArticlesQuery, Se
         _articleReadRepository = articleReadRepository;
     }
     public async Task<SearchResultEntity<ArticleEntity>> Handle(GetManyArticlesQuery request, CancellationToken cancellationToken)
-        => await _articleReadRepository.GetMany();
+        => await _articleReadRepository.GetMany(request.Keywords,
+            request.Categories,
+            request.Page
+            );
 }

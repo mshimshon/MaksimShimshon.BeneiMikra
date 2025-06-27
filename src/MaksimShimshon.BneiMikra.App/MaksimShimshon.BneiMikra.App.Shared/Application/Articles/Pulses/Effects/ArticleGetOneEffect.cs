@@ -1,44 +1,35 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Pulses.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.Articles.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Contracts.Articles.Responses;
-using MaksimShimshon.BneiMikra.App.Shared.Contracts.Shared.Responses;
-using MaksimShimshon.BneiMikra.App.Shared.Pulsars.Articles.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Shared.Services.Interfaces;
-using MaksimShimshon.BneiMikra.App.Shared.Shared.Utils;
-using System.Text.Json;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Repositories;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Pulses.Effects;
 internal class ArticleGetOneEffect : IEffect<ArticleGetOneAction>
 {
-    private readonly IDispatcherClient _dispatcherClient;
+    private readonly IArticleReadRepository _articleReadRepository;
 
-    public ArticleGetOneEffect(IDispatcherClient dispatcherClient)
+    public ArticleGetOneEffect(IArticleReadRepository articleReadRepository)
     {
-        _dispatcherClient = dispatcherClient;
+        _articleReadRepository = articleReadRepository;
     }
 
     public async Task EffectAsync(ArticleGetOneAction action, IDispatcher dispatcher)
     {
-        await _dispatcherClient.DispatchApi(async client =>
+        await dispatcher.Prepare<ArticleGetOneResultAction>()
+            .With(p => p.IsLoading, true)
+            .UsingSynchronousMode()
+            .DispatchAsync();
+        try
         {
-            var nextAction = new ArticleGetOneResultAction() { IsLoading = true };
-            await dispatcher.Prepare(() => nextAction).DispatchAsync();
-            return await client.GetAsync($"api/articles/{action.Id}?&locale=en&populate=*");
-        }, async response =>
+            var result = await _articleReadRepository.GetById(action.Id);
+            await dispatcher.Prepare<ArticleGetOneResultAction>()
+                .With(p => p.IsLoading, false)
+                .With(p => p.Result, result)
+                .DispatchAsync();
+        }
+        catch (Exception)
         {
-            var json = await response.Content.ReadAsStringAsync();
-            var result = JsonSerializer.Deserialize<StrapiResponse<ArticleResponse>>(json, GlobalJsonOptions.UseGlobal());
-            var nextAction = new ArticleGetOneResultAction()
-            {
-                IsLoading = false,
-                Result = result?.Data ?? default
-            };
-            await dispatcher.Prepare(() => nextAction).DispatchAsync();
-        }, async () =>
-        {
-            var nextAction = new ArticleGetOneResultAction() { IsLoading = false };
-            await dispatcher.Prepare(() => nextAction).DispatchAsync();
-        });
+            await dispatcher.Prepare<ArticleGetOneResultAction>()
+                .With(p => p.IsLoading, false)
+                .DispatchAsync();
+        }
     }
-
 }

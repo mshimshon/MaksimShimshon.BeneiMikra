@@ -5,5 +5,9 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Application.Authors.Pulses.Reducer
 internal class AuthorGetOneResultReducer : IReducer<AuthorViewState, AuthorGetOneResultAction>
 {
     public async Task<AuthorViewState> ReduceAsync(AuthorViewState state, AuthorGetOneResultAction action)
-        => await Task.FromResult(state with { IsLoading = action.IsLoading, Result = action.Result });
+        => await Task.FromResult(state with
+        {
+            IsLoading = action.IsLoading,
+            Author = action.Result
+        });
 }
