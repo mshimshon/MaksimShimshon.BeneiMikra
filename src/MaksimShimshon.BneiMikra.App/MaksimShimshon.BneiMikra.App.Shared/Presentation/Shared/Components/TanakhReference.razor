@@ -1,0 +1,7 @@
+@inherits ComponentBase
+
+
+<MudChip T="string" Color="Color.Primary" OnClose=OpenDialog CloseIcon="@Icons.Material.Filled.Link">
+    @(UseShortName ? ViewModel.ReferenceAbreviation : ViewModel.RefereneceName)
+</MudChip>
+

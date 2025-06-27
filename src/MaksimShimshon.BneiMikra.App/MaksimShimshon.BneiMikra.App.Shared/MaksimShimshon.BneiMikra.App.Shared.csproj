@@ -29,13 +29,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Articles\Queries\Handlers\" />
-    <Folder Include="Application\Authors\" />
-    <Folder Include="Application\Brachot\" />
+    <Folder Include="Application\Brachot\Queries\Handlers\" />
+    <Folder Include="Application\Brachot\Pulses\" />
+    <Folder Include="Application\Brachot\Queries\" />
     <Folder Include="Application\Pulses\Articles\" />
+    <Folder Include="Application\Pulses\Author\" />
     <Folder Include="Application\Pulses\Shared\Contracts\" />
     <Folder Include="Application\Pulses\Shared\Mapping\" />
     <Folder Include="Application\Pulses\TanakhReferences\Contracts\" />
+    <Folder Include="Components\Shared\" />
     <Folder Include="Shared\Services\Client\Articles\Dto\Responses\Validators\" />
     <Folder Include="Shared\Services\Client\Articles\Queries\Handlers\" />
   </ItemGroup>

@@ -3,3 +3,5 @@ public record ArticleGetOneAction(string Id) : ISafeAction
 {
 
 }
+
+

@@ -1,4 +1,4 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.Author.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Authors.Pulses.Stores;
 using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources;
 using MaksimShimshon.BneiMikra.App.Shared.Shared.Services.Interfaces;
 

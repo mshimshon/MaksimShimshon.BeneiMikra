@@ -1,0 +1,16 @@
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Repositories;
+using MaksimShimshon.BneiMikra.App.Shared.Domain.Articles.Entities;
+using MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Entities;
+
+namespace MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Queries.Handlers;
+internal class GetManyArticlesHandler : IRequestHandler<GetManyArticlesQuery, SearchResultEntity<ArticleEntity>>
+{
+    private readonly IArticleReadRepository _articleReadRepository;
+
+    public GetManyArticlesHandler(IArticleReadRepository articleReadRepository)
+    {
+        _articleReadRepository = articleReadRepository;
+    }
+    public async Task<SearchResultEntity<ArticleEntity>> Handle(GetManyArticlesQuery request, CancellationToken cancellationToken)
+        => await _articleReadRepository.GetMany();
+}

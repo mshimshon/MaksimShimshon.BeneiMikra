@@ -1,4 +1,4 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.Author.Contracts.Responses;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Authors.Pulses.Contracts.Responses;
 using MaksimShimshon.BneiMikra.App.Shared.Contracts.Shared.Responses;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Contracts.Articles.Responses;
