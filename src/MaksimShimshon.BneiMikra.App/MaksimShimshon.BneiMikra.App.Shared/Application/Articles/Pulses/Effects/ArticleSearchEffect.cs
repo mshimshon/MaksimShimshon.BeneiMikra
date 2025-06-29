@@ -13,12 +13,12 @@ internal class ArticleSearchEffect : IEffect<ArticleSearchAction>
 
     public async Task EffectAsync(ArticleSearchAction action, IDispatcher dispatcher)
     {
-        await dispatcher.Prepare<ArticleSearchResultAction>()
-            .With(p => p.IsLoading, true)
-            .UsingSynchronousMode()
-            .DispatchAsync();
         try
         {
+            await dispatcher.Prepare<ArticleSearchResultAction>()
+                .With(p => p.IsLoading, true)
+                .UsingSynchronousMode()
+                .DispatchAsync();
             var result = await _articleReadRepository
                 .GetMany(action.Keywords,
                 action.Category,

@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Domain.Bracha.Entities;
+using MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Entities;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Application.Brachot.Respositories;
-internal interface IBrachaReadRepository
+public interface IBrachaReadRepository
 {
+    Task<BrachaEntity> GetById(string id);
+    Task<SearchResultEntity<BrachaEntity>> Search(string? keywords, string? sortBy, int page = 1);
 }

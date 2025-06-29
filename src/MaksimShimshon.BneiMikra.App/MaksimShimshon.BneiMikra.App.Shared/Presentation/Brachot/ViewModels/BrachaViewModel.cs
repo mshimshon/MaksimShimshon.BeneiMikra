@@ -1,4 +1,4 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.Bacha.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Brachot.Pulses.Stores;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Brachot.ViewModels;
 internal class BrachaViewModel

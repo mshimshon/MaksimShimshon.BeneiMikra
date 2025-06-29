@@ -1,7 +1,7 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.Bacha.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.Bacha.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Brachot.Pulses.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Brachot.Pulses.Stores;
 
-namespace MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.Bacha.Reducers;
+namespace MaksimShimshon.BneiMikra.App.Shared.Application.Brachot.Pulses.Reducers;
 internal class BrachaGetResultReducer : IReducer<BrachaListingState, BrachaGetResultAction>
 {
     public Task<BrachaListingState> ReduceAsync(BrachaListingState state, BrachaGetResultAction action)
