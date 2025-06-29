@@ -1,14 +1,14 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Pulses.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Repositories;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Queries;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Pulses.Effects;
 internal class ArticleGetOneEffect : IEffect<ArticleGetOneAction>
 {
-    private readonly IArticleReadRepository _articleReadRepository;
+    private readonly IMediator _mediator;
 
-    public ArticleGetOneEffect(IArticleReadRepository articleReadRepository)
+    public ArticleGetOneEffect(IMediator mediator)
     {
-        _articleReadRepository = articleReadRepository;
+        _mediator = mediator;
     }
 
     public async Task EffectAsync(ArticleGetOneAction action, IDispatcher dispatcher)
@@ -19,7 +19,8 @@ internal class ArticleGetOneEffect : IEffect<ArticleGetOneAction>
             .DispatchAsync();
         try
         {
-            var result = await _articleReadRepository.GetById(action.Id);
+            var result = await _mediator.Send(new GetArticleQuery(action.Id));
+
             await dispatcher.Prepare<ArticleGetOneResultAction>()
                 .With(p => p.IsLoading, false)
                 .With(p => p.Result, result)

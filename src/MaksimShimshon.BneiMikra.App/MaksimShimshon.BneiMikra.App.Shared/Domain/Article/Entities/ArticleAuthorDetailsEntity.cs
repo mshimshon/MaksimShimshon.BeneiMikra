@@ -1,4 +1,4 @@
-﻿namespace MaksimShimshon.BneiMikra.App.Shared.Domain.Articles.Entities;
+﻿namespace MaksimShimshon.BneiMikra.App.Shared.Domain.Article.Entities;
 public record ArticleAuthorDetailsEntity
 {
     public string Name { get; init; } = default!;

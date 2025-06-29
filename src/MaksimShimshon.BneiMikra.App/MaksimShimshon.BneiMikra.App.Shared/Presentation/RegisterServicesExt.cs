@@ -1,7 +1,7 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Presentation.Articles.ViewModels;
-using MaksimShimshon.BneiMikra.App.Shared.Presentation.Authors.ViewModels;
-using MaksimShimshon.BneiMikra.App.Shared.Presentation.Brachot.ViewModels;
-using MaksimShimshon.BneiMikra.App.Shared.Presentation.Home.ViewModels;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Articles.ViewModels;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Authors.ViewModels;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Brachot.ViewModels;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Home.ViewModels;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 

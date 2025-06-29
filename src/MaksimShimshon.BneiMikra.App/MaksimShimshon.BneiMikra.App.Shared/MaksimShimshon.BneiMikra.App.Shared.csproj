@@ -29,7 +29,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Pulses\TanakhReferences\Contracts\" />
     <Folder Include="Components\Shared\" />
     <Folder Include="Shared\Services\Client\Articles\Dto\Responses\Validators\" />
     <Folder Include="Shared\Services\Client\Articles\Queries\Handlers\" />

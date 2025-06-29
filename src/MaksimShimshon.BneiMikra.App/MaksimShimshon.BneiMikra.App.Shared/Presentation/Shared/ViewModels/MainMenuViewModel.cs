@@ -1,7 +1,7 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.System.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.System.Stores;
-using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.Teachings.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Application.Pulses.Teachings.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Teachings.Pulses.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Teachings.Pulses.Stores;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Pulses.System.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Pulses.System.Stores;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 internal class MainMenuViewModel

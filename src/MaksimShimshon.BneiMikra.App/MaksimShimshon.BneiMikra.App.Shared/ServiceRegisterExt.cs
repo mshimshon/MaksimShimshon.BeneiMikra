@@ -7,7 +7,7 @@ global using System.Net.Http.Json;
 using MaksimShimshon.BneiMikra.App.Shared.Application;
 using MaksimShimshon.BneiMikra.App.Shared.Infrastructure;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation;
-using MaksimShimshon.BneiMikra.App.Shared.Presentation.Articles.ViewModels;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Articles.ViewModels;
 using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources;
 using MaksimShimshon.BneiMikra.App.Shared.Shared.Services;
 using MaksimShimshon.BneiMikra.App.Shared.Shared.Services.Interfaces;

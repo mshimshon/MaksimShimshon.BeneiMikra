@@ -1,14 +1,14 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Brachot.Pulses.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Application.Brachot.Respositories;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Brachot.Queries;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Application.Brachot.Pulses.Effects;
 internal class BrachaGetEffect : IEffect<BrachaGetAction>
 {
-    private readonly IBrachaReadRepository _brachaReadRepository;
+    private readonly IMediator _mediator;
 
-    public BrachaGetEffect(IBrachaReadRepository brachaReadRepository)
+    public BrachaGetEffect(IMediator mediator)
     {
-        _brachaReadRepository = brachaReadRepository;
+        _mediator = mediator;
     }
 
     public async Task EffectAsync(BrachaGetAction action, IDispatcher dispatcher)
@@ -19,7 +19,7 @@ internal class BrachaGetEffect : IEffect<BrachaGetAction>
                 .With(p => p.IsLoading, true)
                 .UsingSynchronousMode()
                 .DispatchAsync();
-            var result = await _brachaReadRepository.Search(default, default, action.Page);
+            var result = await _mediator.Send(new SearchBrachotQuery(default, default, action.Page));
             await dispatcher.Prepare<BrachaGetResultAction>()
                 .With(p => p.IsLoading, false)
                 .With(p => p.Result, result)
