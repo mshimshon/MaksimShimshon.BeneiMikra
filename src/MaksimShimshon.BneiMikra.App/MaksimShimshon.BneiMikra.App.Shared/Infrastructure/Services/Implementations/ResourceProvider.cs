@@ -34,5 +34,7 @@ internal class ResourceProvider<TResource> : IResourceProvider<TResource> where 
         => string.Format(GetString(prop, cultureInfo), formatVars);
     public string GetString(Expression<Func<string>> prop, params string[] formatVars)
         => string.Format(GetString(prop), formatVars);
+    public string GetString(Expression<Func<TResource, string>> prop, CultureInfo? cultureInfo = null)
+    => GetString(prop.GetPropetyName(), cultureInfo);
 }
 

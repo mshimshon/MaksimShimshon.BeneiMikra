@@ -390,4 +390,7 @@
   <data name="GenericIncompleSection" xml:space="preserve">
     <value>This section is not yet fully completed.</value>
   </data>
+  <data name="HttpStatusCodeBadRequest" xml:space="preserve">
+    <value>Cannot process request 'Bad Request'.</value>
+  </data>
 </root>

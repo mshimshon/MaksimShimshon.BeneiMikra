@@ -1,5 +1,5 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
-using MaksimShimshon.BneiMikra.App.Shared.Contracts.Tanakh.Responses;
+using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Tanakh;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources;
 using Microsoft.AspNetCore.Components;

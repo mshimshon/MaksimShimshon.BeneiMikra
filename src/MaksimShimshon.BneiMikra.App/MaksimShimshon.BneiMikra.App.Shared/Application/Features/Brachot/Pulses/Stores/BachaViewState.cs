@@ -1,4 +1,4 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Contracts.Bracha.Responses;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Brachot;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Application.Features.Brachot.Pulses.Stores;
 [FeatureState]

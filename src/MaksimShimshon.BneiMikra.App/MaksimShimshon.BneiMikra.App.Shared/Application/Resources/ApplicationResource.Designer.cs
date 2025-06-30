@@ -214,6 +214,15 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Application.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bad Request.
+        /// </summary>
+        public static string HttpStatusCodeBadRequest {
+            get {
+                return ResourceManager.GetString("HttpStatusCodeBadRequest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You do not have sufficient permissions to perform this request..
         /// </summary>
         public static string HttpStatusCodeForbidden {

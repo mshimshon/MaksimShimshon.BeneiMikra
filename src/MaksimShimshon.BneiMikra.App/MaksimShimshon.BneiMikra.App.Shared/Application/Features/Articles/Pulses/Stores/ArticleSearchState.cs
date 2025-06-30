@@ -1,5 +1,5 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Contracts.Articles.Responses;
-using MaksimShimshon.BneiMikra.App.Shared.Contracts.Shared.Responses;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Contracts.Shared.Responses;
+using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Articles;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Application.Features.Articles.Pulses.Stores;
 

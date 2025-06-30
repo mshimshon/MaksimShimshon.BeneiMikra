@@ -1,4 +1,4 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Contracts.Shared.Responses;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Shared.Blocks;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
