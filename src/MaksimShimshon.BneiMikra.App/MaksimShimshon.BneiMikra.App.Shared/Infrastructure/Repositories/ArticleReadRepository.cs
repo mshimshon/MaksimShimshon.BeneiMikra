@@ -1,4 +1,4 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Articles.Repositories;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Articles.Repositories;
 using MaksimShimshon.BneiMikra.App.Shared.Domain.Article.Entities;
 using MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Entities;
 

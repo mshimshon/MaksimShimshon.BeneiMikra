@@ -1,4 +1,4 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Authors.Respositories;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Authors.Respositories;
 using MaksimShimshon.BneiMikra.App.Shared.Domain.Author.Entities;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Repositories;

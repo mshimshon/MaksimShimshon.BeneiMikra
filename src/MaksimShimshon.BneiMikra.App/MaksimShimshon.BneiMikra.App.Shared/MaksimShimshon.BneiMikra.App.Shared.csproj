@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="BlazorWasmPreRendering.Build" Version="5.0.1" />
+    <PackageReference Include="CoreMap" Version="0.9.0" />
     <PackageReference Include="FluentValidation" Version="12.0.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
     <PackageReference Include="Mapster" Version="7.4.0" />
@@ -25,17 +26,18 @@
     <PackageReference Include="MudBlazor.Markdown" Version="8.7.0" />
     <PackageReference Include="MudBlazor.ThemeManager" Version="3.0.0" />
     <PackageReference Include="StatePulse.Net" Version="0.9.3" />
+    <PackageReference Include="Strapi.Net" Version="0.9.0" />
     <PackageReference Include="SwizzleV" Version="0.9.112" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Application\Services\Implementations\" />
+    <Folder Include="Application\Utilities\" />
     <Folder Include="Components\Shared\" />
-    <Folder Include="Shared\Services\Client\Articles\Dto\Responses\Validators\" />
-    <Folder Include="Shared\Services\Client\Articles\Queries\Handlers\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Shared\Resources\ApplicationResource.Designer.cs">
+    <Compile Update="Application\Resources\ApplicationResource.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>ApplicationResource.resx</DependentUpon>
@@ -43,7 +45,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Shared\Resources\ApplicationResource.resx">
+    <EmbeddedResource Update="Application\Resources\ApplicationResource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ApplicationResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>

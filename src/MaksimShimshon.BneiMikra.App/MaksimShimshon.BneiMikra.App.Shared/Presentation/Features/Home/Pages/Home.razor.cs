@@ -1,6 +1,5 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Home.ViewModels;
-using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources;
-using MaksimShimshon.BneiMikra.App.Shared.Shared.Services.Interfaces;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Home.ViewModels;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Home.Pages;

@@ -1,4 +1,4 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Shared.Utils;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Presentation.Utilities;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components;

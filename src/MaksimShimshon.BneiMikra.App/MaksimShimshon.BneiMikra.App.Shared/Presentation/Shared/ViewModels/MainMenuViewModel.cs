@@ -1,5 +1,5 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Teachings.Pulses.Actions;
-using MaksimShimshon.BneiMikra.App.Shared.Application.Teachings.Pulses.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Teachings.Pulses.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Teachings.Pulses.Stores;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Pulses.System.Actions;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Pulses.System.Stores;
 

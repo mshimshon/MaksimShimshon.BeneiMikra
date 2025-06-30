@@ -1,7 +1,7 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Contracts.Tanakh.Responses;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
+using MaksimShimshon.BneiMikra.App.Shared.Contracts.Tanakh.Responses;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources;
-using MaksimShimshon.BneiMikra.App.Shared.Shared.Services.Interfaces;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components;

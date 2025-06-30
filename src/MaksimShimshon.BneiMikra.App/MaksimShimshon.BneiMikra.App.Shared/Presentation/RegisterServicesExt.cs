@@ -1,7 +1,11 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Articles.ViewModels;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Articles.ViewModels;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Authors.ViewModels;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Brachot.ViewModels;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Home.ViewModels;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Services.Implementation;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Services.Implementation.Transliterator;
+using MaksimShimshon.BneiMikra.App.Shared.Presentation.Services.Interfaces;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -19,6 +23,9 @@ internal static class RegisterServicesExt
         services.AddScoped<AppTopBarViewModel>();
         services.AddTransient<HebrewSentenceViewModel>();
         services.AddTransient<TanakhReferenceViewModel>();
+
+        services.AddScoped<IJavascriptProvider, JavascriptProvider>();
+        services.AddScoped<ITransliterationProvider, TransliterationProvider>();
         return services;
     }
 }
