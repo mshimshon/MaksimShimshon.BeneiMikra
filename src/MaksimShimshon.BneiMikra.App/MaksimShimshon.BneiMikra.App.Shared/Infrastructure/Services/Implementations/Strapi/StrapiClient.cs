@@ -39,7 +39,6 @@ internal class StrapiClient : IStrapiClient
         return default;
     }
 
-
     public async Task<StrapiResponse<TEntity>?> GetAsync<TEntity>(string uri, CancellationToken cancellationToken = default)
     {
         var result = await _client.GetAsync(uri);
