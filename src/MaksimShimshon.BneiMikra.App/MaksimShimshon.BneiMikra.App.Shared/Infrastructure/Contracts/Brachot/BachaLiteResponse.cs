@@ -5,4 +5,5 @@ internal record BrachaLiteResponse : BaseResponse
 {
     public string Locale { get; set; } = default!;
     public string Name { get; set; } = default!;
+    public string Gender { get; set; } = default!;
 }

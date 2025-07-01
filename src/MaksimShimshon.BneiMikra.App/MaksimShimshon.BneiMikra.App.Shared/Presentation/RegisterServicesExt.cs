@@ -26,6 +26,10 @@ internal static class RegisterServicesExt
 
         services.AddScoped<IJavascriptProvider, JavascriptProvider>();
         services.AddScoped<ITransliterationProvider, TransliterationProvider>();
+
+        services.AddMudServices();
+        services.AddMudMarkdownServices();
+
         return services;
     }
 }

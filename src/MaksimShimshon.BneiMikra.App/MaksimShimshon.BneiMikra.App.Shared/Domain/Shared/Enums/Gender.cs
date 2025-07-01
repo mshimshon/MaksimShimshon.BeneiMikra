@@ -1,6 +1,7 @@
 ﻿namespace MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Enums;
-public enum TanakhBook
+public enum Gender
 {
-    //TODO: Add Books
-    Unknown
+    Male,
+    Female,
+    NA
 }

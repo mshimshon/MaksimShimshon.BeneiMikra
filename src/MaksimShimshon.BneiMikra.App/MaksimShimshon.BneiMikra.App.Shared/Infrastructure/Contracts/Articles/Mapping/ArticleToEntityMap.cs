@@ -1,16 +1,18 @@
 ﻿using CoreMap;
 using MaksimShimshon.BneiMikra.App.Shared.Domain.Article.Entities;
+using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Authors;
 using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Services.Implementations.Strapi;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Articles.Mapping;
-internal class ArticleToEntity : ICoreMapHandler<ArticleResponse, ArticleEntity>
+internal class ArticleToEntityMap : ICoreMapHandler<ArticleResponse, ArticleEntity>
 {
     private readonly ICoreMap _coreMap;
 
-    public ArticleToEntity(ICoreMap coreMap)
+    public ArticleToEntityMap(ICoreMap coreMap)
     {
         _coreMap = coreMap;
     }
+
     public ArticleEntity MapHandler(ArticleResponse data) => new()
     {
         Id = data.DocumentId,
@@ -22,11 +24,7 @@ internal class ArticleToEntity : ICoreMapHandler<ArticleResponse, ArticleEntity>
             data.Category.Slug
         } : new() { },
         LastRevision = data.UpdatedAt,
-        Author = data.Author != default ? new()
-        {
-            Id = data.Author.DocumentId,
-            Name = data.Author.Name
-        } : default,
+        Author = data.Author != default ? _coreMap.MapTo<AuthorLiteResponse, ArticleAuthorDetailsEntity>(data.Author) : default,
         Details = data.Blocks != default ? new()
         {
             BodyParts = data.Blocks.SkipWhile(p => !BlockMapper.Matches.ContainsKey(p.Component))

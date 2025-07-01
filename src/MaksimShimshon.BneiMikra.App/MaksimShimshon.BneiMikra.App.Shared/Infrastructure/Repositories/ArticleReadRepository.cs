@@ -25,7 +25,7 @@ internal class ArticleReadRepository : IArticleReadRepository
         _appResourceProvider = appResourceProvider;
         _coreMap = coreMap;
     }
-    public async Task<ArticleEntity> GetById(string id)
+    public async Task<ArticleEntity?> GetById(string id)
     {
         var article = await _stapiClient.GetAsync<ArticleResponse>($"articles/{id}");
         if (article == default)
@@ -34,10 +34,11 @@ internal class ArticleReadRepository : IArticleReadRepository
             throw new AppApiException(new ValidationErrorEntity() { Code = article.Error.Name, Message = article.Error.Message });
         if (article.Data != default)
         {
-            await _coreMap.MapToAsync<ArticleEntity, ArticleResponse>(article.Data);
+            return await _coreMap.MapToAsync<ArticleResponse, ArticleEntity>(article.Data[0]);
         }
+        return default;
     }
 
-    public Task<SearchResultEntity<ArticleEntity>> GetMany(string? keywords, string? category, string? sortBy, int page = 1)
+    public Task<SearchResultEntity<ArticleEntity>?> GetMany(string? keywords, string? category, string? sortBy, int page = 1)
         => throw new NotImplementedException();
 }
