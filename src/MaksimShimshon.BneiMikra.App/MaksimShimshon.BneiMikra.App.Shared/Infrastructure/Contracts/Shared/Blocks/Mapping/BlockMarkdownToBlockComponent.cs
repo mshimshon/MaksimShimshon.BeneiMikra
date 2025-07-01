@@ -2,9 +2,9 @@
 using MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Entities;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Shared.Blocks.Mapping;
-internal class StrapiBlockToBlockComponent : ICoreMapHandler<BlockMarkdownResponse, BlockComponent>
+internal class BlockMarkdownToBlockComponent : ICoreMapHandler<BlockMarkdownResponse, BlockComponent>
 {
-    public StrapiBlockToBlockComponent()
+    public BlockMarkdownToBlockComponent()
     {
 
     }
@@ -12,7 +12,7 @@ internal class StrapiBlockToBlockComponent : ICoreMapHandler<BlockMarkdownRespon
     {
         return new()
         {
-            Component = "Markdown",
+            Component = "MarkdownComponent",
             Paramaters = new Dictionary<string, object>()
             {
                 ["Body"] = data.Body

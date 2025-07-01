@@ -1,6 +1,6 @@
 @inherits ComponentBase
 @page "/bracha/{Id}"
-@using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources
+@using MaksimShimshon.BneiMikra.App.Shared.Application.Resources
 
 <PageTitle>@("B'nei Mikra - Blessings")</PageTitle>
 <MudGrid Justify=@Justify.Center>
@@ -10,7 +10,7 @@
             <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
         </MudItem>
     }
-    else if (_viewModel.ViewState.Result != default)
+    else if (_viewModel.ViewState.Result != default && _viewModel.ViewState.Result.Details != default)
     {
         <MudItem xs="12">
             <MudText Align=@Align.Center>
@@ -26,9 +26,9 @@
             <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
 
             <MudPaper Style="padding:1em">
-                <HebrewSentence Hebrew=@_viewModel.ViewState.Result.Hebrew 
-                    Translation=@_viewModel.ViewState.Result.Translated 
-                    ScripturalReferences=@_viewModel.ViewState.Result.TanakhReferences />
+                <HebrewSentence Hebrew=@_viewModel.ViewState.Result.Details.Hebrew 
+                    Translation=@_viewModel.ViewState.Result.Details.Translated 
+                    ScripturalReferences=@_viewModel.ViewState.Result.Details.TanakhReferences />
             </MudPaper>
         </MudItem>
     }

@@ -1,5 +1,6 @@
 @inherits ComponentBase
 @page "/brachot"
+@using MaksimShimshon.BneiMikra.App.Shared.Application.Resources
 
 
 <PageTitle>@("B'nei Mikra - Blessings")</PageTitle>
@@ -11,9 +12,9 @@
             <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
         </MudItem>
     }
-    else if (_viewModel.ListingState.Result != default && _viewModel.ListingState.Result.Count > 0)
+    else if (_viewModel.ListingState.Result != default && _viewModel.ListingState.Result.Entities.Count > 0)
     {
-        @foreach (var item in _viewModel.ListingState.Result)
+        @foreach (var item in _viewModel.ListingState.Result.Entities)
         {
             <MudItem xs="12" sm="6">
                 <BrachaLiteItem Data=@item />

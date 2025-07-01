@@ -1,0 +1,35 @@
+﻿using MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Entities;
+using Microsoft.AspNetCore.Components;
+
+namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components;
+public partial class BlockRenderer
+{
+    [Parameter]
+    public List<BlockComponent> Blocks { get; set; } = default!;
+    private List<RenderFragment> Fragments { get; set; } = new();
+    public static RenderFragment Render(Type component, IReadOnlyDictionary<string, object> parameters)
+    => (treeBuilder) =>
+    {
+        treeBuilder.OpenComponent(0, component);
+        int index = 1;
+        foreach (var item in parameters)
+        {
+            treeBuilder.AddComponentParameter(index, item.Key, item.Value);
+            index++;
+        }
+        treeBuilder.CloseComponent();
+    };
+
+    protected override void OnInitialized()
+    {
+        Fragments = Blocks
+            .SkipWhile(p => Map.ContainsKey(p.Component))
+            .Select(p => Render(Map[p.Component], p.Paramaters))
+            .ToList();
+    }
+
+    private static Dictionary<string, Type> Map { get; set; } = new()
+    {
+        ["MarkdownComponent"] = typeof(BlockRenderer)
+    };
+}

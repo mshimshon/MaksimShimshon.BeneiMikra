@@ -1,9 +1,9 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Domain.Bracha.Entities;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Bracha;
 public partial class BrachaLiteItem
 {
     [Parameter]
-    public BrachaLiteResponse Data { get; set; } = default!;
+    public BrachaEntity Data { get; set; } = default!;
 }

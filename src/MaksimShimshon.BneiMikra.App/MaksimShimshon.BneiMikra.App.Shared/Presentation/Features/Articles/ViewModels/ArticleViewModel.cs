@@ -1,4 +1,5 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Articles.Pulses.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Articles.Pulses.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Articles.Pulses.Stores;
 
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Articles.ViewModels;
@@ -14,7 +15,7 @@ internal class ArticleViewModel
     {
         _dispatcher = dispatcher;
         _swizzleViewModel = swizzleViewModel;
-        _state = pulsars.StateOf<ArticleViewState>(this, OnStateHasChanged);
+        _state = pulsars.StateOf<ArticleViewState>(() => this, OnStateHasChanged);
     }
 
     public async Task LoadAsync(string id)

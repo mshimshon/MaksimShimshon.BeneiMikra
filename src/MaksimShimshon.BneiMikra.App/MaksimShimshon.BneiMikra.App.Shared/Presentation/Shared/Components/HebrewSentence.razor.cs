@@ -1,7 +1,7 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
-using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Tanakh;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Resources;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
+using MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Entities;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
-using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components;
@@ -9,7 +9,7 @@ public partial class HebrewSentence : ComponentBase
 {
     [Parameter] public string Hebrew { get; set; } = default!;
     [Parameter] public string? Translation { get; set; }
-    [Parameter] public List<TanakhReferenceResponse>? ScripturalReferences { get; set; }
+    [Parameter] public List<TanakhReferenceEntity>? ScripturalReferences { get; set; }
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
 
     private HebrewSentenceViewModel ViewModel { get; set; } = default!;

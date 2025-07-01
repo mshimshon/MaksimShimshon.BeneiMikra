@@ -1,4 +1,5 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Articles.Pulses.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Articles.Queries;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Application.Features.Articles.Pulses.Effects;
 internal class ArticleGetOneEffect : IEffect<ArticleGetOneAction>

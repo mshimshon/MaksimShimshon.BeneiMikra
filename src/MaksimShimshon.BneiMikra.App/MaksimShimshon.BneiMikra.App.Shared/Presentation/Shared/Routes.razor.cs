@@ -1,12 +1,13 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Presentation.Services.Implementation;
 using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared;
 public partial class Routes : ComponentBase
 {
-    [Inject] private IStartupProvider StartupProvider { get; set; } = null!;
+    [Inject] IJSRuntime JavascriptRuntime { get; set; } = default!;
     protected override async Task OnInitializedAsync()
     {
-        await StartupProvider.Start();
+        JavascriptProvider.JSRuntime = JavascriptRuntime;
     }
 }

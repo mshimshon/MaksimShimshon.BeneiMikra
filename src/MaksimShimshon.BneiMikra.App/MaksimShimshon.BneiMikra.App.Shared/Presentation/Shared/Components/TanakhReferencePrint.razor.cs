@@ -1,6 +1,6 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Resources;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
 using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
-using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components;

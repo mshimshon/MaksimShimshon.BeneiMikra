@@ -1,6 +1,6 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Resources;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
 using MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Entities;
-using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 internal class TanakhReferenceViewModel

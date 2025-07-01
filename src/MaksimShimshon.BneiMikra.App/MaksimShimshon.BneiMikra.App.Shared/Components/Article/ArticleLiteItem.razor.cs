@@ -1,8 +1,8 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Articles;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Domain.Article.Entities;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Components.Article;
 public partial class ArticleLiteItem : ComponentBase
 {
-    [Parameter] public ArticleLiteResponse Data { get; set; } = default!;
+    [Parameter] public ArticleEntity Data { get; set; } = default!;
 }

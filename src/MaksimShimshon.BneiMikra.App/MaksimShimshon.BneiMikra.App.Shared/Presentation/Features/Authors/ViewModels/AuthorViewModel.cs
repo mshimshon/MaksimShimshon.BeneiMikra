@@ -1,6 +1,6 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Authors.Pulses.Stores;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Resources;
 using MaksimShimshon.BneiMikra.App.Shared.Application.Services.Interfaces;
-using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Authors.ViewModels;
 internal class AuthorViewModel

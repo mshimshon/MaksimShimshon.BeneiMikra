@@ -1,6 +1,7 @@
 @inherits ComponentBase
 @page "/author/{Id}"
-@using MaksimShimshon.BneiMikra.App.Shared.Shared.Resources
+@using MaksimShimshon.BneiMikra.App.Shared.Application.Resources
+
 
 <PageTitle>@($"B'nei Mikra - ")</PageTitle>
 <MudGrid>
@@ -11,13 +12,14 @@
             <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
 
         }
-        else if (_viewModel.ViewState.Result?.Biography != default)
+        else if (_viewModel.ViewState.Author != default && _viewModel.ViewState.Author.InfoParts.Count > 0)
         {
             <MudText Typo=@Typo.h5>
-                @_viewModel.ViewState.Result.Name
+                @_viewModel.ViewState.Author.Name
             </MudText>
+
             <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
-            <ArticleBlockRenderer Blocks=@_viewModel.ViewState.Result.Biography.Blocks />
+            <ArticleBlockRenderer Blocks=@_viewModel.ViewState.Author.InfoParts/>
         }
         else
         {

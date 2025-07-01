@@ -1,6 +1,5 @@
-@using MaksimShimshon.BneiMikra.App.Shared.Flux.System.Actions
 @inherits ComponentBase
-<MudDrawer @ref=Menu Open=@ViewModel.MainMenuState.IsOpened OpenChanged=@OnMenuExternalChanged
+<MudDrawer @ref=Menu Open=@ViewModel.MainMenuState.IsOpened OpenChanged=@ViewModel.OnMenuExternalChanged
            Overlay=true OverlayAutoClose=true>
     <MudNavMenu >
         <MudNavLink Ripple=true Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home" OnClick=@(()=>AutoClose("/"))>
@@ -26,14 +25,14 @@
                 @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryHistory)
             </MudNavLink>
         </MudNavGroup>
-        @if (ViewModel.TeachingState.Teachings != default)
+        @if (ViewModel.TeachingState.Result != default)
         {
             <MudNavGroup Ripple=true Title=@ApplicationResourceProvider.GetString(() => ApplicationResource.MainMenuTeachings) 
             Icon=@Icons.Material.Filled.School Expanded="true">
-                @foreach (var item in ViewModel.TeachingState.Teachings!)
+                @foreach (var item in ViewModel.TeachingState.Result.Entities!)
                 {
                     <MudNavLink Ripple=true Match="NavLinkMatch.Prefix"
-                                OnClick=@(()=>AutoClose($"/article/{item.Article.DocumentId}"))>
+                                OnClick=@(()=>AutoClose($"/article/{item.Id}"))>
                         @item.Title
                     </MudNavLink>
                 }

@@ -1,5 +1,6 @@
 @inherits ComponentBase
 @page "/"
+@using MaksimShimshon.BneiMikra.App.Shared.Application.Resources
 
 <PageTitle>@("B'nei Mikra - Home")</PageTitle>
 
@@ -11,9 +12,9 @@
         </MudItem>
 
     }
-    else if (_viewModel.LatestArticles.Result != default && _viewModel.LatestArticles.Result.Result.Count > 0)
+    else if (_viewModel.LatestArticles.Result != default && _viewModel.LatestArticles.Result.Entities.Count > 0)
     {
-        @foreach (var item in _viewModel.LatestArticles.Result.Result)
+        @foreach (var item in _viewModel.LatestArticles.Result.Entities)
         {
             <MudItem xs="12" sm="6" md="4" lg="3">
                 <ArticleLiteItem Data=item />
