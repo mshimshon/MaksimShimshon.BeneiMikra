@@ -8,5 +8,6 @@ internal record ArticleLiteResponse : BaseResponse
     public string Description { get; set; } = default!;
     public string Slug { get; set; } = default!;
     public string Locale { get; set; } = default!;
-    public AuthorLiteResponse Author { get; set; } = default!;
+    public AuthorLiteResponse? Author { get; set; }
+    public CategoryResponse? Category { get; set; }
 }

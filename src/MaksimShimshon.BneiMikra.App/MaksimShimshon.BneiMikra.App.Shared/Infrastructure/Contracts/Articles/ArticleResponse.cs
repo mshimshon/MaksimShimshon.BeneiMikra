@@ -1,9 +1,7 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Shared;
+﻿using Strapi.Net.Dto;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Articles;
-internal record ArticleResponse : BaseResponse
+internal record ArticleResponse : ArticleLiteResponse
 {
-    public string Title { get; set; } = default!;
-    public string Slug { get; set; } = default!;
-    public string Locale { get; set; } = default!;
+    public List<StrapiBlockResponse>? Blocks { get; set; }
 }
