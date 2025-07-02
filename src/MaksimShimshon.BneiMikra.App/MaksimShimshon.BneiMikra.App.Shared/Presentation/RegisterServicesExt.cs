@@ -23,7 +23,7 @@ internal static class RegisterServicesExt
         services.AddScoped<AppTopBarViewModel>();
         services.AddTransient<HebrewSentenceViewModel>();
         services.AddTransient<TanakhReferenceViewModel>();
-
+        services.AddTransient<BlockMarkdownViewModel>();
         services.AddScoped<IJavascriptProvider, JavascriptProvider>();
         services.AddScoped<ITransliterationProvider, TransliterationProvider>();
 

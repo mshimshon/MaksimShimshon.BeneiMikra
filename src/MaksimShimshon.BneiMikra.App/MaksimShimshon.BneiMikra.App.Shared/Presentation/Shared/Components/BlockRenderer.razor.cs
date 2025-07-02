@@ -7,7 +7,7 @@ public partial class BlockRenderer
     [Parameter]
     public List<BlockComponent> Blocks { get; set; } = default!;
     private List<RenderFragment> Fragments { get; set; } = new();
-    public static RenderFragment Render(Type component, IReadOnlyDictionary<string, object> parameters)
+    public static RenderFragment Render(Type component, IReadOnlyDictionary<string, object?> parameters)
     => (treeBuilder) =>
     {
         treeBuilder.OpenComponent(0, component);
@@ -30,6 +30,7 @@ public partial class BlockRenderer
 
     private static Dictionary<string, Type> Map { get; set; } = new()
     {
-        ["MarkdownComponent"] = typeof(BlockRenderer)
+        ["MarkdownComponent"] = typeof(BlockRenderer),
+        ["QuotationComponent"] = typeof(Quotation)
     };
 }

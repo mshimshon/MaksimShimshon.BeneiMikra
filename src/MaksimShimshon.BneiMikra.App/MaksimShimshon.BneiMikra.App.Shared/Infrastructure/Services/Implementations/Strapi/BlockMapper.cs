@@ -10,7 +10,7 @@ internal static class BlockMapper
     public static Dictionary<string, Func<ICoreMap, string, BlockComponent>> Matches { get; } = new()
     {
         ["shared.rich-text"] = (map, json)
-            => map.MapTo<BlockMarkdownResponse, BlockComponent>(JsonSerializer.Deserialize<BlockMarkdownResponse>(json)!),
+            => map.MapTo<BlockQuotationResponse, BlockComponent>(JsonSerializer.Deserialize<BlockQuotationResponse>(json)!),
         ["shared.quote"] = (map, json)
             => map.MapTo<BlockQuotationResponse, BlockComponent>(JsonSerializer.Deserialize<BlockQuotationResponse>(json)!),
         ["shared.tanakh-reference"] = (map, json)

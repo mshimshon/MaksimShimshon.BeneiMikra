@@ -13,7 +13,7 @@ internal class BlockMarkdownToBlockComponent : ICoreMapHandler<BlockMarkdownResp
         return new()
         {
             Component = "MarkdownComponent",
-            Paramaters = new Dictionary<string, object>()
+            Paramaters = new Dictionary<string, object?>()
             {
                 ["Body"] = data.Body
             }
