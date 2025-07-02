@@ -1,7 +1,12 @@
 @inherits ComponentBase
 @page "/brachot"
 @using MaksimShimshon.BneiMikra.App.Shared.Application.Resources
-
+@using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components
+@using Microsoft.AspNetCore.Components.Web
+@using MudBlazor
+@using SwizzleV
+@inject IDispatcher Dispatcher
+@inject ISwizzleFactory SwizzleFact
 
 <PageTitle>@("B'nei Mikra - Blessings")</PageTitle>
 

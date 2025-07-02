@@ -1,4 +1,5 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Teachings.Pulses.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Teachings.Queries;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Application.Features.Teachings.Pulses.Effects;
 internal class TeachingGetEffect : IEffect<TeachingGetAction>

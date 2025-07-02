@@ -2,7 +2,7 @@
 using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Shared;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Teachings;
-internal record TeachingResponse : BaseResponse
+public record TeachingResponse : BaseResponse
 {
     public string Locale { get; set; } = default!;
     public string Title { get; set; } = default!;

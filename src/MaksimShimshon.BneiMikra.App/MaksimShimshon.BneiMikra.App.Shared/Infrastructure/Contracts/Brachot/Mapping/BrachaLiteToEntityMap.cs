@@ -9,7 +9,8 @@ internal class BrachaLiteToEntityMap : ICoreMapHandler<BrachaLiteResponse, Brach
     public BrachaEntity MapHandler(BrachaLiteResponse data) => new()
     {
         Name = data.Name,
-        Gender = GenderMapper.Mapper.ContainsKey(data.Gender) ? GenderMapper.Mapper[data.Gender] : Gender.NA
+        Gender = GenderMapper.Mapper.ContainsKey(data.Gender) ? GenderMapper.Mapper[data.Gender] : Gender.NA,
+        Id = data.DocumentId
     };
 
     public async Task<BrachaEntity> MapHandlerAsync(BrachaLiteResponse data)

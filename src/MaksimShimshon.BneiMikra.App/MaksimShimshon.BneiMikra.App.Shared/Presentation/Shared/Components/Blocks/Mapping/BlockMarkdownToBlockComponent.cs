@@ -1,7 +1,8 @@
 ﻿using CoreMap;
 using MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Entities;
+using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Shared.Blocks;
 
-namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Shared.Blocks.Mapping;
+namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components.Blocks.Mapping;
 internal class BlockMarkdownToBlockComponent : ICoreMapHandler<BlockMarkdownResponse, BlockComponent>
 {
     public BlockMarkdownToBlockComponent()
@@ -12,10 +13,10 @@ internal class BlockMarkdownToBlockComponent : ICoreMapHandler<BlockMarkdownResp
     {
         return new()
         {
-            Component = "MarkdownComponent",
+            Component = nameof(BlockMarkdown),
             Paramaters = new Dictionary<string, object?>()
             {
-                ["Body"] = data.Body
+                [nameof(BlockMarkdown.Body)] = data.Body
             }
         };
     }

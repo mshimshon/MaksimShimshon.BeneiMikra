@@ -1,7 +1,7 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Shared;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Tanakh;
-internal record TanakhVerseResponse : BaseResponse
+public record TanakhVerseResponse : BaseResponse
 {
     public string Locale { get; set; } = default!;
     public string Hebrew { get; set; } = default!;

@@ -1,7 +1,13 @@
 @inherits ComponentBase
 @page "/article/{Id}"
 @using MaksimShimshon.BneiMikra.App.Shared.Application.Resources
-
+@using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components
+@using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components.Blocks
+@using Microsoft.AspNetCore.Components.Web
+@using MudBlazor
+@using SwizzleV
+@inject IDispatcher Dispatcher
+@inject ISwizzleFactory SwizzleFact
 <PageTitle>@($"B'nei Mikra - {Id}")</PageTitle>
 <MudGrid Justify=@Justify.Center>
     @if (_articleViewModel.IsLoading)
@@ -10,7 +16,7 @@
             <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
         </MudItem>
     }
-    else if (_articleViewModel.State.Result != default)
+    else if (_articleViewModel.State.Result != default && _articleViewModel.State.Result.Details != default)
     {
         <MudItem xs="12" md="6">
             <MudText Align=@Align.Center Typo=Typo.h3>@_articleViewModel.State.Result.Title</MudText>
@@ -18,7 +24,7 @@
         </MudItem>
         <MudFlexBreak />
         <MudItem md="6">
-            <ArticleBlockRenderer Blocks=@_articleViewModel.State.Result.Blocks />
+            <BlockRenderer Blocks=@_articleViewModel.State.Result.Details.BodyParts />
         </MudItem>
     }
     else

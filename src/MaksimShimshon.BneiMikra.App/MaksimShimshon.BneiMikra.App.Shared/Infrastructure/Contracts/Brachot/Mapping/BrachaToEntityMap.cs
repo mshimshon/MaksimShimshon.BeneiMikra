@@ -16,6 +16,7 @@ internal class BrachaToEntityMap : ICoreMapHandler<BrachaResponse, BrachaEntity>
     }
     public BrachaEntity MapHandler(BrachaResponse data) => new()
     {
+        Id = data.DocumentId,
         Name = data.Name,
         Gender = GenderMapper.Mapper.ContainsKey(data.Gender) ? GenderMapper.Mapper[data.Gender] : Gender.NA,
         Details = new()

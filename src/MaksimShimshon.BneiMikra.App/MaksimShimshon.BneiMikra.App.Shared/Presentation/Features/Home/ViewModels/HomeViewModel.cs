@@ -1,4 +1,5 @@
-﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Articles.Pulses.Stores;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Articles.Pulses.Actions;
+using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Articles.Pulses.Stores;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Home.ViewModels;
 internal class HomeViewModel
@@ -26,7 +27,10 @@ internal class HomeViewModel
     }
     public async Task LoadAsync()
     {
-        var action = new ArticleSearchAction(string.Empty, "publishedAt:desc");
+        var action = new ArticleSearchAction()
+        {
+            SortBy = "publishedAt:desc",
+        };
         await _dispatcher.Prepare(() => action).DispatchAsync();
     }
 }

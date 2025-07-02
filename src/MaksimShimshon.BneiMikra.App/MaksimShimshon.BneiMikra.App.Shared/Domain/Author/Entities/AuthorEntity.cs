@@ -8,6 +8,6 @@ public record AuthorEntity
     public string? Email { get; init; }
     public string? Picture { get; init; } = default!;
 
-    public IReadOnlyList<BlockComponent> InfoParts { get; init; } = new List<BlockComponent>();
+    public ICollection<BlockComponent> InfoParts { get; init; } = new List<BlockComponent>();
 
 }

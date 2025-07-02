@@ -1,5 +1,5 @@
 ﻿namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Shared;
-internal abstract record BaseResponse
+public abstract record BaseResponse
 {
     public int Id { get; set; }
     public string DocumentId { get; set; } = default!;

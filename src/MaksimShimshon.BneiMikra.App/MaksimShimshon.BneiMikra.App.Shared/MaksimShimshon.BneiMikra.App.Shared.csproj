@@ -26,13 +26,16 @@
     <PackageReference Include="MudBlazor.Markdown" Version="8.7.0" />
     <PackageReference Include="MudBlazor.ThemeManager" Version="3.0.0" />
     <PackageReference Include="StatePulse.Net" Version="0.9.3" />
-    <PackageReference Include="Strapi.Net" Version="0.9.15" />
+    <PackageReference Include="Strapi.Net" Version="0.9.17" />
     <PackageReference Include="SwizzleV" Version="0.9.112" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Application\Services\Implementations\" />
     <Folder Include="Application\Utilities\" />
+    <Folder Include="Components\Article\" />
+    <Folder Include="Components\Bracha\" />
+    <Folder Include="Infrastructure\Contracts\Shared\Blocks\Mapping\" />
     <Folder Include="Infrastructure\Utilities\" />
   </ItemGroup>
 

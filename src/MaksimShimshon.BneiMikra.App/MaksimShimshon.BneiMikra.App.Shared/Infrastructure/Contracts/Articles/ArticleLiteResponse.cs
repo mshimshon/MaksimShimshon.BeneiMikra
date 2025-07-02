@@ -2,7 +2,7 @@
 using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Shared;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Articles;
-internal record ArticleLiteResponse : BaseResponse
+public record ArticleLiteResponse : BaseResponse
 {
     public string Title { get; set; } = default!;
     public string Description { get; set; } = default!;

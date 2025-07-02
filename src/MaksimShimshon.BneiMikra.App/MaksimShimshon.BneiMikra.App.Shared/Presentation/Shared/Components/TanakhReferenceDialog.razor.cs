@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Enums;
+using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components;
 public partial class TanakhReferenceDialog : ComponentBase
 {
     [Parameter]
-    public string BookName { get; set; } = default!;
+    public TanakhBook BookName { get; set; } = default!;
 
     [Parameter]
     public int Chapiter { get; set; }

@@ -1,7 +1,7 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 using Microsoft.AspNetCore.Components;
 
-namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components;
+namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components.Blocks;
 public partial class BlockMarkdown
 {
     [Parameter] public string Body { get; set; } = default!;

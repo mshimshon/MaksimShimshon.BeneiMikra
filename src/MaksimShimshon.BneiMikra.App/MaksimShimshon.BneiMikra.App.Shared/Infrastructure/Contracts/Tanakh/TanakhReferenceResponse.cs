@@ -1,5 +1,5 @@
 ﻿namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Tanakh;
-internal record TanakhReferenceResponse
+public record TanakhReferenceResponse
 {
     public int Id { get; set; }
     public string Book { get; set; } = default!;

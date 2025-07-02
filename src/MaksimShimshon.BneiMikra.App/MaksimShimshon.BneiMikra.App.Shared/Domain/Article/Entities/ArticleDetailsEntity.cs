@@ -3,6 +3,6 @@
 namespace MaksimShimshon.BneiMikra.App.Shared.Domain.Article.Entities;
 public record ArticleDetailsEntity
 {
-    public IReadOnlyCollection<BlockComponent> BodyParts { get; init; } = new List<BlockComponent>();
+    public ICollection<BlockComponent> BodyParts { get; init; } = new List<BlockComponent>();
 
 }
