@@ -11,8 +11,10 @@ public partial class Home
     protected override async Task OnInitializedAsync()
     {
         var articleVMHook = SwizzleFact
-            .CreateOrGet<HomeViewModel>(() => this, () => InvokeAsync(() => StateHasChanged()));
+            .CreateOrGet<HomeViewModel>(() => this, ShouldUpdate);
         _viewModel = articleVMHook.GetViewModel<HomeViewModel>()!;
         await _viewModel.LoadAsync();
     }
+    private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
+
 }

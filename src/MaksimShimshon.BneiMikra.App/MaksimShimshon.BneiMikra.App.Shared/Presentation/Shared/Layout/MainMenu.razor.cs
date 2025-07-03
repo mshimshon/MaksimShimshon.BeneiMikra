@@ -13,12 +13,12 @@ public partial class MainMenu : ComponentBase
     protected override Task OnInitializedAsync()
     {
         var vmHook =
-            SwizzleFact.CreateOrGet<MainMenuViewModel>(() => this, () => InvokeAsync(() => StateHasChanged()));
+            SwizzleFact.CreateOrGet<MainMenuViewModel>(() => this, ShouldUpdate);
 
         ViewModel = vmHook.GetViewModel<MainMenuViewModel>()!;
         return base.OnInitializedAsync();
     }
-
+    private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
     private async Task AutoClose(string href)
     {
         await ViewModel.CloseMenu();

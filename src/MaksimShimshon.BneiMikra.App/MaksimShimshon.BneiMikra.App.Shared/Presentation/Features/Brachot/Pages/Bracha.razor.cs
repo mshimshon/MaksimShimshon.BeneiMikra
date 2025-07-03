@@ -12,8 +12,10 @@ public partial class Bracha
     protected override async Task OnInitializedAsync()
     {
         var articleVMHook = SwizzleFact
-            .CreateOrGet<BrachaViewModel>(() => this, () => InvokeAsync(() => StateHasChanged()));
+            .CreateOrGet<BrachaViewModel>(() => this, ShouldUpdate);
         _viewModel = articleVMHook.GetViewModel<BrachaViewModel>()!;
         await _viewModel.LoadAsync(Id);
     }
+    private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
+
 }

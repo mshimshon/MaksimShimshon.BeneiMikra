@@ -11,8 +11,10 @@ public partial class Brachot
     protected override async Task OnInitializedAsync()
     {
         var articleVMHook = SwizzleFact
-            .CreateOrGet<BrachotViewModel>(() => this, () => InvokeAsync(() => StateHasChanged()));
+            .CreateOrGet<BrachotViewModel>(() => this, ShouldUpdate);
         _viewModel = articleVMHook.GetViewModel<BrachotViewModel>()!;
         await _viewModel.LoadAsync();
     }
+    private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
+
 }

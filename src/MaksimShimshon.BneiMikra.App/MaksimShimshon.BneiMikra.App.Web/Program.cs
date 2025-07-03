@@ -30,7 +30,7 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(
-        typeof(MaksimShimshon.BneiMikra.App.Shared._Imports).Assembly,
+        typeof(MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared._Imports).Assembly,
         typeof(MaksimShimshon.BneiMikra.App.Web.Client._Imports).Assembly);
 
 await app.RunAsync();

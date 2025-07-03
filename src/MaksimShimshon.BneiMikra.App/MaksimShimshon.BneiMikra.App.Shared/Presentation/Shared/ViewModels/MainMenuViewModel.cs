@@ -6,20 +6,19 @@ using MaksimShimshon.BneiMikra.App.Shared.Presentation.Pulses.System.Stores;
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 internal class MainMenuViewModel
 {
+    private readonly IStatePulse _statePulse;
     private readonly IDispatcher _dispatcher;
     private readonly ISwizzleViewModel _swizzleViewModel;
-    public MainMenuState MainMenuState { get; private set; }
-    public TeachingState TeachingState { get; private set; }
+    public MainMenuState MainMenuState => _statePulse.StateOf<MainMenuState>(() => this, StateHasChanged);
+    public TeachingState TeachingState => _statePulse.StateOf<TeachingState>(() => this, StateHasChanged);
     public MainMenuViewModel(
         IStatePulse statePulse,
-        IDispatcher dispatcher,
-        ISwizzleViewModel swizzleViewModel
+        IDispatcher dispatcher, ISwizzleViewModel swizzleViewModel
         )
     {
+        _statePulse = statePulse;
         _dispatcher = dispatcher;
         _swizzleViewModel = swizzleViewModel;
-        MainMenuState = statePulse.StateOf<MainMenuState>(() => this, StateHasChanged);
-        TeachingState = statePulse.StateOf<TeachingState>(() => this, StateHasChanged);
     }
 
     public async Task StateHasChanged()

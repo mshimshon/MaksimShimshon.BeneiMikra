@@ -22,6 +22,7 @@ internal static class RegisterPresentationServicesExt
         services.AddScoped<ArticleViewModel>();
         services.AddScoped<BrachaViewModel>();
         services.AddScoped<BrachotViewModel>();
+        services.AddScoped<MainMenuViewModel>();
         services.AddScoped<HomeViewModel>();
         services.AddScoped<AppTopBarViewModel>();
         services.AddTransient<HebrewSentenceViewModel>();

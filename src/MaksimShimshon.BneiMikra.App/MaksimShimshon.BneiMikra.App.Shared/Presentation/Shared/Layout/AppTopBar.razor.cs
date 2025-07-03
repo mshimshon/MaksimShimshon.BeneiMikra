@@ -8,8 +8,9 @@ public partial class AppTopBar : ComponentBase
     protected override async Task OnInitializedAsync()
     {
         var vmHook =
-            SwizzleFact.CreateOrGet<AppTopBarViewModel>(() => this, () => InvokeAsync(() => StateHasChanged()));
+            SwizzleFact.CreateOrGet<AppTopBarViewModel>(() => this, ShouldUpdate);
 
         ViewModel = vmHook.GetViewModel<AppTopBarViewModel>()!;
     }
+    private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
 }

@@ -9,8 +9,10 @@ public partial class Author
     protected override async Task OnInitializedAsync()
     {
         var articleVMHook = SwizzleFact
-            .CreateOrGet<AuthorViewModel>(() => this, () => InvokeAsync(() => StateHasChanged()));
+            .CreateOrGet<AuthorViewModel>(() => this, ShouldUpdate);
         _viewModel = articleVMHook.GetViewModel<AuthorViewModel>()!;
         await _viewModel.LoadAsync(Id);
     }
+    private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
+
 }
