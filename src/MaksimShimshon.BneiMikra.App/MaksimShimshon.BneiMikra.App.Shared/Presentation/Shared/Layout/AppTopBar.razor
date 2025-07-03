@@ -3,5 +3,5 @@
 <MudAppBar>
     <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" 
         OnClick=@ViewModel.OnMenuButtonClick />
-    My Application
+    My Application @(ViewModel.State.IsOpened.ToString())
 </MudAppBar>

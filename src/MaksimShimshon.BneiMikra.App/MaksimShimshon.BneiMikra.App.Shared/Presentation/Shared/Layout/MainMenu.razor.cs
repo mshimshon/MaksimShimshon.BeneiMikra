@@ -10,15 +10,14 @@ public partial class MainMenu : ComponentBase
     [Inject] private NavigationManager Navigator { get; set; } = default!;
     private MudDrawer Menu { get; set; } = default!;
     private MainMenuViewModel ViewModel { get; set; } = default!;
-    protected override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
-        var vmHook =
-            SwizzleFact.CreateOrGet<MainMenuViewModel>(() => this, ShouldUpdate);
-
+        var vmHook = SwizzleFact.CreateOrGet<MainMenuViewModel>(() => this, ShouldUpdate);
         ViewModel = vmHook.GetViewModel<MainMenuViewModel>()!;
-        return base.OnInitializedAsync();
     }
-    private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
+
+    private async Task ShouldUpdate() =>
+        await InvokeAsync(StateHasChanged);
     private async Task AutoClose(string href)
     {
         await ViewModel.CloseMenu();

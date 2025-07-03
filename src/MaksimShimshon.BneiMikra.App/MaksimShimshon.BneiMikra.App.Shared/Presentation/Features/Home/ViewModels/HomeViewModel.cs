@@ -27,10 +27,8 @@ internal class HomeViewModel
     }
     public async Task LoadAsync()
     {
-        var action = new ArticleSearchAction()
-        {
-            SortBy = "publishedAt:desc",
-        };
-        await _dispatcher.Prepare(() => action).DispatchAsync();
+        await _dispatcher.Prepare<ArticleSearchAction>()
+            .With(p => p.SortBy, "publishedAt:desc")
+            .DispatchAsync();
     }
 }

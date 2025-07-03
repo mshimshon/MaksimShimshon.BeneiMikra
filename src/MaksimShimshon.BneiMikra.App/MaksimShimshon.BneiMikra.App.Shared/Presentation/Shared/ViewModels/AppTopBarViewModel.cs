@@ -4,18 +4,19 @@ using MaksimShimshon.BneiMikra.App.Shared.Presentation.Pulses.System.Stores;
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 internal class AppTopBarViewModel
 {
+    private readonly IStatePulse _statePulse;
     private readonly IDispatcher _dispatcher;
     private readonly ISwizzleViewModel _swizzleViewModel;
-    public MainMenuState State { get; private set; }
+    public MainMenuState State => _statePulse.StateOf<MainMenuState>(() => this, OnStateChanged);
     public AppTopBarViewModel(
         IStatePulse statePulse,
         IDispatcher dispatcher,
         ISwizzleViewModel swizzleViewModel
         )
     {
+        _statePulse = statePulse;
         _dispatcher = dispatcher;
         _swizzleViewModel = swizzleViewModel;
-        State = statePulse.StateOf<MainMenuState>(() => this, OnStateChanged);
     }
 
     public async Task OnStateChanged()

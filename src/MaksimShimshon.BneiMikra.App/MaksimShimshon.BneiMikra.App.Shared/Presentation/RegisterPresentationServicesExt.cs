@@ -42,8 +42,10 @@ internal static class RegisterPresentationServicesExt
         services.AddInfrastructureService();
         services.AddStatePulseServices(o =>
         {
-            o.ScanAssemblies = new Type[] { typeof(RegisterPresentationServicesExt) };
-            o.ScanAssemblies = new Type[] { typeof(RegisterApplicationServicesExt) };
+            o.ScanAssemblies = new Type[] {
+                typeof(RegisterPresentationServicesExt),
+                typeof(RegisterApplicationServicesExt)
+            };
         });
         return services;
     }

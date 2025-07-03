@@ -8,20 +8,22 @@ using MaksimShimshon.BneiMikra.App.Shared.Domain.Errors.Entities;
 using MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Entities;
 using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Articles;
 using Strapi.Net;
+using Strapi.Net.Dto;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Repositories;
 internal class ArticleReadRepository : IArticleReadRepository
 {
     private readonly IStrapiClient _stapiClient;
+    private readonly IStrapiClient _strapiClient;
     private readonly IResourceProvider<ApplicationResource> _appResourceProvider;
     private readonly ICoreMap _coreMap;
 
     public ArticleReadRepository(
-        IStrapiClient stapiClient,
+        IStrapiClient strapiClient,
         IResourceProvider<ApplicationResource> appResourceProvider,
         ICoreMap coreMap)
     {
-        _stapiClient = stapiClient;
+        _strapiClient = strapiClient;
         _appResourceProvider = appResourceProvider;
         _coreMap = coreMap;
     }
@@ -39,6 +41,37 @@ internal class ArticleReadRepository : IArticleReadRepository
         return default;
     }
 
-    public Task<SearchResultEntity<ArticleEntity>?> GetMany(string? keywords, string? category, string? sortBy, int page = 1)
-        => throw new NotImplementedException();
+    public async Task<SearchResultEntity<ArticleEntity>?>
+        GetMany(string? keywords, string? category, string? sortBy, int page = 1)
+    {
+        var query = StrapiQueryBuilder.Create();
+
+        query.Filter<ArticleResponse>(p => p.Category!, Strapi.Net.Enums.StrapiFilterOperator.IsNotNull, "true");
+
+        if (!string.IsNullOrWhiteSpace(category))
+            query.Filter<ArticleResponse>(p => p.Category!, Strapi.Net.Enums.StrapiFilterOperator.Equal, category);
+
+        if (!string.IsNullOrWhiteSpace(sortBy))
+            query.AddSort(sortBy);
+
+        query.Paginate(page, 10);
+        if (!string.IsNullOrWhiteSpace(keywords))
+            query.Search(keywords);
+        string url = query.ToQueryString("articles");
+        var result = await _strapiClient.GetAsync<ArticleResponse>(url);
+        if (result == default)
+            throw new AppUnknownException("ApiUnknownException", _appResourceProvider.GetString(() => ApplicationResource.HttpStatusCodeUnknown));
+        if (result.Error != default)
+            throw new AppApiException(new ValidationErrorEntity()
+            {
+                Code = result.Error.Name,
+                Message = result.Error.Message
+            });
+
+        if (result.Data != default)
+        {
+            return await _coreMap.MapToAsync<StrapiResponse<ArticleResponse>, SearchResultEntity<ArticleEntity>>(result);
+        }
+        return default;
+    }
 }
