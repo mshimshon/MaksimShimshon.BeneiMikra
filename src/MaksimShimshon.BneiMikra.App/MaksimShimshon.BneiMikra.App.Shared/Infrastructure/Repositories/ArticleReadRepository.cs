@@ -13,7 +13,6 @@ using Strapi.Net.Dto;
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Repositories;
 internal class ArticleReadRepository : IArticleReadRepository
 {
-    private readonly IStrapiClient _stapiClient;
     private readonly IStrapiClient _strapiClient;
     private readonly IResourceProvider<ApplicationResource> _appResourceProvider;
     private readonly ICoreMap _coreMap;
@@ -29,14 +28,14 @@ internal class ArticleReadRepository : IArticleReadRepository
     }
     public async Task<ArticleEntity?> GetById(string id)
     {
-        var article = await _stapiClient.GetAsync<ArticleResponse>($"articles/{id}");
+        var article = await _strapiClient.GetAsync<ArticleResponse>($"articles/{id}");
         if (article == default)
             throw new AppUnknownException("ApiUnknownException", _appResourceProvider.GetString(() => ApplicationResource.HttpStatusCodeUnknown));
         if (article.Error != default)
             throw new AppApiException(new ValidationErrorEntity() { Code = article.Error.Name, Message = article.Error.Message });
         if (article.Data != default)
         {
-            return await _coreMap.MapToAsync<ArticleResponse, ArticleEntity>(article.Data[0]);
+            return await _coreMap.MapToAsync<ArticleResponse, ArticleEntity>(article.Data.First());
         }
         return default;
     }
@@ -46,7 +45,7 @@ internal class ArticleReadRepository : IArticleReadRepository
     {
         var query = StrapiQueryBuilder.Create();
 
-        query.Filter<ArticleResponse>(p => p.Category!, Strapi.Net.Enums.StrapiFilterOperator.IsNotNull, "true");
+        query.Filter<ArticleResponse>(p => p.Category!, Strapi.Net.Enums.StrapiFilterOperator.IsNull, "false");
 
         if (!string.IsNullOrWhiteSpace(category))
             query.Filter<ArticleResponse>(p => p.Category!, Strapi.Net.Enums.StrapiFilterOperator.Equal, category);

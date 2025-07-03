@@ -25,7 +25,6 @@
     <PackageReference Include="MudBlazor" Version="8.7.0" />
     <PackageReference Include="MudBlazor.Markdown" Version="8.7.0" />
     <PackageReference Include="MudBlazor.ThemeManager" Version="3.0.0" />
-    <PackageReference Include="Strapi.Net" Version="0.9.17" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +38,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\StatePulse.NET\src\StatePulse.NET\StatePulse.NET.csproj" />
+    <ProjectReference Include="..\..\..\..\Strapi.Net\src\Strapi.Net\Strapi.Net.csproj" />
     <ProjectReference Include="..\..\..\..\SwizzleV\src\SwizzleV\SwizzleV.csproj" />
   </ItemGroup>
 

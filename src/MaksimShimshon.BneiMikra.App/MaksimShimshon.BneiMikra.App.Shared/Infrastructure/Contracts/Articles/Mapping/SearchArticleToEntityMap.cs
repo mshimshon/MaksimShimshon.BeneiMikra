@@ -16,8 +16,8 @@ internal class SearchArticleToEntity : ICoreMapHandler<StrapiResponse<ArticleRes
         => new SearchResultEntity<ArticleEntity>()
         {
             Entities = _coreMap.MapEachTo<ArticleResponse, ArticleEntity>(data.Data),
-            Page = data.Meta?.Pagination.Page ?? 1,
-            TotalPage = data.Meta?.Pagination.Total ?? 10
+            Page = data.Meta?.Pagination?.Page ?? 1,
+            TotalPage = data.Meta?.Pagination?.Total ?? 10
         };
     public async Task<SearchResultEntity<ArticleEntity>> MapHandlerAsync(StrapiResponse<ArticleResponse> data)
         => await Task.FromResult(MapHandler(data));
