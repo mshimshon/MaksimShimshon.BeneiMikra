@@ -5,6 +5,6 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Application.Features.Tanakh.Respos
 public interface ITanakhReadRepository
 {
     Task<TanakhReferenceEntity?> GetVerse(TanakhBook book, int chapiter, int verse);
-    Task<ICollection<TanakhReferenceEntity>> GetChapiter(TanakhBook book, int chapiter);
-    Task<ICollection<TanakhReferenceEntity>> GetWholeBook(TanakhBook book);
+    Task<SearchResultEntity<TanakhReferenceEntity>?> GetChapiter(TanakhBook book, int chapiter);
+    Task<SearchResultEntity<TanakhReferenceEntity>?> GetWholeBook(TanakhBook book);
 }

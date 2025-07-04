@@ -26,7 +26,7 @@ internal class TanakhReadRepository : ITanakhReadRepository
         _coreMap = coreMap;
         _appResourceProvider = appResourceProvider;
     }
-    public Task<ICollection<TanakhReferenceEntity>> GetChapiter(TanakhBook book, int chapiter) => throw new NotImplementedException();
+    public Task<SearchResultEntity<TanakhReferenceEntity>?> GetChapiter(TanakhBook book, int chapiter) => throw new NotImplementedException();
     public async Task<TanakhReferenceEntity?> GetVerse(TanakhBook book, int chapiter, int verse)
     {
         var query = StrapiQueryBuilder.Create()
@@ -47,5 +47,5 @@ internal class TanakhReadRepository : ITanakhReadRepository
         }
         return default;
     }
-    public Task<ICollection<TanakhReferenceEntity>> GetWholeBook(TanakhBook book) => throw new NotImplementedException();
+    public Task<SearchResultEntity<TanakhReferenceEntity>?> GetWholeBook(TanakhBook book) => throw new NotImplementedException();
 }

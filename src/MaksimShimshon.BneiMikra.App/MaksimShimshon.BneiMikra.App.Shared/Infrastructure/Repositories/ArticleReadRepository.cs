@@ -40,8 +40,7 @@ internal class ArticleReadRepository : IArticleReadRepository
         return default;
     }
 
-    public async Task<SearchResultEntity<ArticleEntity>?>
-        GetMany(string? keywords, string? category, string? sortBy, int page = 1)
+    public async Task<SearchResultEntity<ArticleEntity>?> GetMany(string? keywords, string? category, string? sortBy, int page = 1)
     {
         var query = StrapiQueryBuilder.Create();
 
