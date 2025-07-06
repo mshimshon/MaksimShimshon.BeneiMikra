@@ -43,7 +43,7 @@ internal class TanakhReadRepository : ITanakhReadRepository
             throw new AppApiException(new ValidationErrorEntity() { Code = result.Error.Name, Message = result.Error.Message });
         if (result.Data != default)
         {
-            return await _coreMap.MapToAsync<TanakhVerseResponse, TanakhVerseEntity>(result.Data.First());
+            return _coreMap.MapTo<TanakhVerseResponse, TanakhVerseEntity>(result.Data.First());
         }
         return default;
     }

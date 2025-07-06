@@ -33,7 +33,7 @@ internal class AuthorReadRepository : IAuthorReadRepository
             throw new AppApiException(new ValidationErrorEntity() { Code = result.Error.Name, Message = result.Error.Message });
         if (result.Data != default)
         {
-            return await _coreMap.MapToAsync<AuthorResponse, AuthorEntity>(result.Data.First());
+            return _coreMap.MapTo<AuthorResponse, AuthorEntity>(result.Data.First());
         }
         return default;
     }

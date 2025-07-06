@@ -42,7 +42,7 @@ internal class ArticleReadRepository : IArticleReadRepository
             });
         if (article.Data != default)
         {
-            var converted = await _coreMap.MapToAsync<ArticleResponse, ArticleEntity>(article.Data.First());
+            var converted = _coreMap.MapTo<ArticleResponse, ArticleEntity>(article.Data.First());
             return converted;
 
 
@@ -78,7 +78,7 @@ internal class ArticleReadRepository : IArticleReadRepository
 
         if (result.Data != default)
         {
-            return await _coreMap.MapToAsync<StrapiResponse<ArticleResponse>, SearchResultEntity<ArticleEntity>>(result);
+            return _coreMap.MapTo<StrapiResponse<ArticleResponse>, SearchResultEntity<ArticleEntity>>(result);
         }
         return default;
     }

@@ -44,7 +44,7 @@ internal class TeachingReadRepository : ITeachingsReadRepository
 
         if (result.Data != default)
         {
-            return await _coreMap.MapToAsync<StrapiResponse<TeachingResponse>, SearchResultEntity<TeachingEntity>>(result);
+            return _coreMap.MapTo<StrapiResponse<TeachingResponse>, SearchResultEntity<TeachingEntity>>(result);
         }
         return default;
     }

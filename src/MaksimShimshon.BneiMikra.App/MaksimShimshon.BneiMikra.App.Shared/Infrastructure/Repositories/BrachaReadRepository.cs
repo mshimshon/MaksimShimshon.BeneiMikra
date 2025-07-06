@@ -38,7 +38,7 @@ internal class BrachaReadRepository : IBrachaReadRepository
             });
         if (result.Data != default)
         {
-            return await _coreMap.MapToAsync<BrachaResponse, BrachaEntity>(result.Data.First());
+            return _coreMap.MapTo<BrachaResponse, BrachaEntity>(result.Data.First());
         }
         return default;
     }
@@ -64,7 +64,7 @@ internal class BrachaReadRepository : IBrachaReadRepository
 
         if (result.Data != default)
         {
-            return await _coreMap.MapToAsync<StrapiResponse<BrachaResponse>, SearchResultEntity<BrachaEntity>>(result);
+            return _coreMap.MapTo<StrapiResponse<BrachaResponse>, SearchResultEntity<BrachaEntity>>(result);
         }
         return default;
     }
