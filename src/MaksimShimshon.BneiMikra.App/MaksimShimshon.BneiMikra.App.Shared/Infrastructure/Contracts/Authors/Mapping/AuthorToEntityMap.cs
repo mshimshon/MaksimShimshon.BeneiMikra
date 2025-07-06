@@ -12,7 +12,7 @@ internal class AuthorToEntityMap : ICoreMapHandler<AuthorResponse, AuthorEntity>
     {
         _coreMap = coreMap;
     }
-    public AuthorEntity MapHandler(AuthorResponse data) => new()
+    public AuthorEntity Handler(AuthorResponse data) => new()
     {
         Email = data.Email,
         Id = data.DocumentId,
@@ -20,6 +20,6 @@ internal class AuthorToEntityMap : ICoreMapHandler<AuthorResponse, AuthorEntity>
         InfoParts = data.Biography != default ? _coreMap.MapTo<ArticleResponse, AuthorEntity>(data.Biography).InfoParts : new List<BlockComponent>()
     };
 
-    public async Task<AuthorEntity> MapHandlerAsync(AuthorResponse data)
-        => await Task.FromResult(MapHandler(data));
+    public async Task<AuthorEntity> HandlerAsync(AuthorResponse data)
+        => await Task.FromResult(Handler(data));
 }

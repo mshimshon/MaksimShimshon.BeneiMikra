@@ -17,7 +17,7 @@ internal class BrachaGetEffect : IEffect<BrachaGetAction>
         {
             await dispatcher.Prepare<BrachaGetResultAction>()
                 .With(p => p.IsLoading, true)
-                .UsingSynchronousMode()
+                .Sync()
                 .DispatchAsync();
             var result = await _mediator.Send(new SearchBrachotQuery(default, default, action.Page));
             await dispatcher.Prepare<BrachaGetResultAction>()

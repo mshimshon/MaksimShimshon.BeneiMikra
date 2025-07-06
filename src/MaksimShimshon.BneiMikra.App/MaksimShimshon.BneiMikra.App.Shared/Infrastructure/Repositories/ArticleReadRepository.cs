@@ -28,14 +28,24 @@ internal class ArticleReadRepository : IArticleReadRepository
     }
     public async Task<ArticleEntity?> GetById(string id)
     {
-        var article = await _strapiClient.GetAsync<ArticleResponse>($"articles/{id}");
+        var query = StrapiQueryBuilder.Create();
+        query.PopulateAll();
+        string url = query.ToQueryString($"articles/{id}");
+        var article = await _strapiClient.GetAsync<ArticleResponse>(url);
         if (article == default)
             throw new AppUnknownException("ApiUnknownException", _appResourceProvider.GetString(() => ApplicationResource.HttpStatusCodeUnknown));
         if (article.Error != default)
-            throw new AppApiException(new ValidationErrorEntity() { Code = article.Error.Name, Message = article.Error.Message });
+            throw new AppApiException(new ValidationErrorEntity()
+            {
+                Code = article.Error.Name,
+                Message = article.Error.Message
+            });
         if (article.Data != default)
         {
-            return await _coreMap.MapToAsync<ArticleResponse, ArticleEntity>(article.Data.First());
+            var converted = await _coreMap.MapToAsync<ArticleResponse, ArticleEntity>(article.Data.First());
+            return converted;
+
+
         }
         return default;
     }
@@ -44,10 +54,10 @@ internal class ArticleReadRepository : IArticleReadRepository
     {
         var query = StrapiQueryBuilder.Create();
 
-        query.Filter<ArticleResponse>(p => p.Category!, Strapi.Net.Enums.StrapiFilterOperator.IsNull, "false");
+        query.Filter<ArticleResponse>(p => p.Category!, p => p.ToLower(), Strapi.Net.Enums.StrapiFilterOperator.IsNull, "false");
 
         if (!string.IsNullOrWhiteSpace(category))
-            query.Filter<ArticleResponse>(p => p.Category!, Strapi.Net.Enums.StrapiFilterOperator.Equal, category);
+            query.Filter<ArticleResponse>(p => p.Category!, p => p.ToLower(), Strapi.Net.Enums.StrapiFilterOperator.Equal, category);
 
         if (!string.IsNullOrWhiteSpace(sortBy))
             query.AddSort(sortBy);

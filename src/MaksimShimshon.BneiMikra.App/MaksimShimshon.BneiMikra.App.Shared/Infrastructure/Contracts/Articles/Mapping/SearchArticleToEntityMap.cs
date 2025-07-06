@@ -12,13 +12,13 @@ internal class SearchArticleToEntity : ICoreMapHandler<StrapiResponse<ArticleRes
     {
         _coreMap = coreMap;
     }
-    public SearchResultEntity<ArticleEntity> MapHandler(StrapiResponse<ArticleResponse> data)
+    public SearchResultEntity<ArticleEntity> Handler(StrapiResponse<ArticleResponse> data)
         => new SearchResultEntity<ArticleEntity>()
         {
             Entities = _coreMap.MapEachTo<ArticleResponse, ArticleEntity>(data.Data),
             Page = data.Meta?.Pagination?.Page ?? 1,
             TotalPage = data.Meta?.Pagination?.Total ?? 1
         };
-    public async Task<SearchResultEntity<ArticleEntity>> MapHandlerAsync(StrapiResponse<ArticleResponse> data)
-        => await Task.FromResult(MapHandler(data));
+    public async Task<SearchResultEntity<ArticleEntity>> HandlerAsync(StrapiResponse<ArticleResponse> data)
+        => await Task.FromResult(Handler(data));
 }

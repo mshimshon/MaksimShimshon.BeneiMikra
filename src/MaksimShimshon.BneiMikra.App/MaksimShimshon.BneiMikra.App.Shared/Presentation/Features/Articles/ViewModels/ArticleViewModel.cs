@@ -6,16 +6,16 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Articles.Vie
 internal class ArticleViewModel
 {
     private readonly IDispatcher _dispatcher;
+    private readonly IStatePulse _pulsars;
     private readonly ISwizzleViewModel _swizzleViewModel;
-    private readonly ArticleViewState _state;
 
-    public bool IsLoading => _state.IsLoading;
-    public ArticleViewState State => _state;
+    public bool IsLoading => State.IsLoading;
+    public ArticleViewState State => _pulsars.StateOf<ArticleViewState>(() => this, OnStateHasChanged);
     public ArticleViewModel(IStatePulse pulsars, ISwizzleViewModel swizzleViewModel, IDispatcher dispatcher)
     {
         _dispatcher = dispatcher;
+        _pulsars = pulsars;
         _swizzleViewModel = swizzleViewModel;
-        _state = pulsars.StateOf<ArticleViewState>(() => this, OnStateHasChanged);
     }
 
     public async Task LoadAsync(string id)

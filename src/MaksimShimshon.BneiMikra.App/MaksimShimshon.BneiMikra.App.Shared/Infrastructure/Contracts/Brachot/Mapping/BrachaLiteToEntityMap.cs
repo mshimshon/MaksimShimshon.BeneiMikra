@@ -6,13 +6,13 @@ using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Services.Implementation
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Brachot.Mapping;
 internal class BrachaLiteToEntityMap : ICoreMapHandler<BrachaLiteResponse, BrachaEntity>
 {
-    public BrachaEntity MapHandler(BrachaLiteResponse data) => new()
+    public BrachaEntity Handler(BrachaLiteResponse data) => new()
     {
         Name = data.Name,
         Gender = GenderMapper.Mapper.ContainsKey(data.Gender) ? GenderMapper.Mapper[data.Gender] : Gender.NA,
         Id = data.DocumentId
     };
 
-    public async Task<BrachaEntity> MapHandlerAsync(BrachaLiteResponse data)
-        => await Task.FromResult(MapHandler(data));
+    public async Task<BrachaEntity> HandlerAsync(BrachaLiteResponse data)
+        => await Task.FromResult(Handler(data));
 }

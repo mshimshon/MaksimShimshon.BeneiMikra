@@ -13,7 +13,7 @@ internal class ArticleToEntityMap : ICoreMapHandler<ArticleResponse, ArticleEnti
         _coreMap = coreMap;
     }
 
-    public ArticleEntity MapHandler(ArticleResponse data) => new()
+    public ArticleEntity Handler(ArticleResponse data) => new()
     {
         Id = data.DocumentId,
         Description = data.Description,
@@ -32,8 +32,8 @@ internal class ArticleToEntityMap : ICoreMapHandler<ArticleResponse, ArticleEnti
         } : default
     };
 
-    public async Task<ArticleEntity> MapHandlerAsync(ArticleResponse data)
-        => await Task.FromResult(MapHandler(data));
+    public async Task<ArticleEntity> HandlerAsync(ArticleResponse data)
+        => await Task.FromResult(Handler(data));
 
 
 }

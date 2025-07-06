@@ -9,4 +9,5 @@ public record ArticleEntity
     public ArticleDetailsEntity? Details { get; init; }
     public ArticleAuthorDetailsEntity? Author { get; init; }
     public List<string> Categories { get; init; } = new();
+    public ICollection<ArticleEntity> Related { get; set; } = new List<ArticleEntity>();
 }

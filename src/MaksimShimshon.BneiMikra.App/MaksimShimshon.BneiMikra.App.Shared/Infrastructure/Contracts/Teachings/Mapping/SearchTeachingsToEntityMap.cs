@@ -12,13 +12,13 @@ internal class SearchTeachingsToEntityMap : ICoreMapHandler<StrapiResponse<Teach
     {
         _coreMap = coreMap;
     }
-    public SearchResultEntity<TeachingEntity> MapHandler(StrapiResponse<TeachingResponse> data)
+    public SearchResultEntity<TeachingEntity> Handler(StrapiResponse<TeachingResponse> data)
         => new SearchResultEntity<TeachingEntity>()
         {
             Entities = _coreMap.MapEachTo<TeachingResponse, TeachingEntity>(data.Data),
             Page = data.Meta?.Pagination?.Page ?? 1,
             TotalPage = data.Meta?.Pagination?.PageCount ?? 1
         };
-    public async Task<SearchResultEntity<TeachingEntity>> MapHandlerAsync(StrapiResponse<TeachingResponse> data)
-        => await Task.FromResult(MapHandler(data));
+    public async Task<SearchResultEntity<TeachingEntity>> HandlerAsync(StrapiResponse<TeachingResponse> data)
+        => await Task.FromResult(Handler(data));
 }

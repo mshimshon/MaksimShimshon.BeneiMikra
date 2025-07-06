@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -13,10 +13,6 @@
   <ItemGroup>
     <PackageReference Include="BlazorWasmPreRendering.Build" Version="5.0.1" />
     <PackageReference Include="CoreMap" Version="0.9.15" />
-    <PackageReference Include="FluentValidation" Version="12.0.0" />
-    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
-    <PackageReference Include="Mapster" Version="7.4.0" />
-    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
     <PackageReference Include="MediatR" Version="12.5.0" />
     <PackageReference Include="MediatR.Extensions.FluentValidation.AspNetCore" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.5" />
@@ -25,21 +21,16 @@
     <PackageReference Include="MudBlazor" Version="8.7.0" />
     <PackageReference Include="MudBlazor.Markdown" Version="8.7.0" />
     <PackageReference Include="MudBlazor.ThemeManager" Version="3.0.0" />
+    <PackageReference Include="StatePulse.Net" Version="0.9.45" />
+	<PackageReference Include="Strapi.Net" Version="0.9.21" />
+	<PackageReference Include="SwizzleV" Version="0.9.114" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Application\Services\Implementations\" />
     <Folder Include="Application\Utilities\" />
-    <Folder Include="Components\Article\" />
-    <Folder Include="Components\Bracha\" />
     <Folder Include="Infrastructure\Contracts\Shared\Blocks\Mapping\" />
     <Folder Include="Infrastructure\Utilities\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\StatePulse.NET\src\StatePulse.NET\StatePulse.NET.csproj" />
-    <ProjectReference Include="..\..\..\..\Strapi.Net\src\Strapi.Net\Strapi.Net.csproj" />
-    <ProjectReference Include="..\..\..\..\SwizzleV\src\SwizzleV\SwizzleV.csproj" />
   </ItemGroup>
 
   <ItemGroup>

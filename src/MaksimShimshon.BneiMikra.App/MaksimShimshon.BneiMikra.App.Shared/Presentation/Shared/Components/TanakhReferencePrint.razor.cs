@@ -21,13 +21,15 @@ public partial class TanakhReferencePrint : ComponentBase
 
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
 
+
     private TanakhReferencePrintViewModel ViewModel { get; set; } = default!;
     protected override async Task OnInitializedAsync()
     {
         var vmHook =
-            SwizzleFact.CreateOrGet<TanakhReferencePrintViewModel>(() => this, () => InvokeAsync(() => StateHasChanged()));
+            SwizzleFact.CreateOrGet<TanakhReferencePrintViewModel>(() => this, ShouldUpdate);
 
         ViewModel = vmHook.GetViewModel<TanakhReferencePrintViewModel>()!;
         await ViewModel.LoadAsync(BookName, Chapiter, Verse);
     }
+    private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
 }

@@ -1,9 +1,9 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Application.Features.Teachings.Repositories;
-using MaksimShimshon.BneiMikra.App.Shared.Domain.Article.Entities;
 using MaksimShimshon.BneiMikra.App.Shared.Domain.Shared.Entities;
+using MaksimShimshon.BneiMikra.App.Shared.Domain.Teaching;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Application.Features.Teachings.Queries.Handlers;
-internal class SearchTeachingsHandler : IRequestHandler<SearchTeachingsQuery, SearchResultEntity<ArticleEntity>?>
+internal class SearchTeachingsHandler : IRequestHandler<SearchTeachingsQuery, SearchResultEntity<TeachingEntity>?>
 {
     private readonly ITeachingsReadRepository _teachingsReadRepository;
 
@@ -11,6 +11,6 @@ internal class SearchTeachingsHandler : IRequestHandler<SearchTeachingsQuery, Se
     {
         _teachingsReadRepository = teachingsReadRepository;
     }
-    public async Task<SearchResultEntity<ArticleEntity>?> Handle(SearchTeachingsQuery request, CancellationToken cancellationToken)
+    public async Task<SearchResultEntity<TeachingEntity>?> Handle(SearchTeachingsQuery request, CancellationToken cancellationToken)
         => await _teachingsReadRepository.Search(request.Page);
 }

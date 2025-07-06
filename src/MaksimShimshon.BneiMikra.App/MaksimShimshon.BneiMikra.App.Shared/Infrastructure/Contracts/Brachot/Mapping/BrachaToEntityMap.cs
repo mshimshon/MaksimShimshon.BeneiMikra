@@ -14,7 +14,7 @@ internal class BrachaToEntityMap : ICoreMapHandler<BrachaResponse, BrachaEntity>
     {
         _coreMap = coreMap;
     }
-    public BrachaEntity MapHandler(BrachaResponse data) => new()
+    public BrachaEntity Handler(BrachaResponse data) => new()
     {
         Id = data.DocumentId,
         Name = data.Name,
@@ -27,6 +27,6 @@ internal class BrachaToEntityMap : ICoreMapHandler<BrachaResponse, BrachaEntity>
         }
     };
 
-    public async Task<BrachaEntity> MapHandlerAsync(BrachaResponse data)
-        => await Task.FromResult(MapHandler(data));
+    public async Task<BrachaEntity> HandlerAsync(BrachaResponse data)
+        => await Task.FromResult(Handler(data));
 }

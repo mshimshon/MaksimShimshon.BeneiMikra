@@ -17,7 +17,7 @@ internal class TeachingGetEffect : IEffect<TeachingGetAction>
         {
             await dispatcher.Prepare<TeachingGetResultAction>()
                 .With(p => p.IsLoading, true)
-                .UsingSynchronousMode()
+                .Sync()
                 .DispatchAsync();
 
             var result = await _mediator.Send(new SearchTeachingsQuery(action.Page));

@@ -16,10 +16,11 @@ public partial class HebrewSentence : ComponentBase
     protected override async Task OnInitializedAsync()
     {
         var vmHook =
-            SwizzleFact.CreateOrGet<HebrewSentenceViewModel>(() => this, () => InvokeAsync(() => StateHasChanged()));
+            SwizzleFact.CreateOrGet<HebrewSentenceViewModel>(() => this, ShouldUpdate);
 
         ViewModel = vmHook.GetViewModel<HebrewSentenceViewModel>()!;
         ViewModel.Hebrew = Hebrew;
         await ViewModel.Initialize();
     }
+    private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
 }

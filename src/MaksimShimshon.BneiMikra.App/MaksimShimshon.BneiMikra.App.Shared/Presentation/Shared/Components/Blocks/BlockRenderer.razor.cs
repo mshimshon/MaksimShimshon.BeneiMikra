@@ -24,14 +24,15 @@ public partial class BlockRenderer
     {
 
         Fragments = Blocks
-            .SkipWhile(p => Map.ContainsKey(p.Component))
+            .SkipWhile(p => !Map.ContainsKey(p.Component))
             .Select(p => Render(Map[p.Component], p.Paramaters))
             .ToList();
     }
 
     private Dictionary<string, Type> Map { get; set; } = new()
     {
-        ["MarkdownComponent"] = typeof(BlockMarkdown),
-        ["QuotationComponent"] = typeof(BlockQuotation)
+        [nameof(BlockMarkdown)] = typeof(BlockMarkdown),
+        [nameof(BlockQuotation)] = typeof(BlockQuotation),
+        [nameof(TanakhReference)] = typeof(TanakhReference)
     };
 }

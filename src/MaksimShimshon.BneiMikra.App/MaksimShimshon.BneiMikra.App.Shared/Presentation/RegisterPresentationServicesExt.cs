@@ -25,8 +25,10 @@ internal static class RegisterPresentationServicesExt
         services.AddScoped<MainMenuViewModel>();
         services.AddScoped<HomeViewModel>();
         services.AddScoped<AppTopBarViewModel>();
+        services.AddScoped<MainLayoutViewModel>();
         services.AddTransient<HebrewSentenceViewModel>();
         services.AddTransient<TanakhReferenceViewModel>();
+        services.AddTransient<TanakhReferencePrintViewModel>();
         services.AddTransient<BlockMarkdownViewModel>();
         services.AddScoped<IJavascriptProvider, JavascriptProvider>();
         services.AddScoped<ITransliterationProvider, TransliterationProvider>();

@@ -11,18 +11,18 @@ public partial class TanakhReference : ComponentBase
     [Inject] private IDialogService Dialog { get; set; } = default!;
     [Parameter] public TanakhReferenceEntity Data { get; set; } = default!;
     [Parameter] public bool UseShortName { get; set; } = false;
-
+    [Parameter] public bool DirectPrint { get; set; }
     private TanakhReferenceViewModel ViewModel { get; set; } = default!;
     protected override async Task OnInitializedAsync()
     {
         var vmHook =
-            SwizzleFact.CreateOrGet<TanakhReferenceViewModel>(() => this, () => InvokeAsync(() => StateHasChanged()));
+            SwizzleFact.CreateOrGet<TanakhReferenceViewModel>(() => this, ShouldUpdate);
 
         ViewModel = vmHook.GetViewModel<TanakhReferenceViewModel>()!;
         ViewModel.TanakhRef = Data;
         await ViewModel.Initialize();
     }
-
+    private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
     private async Task OpenDialog()
     {
         var option = new DialogOptions()

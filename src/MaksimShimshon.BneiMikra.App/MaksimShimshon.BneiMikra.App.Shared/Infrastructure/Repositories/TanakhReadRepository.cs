@@ -27,14 +27,14 @@ internal class TanakhReadRepository : ITanakhReadRepository
         _appResourceProvider = appResourceProvider;
     }
     public Task<SearchResultEntity<TanakhReferenceEntity>?> GetChapiter(TanakhBook book, int chapiter) => throw new NotImplementedException();
-    public async Task<TanakhReferenceEntity?> GetVerse(TanakhBook book, int chapiter, int verse)
+    public async Task<TanakhVerseEntity?> GetVerse(TanakhBook book, int chapiter, int verse)
     {
         var query = StrapiQueryBuilder.Create()
-        .Filter<TanakhReferenceResponse>(p => p.Book, Strapi.Net.Enums.StrapiFilterOperator.Equal, book.ToString())
-        .Filter<TanakhReferenceResponse>(p => p.Chapiter, Strapi.Net.Enums.StrapiFilterOperator.Equal, chapiter.ToString())
-        .Filter<TanakhReferenceResponse>(p => p.Verse, Strapi.Net.Enums.StrapiFilterOperator.Equal, verse.ToString())
+        .Filter<TanakhVerseResponse>(p => p.Book, p => p.ToLower(), Strapi.Net.Enums.StrapiFilterOperator.Equal, book.ToString())
+        .Filter<TanakhVerseResponse>(p => p.Chapiter, p => p.ToLower(), Strapi.Net.Enums.StrapiFilterOperator.Equal, chapiter.ToString())
+        .Filter<TanakhVerseResponse>(p => p.Verse, p => p.ToLower(), Strapi.Net.Enums.StrapiFilterOperator.Equal, verse.ToString())
         .ToQueryString("torahs");
-        var result = await _strapiClient.GetAsync<TanakhReferenceResponse>(query);
+        var result = await _strapiClient.GetAsync<TanakhVerseResponse>(query);
 
 
         if (result == default)
@@ -43,7 +43,7 @@ internal class TanakhReadRepository : ITanakhReadRepository
             throw new AppApiException(new ValidationErrorEntity() { Code = result.Error.Name, Message = result.Error.Message });
         if (result.Data != default)
         {
-            return await _coreMap.MapToAsync<TanakhReferenceResponse, TanakhReferenceEntity>(result.Data.First());
+            return await _coreMap.MapToAsync<TanakhVerseResponse, TanakhVerseEntity>(result.Data.First());
         }
         return default;
     }

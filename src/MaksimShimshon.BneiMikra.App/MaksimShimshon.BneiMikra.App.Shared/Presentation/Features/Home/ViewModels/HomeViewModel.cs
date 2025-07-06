@@ -7,7 +7,7 @@ internal class HomeViewModel
     private readonly ISwizzleViewModel _swizzleViewModel;
     private readonly IDispatcher _dispatcher;
     private readonly IStatePulse _statePulse;
-
+    public string? Category { get; set; }
     public ArticleSearchState LatestArticles => _statePulse.StateOf<ArticleSearchState>(() => this, OnStateChanged);
     public bool IsLoading => LatestArticles.IsLoading;
     public HomeViewModel(
@@ -27,8 +27,10 @@ internal class HomeViewModel
     }
     public async Task LoadAsync()
     {
-        await _dispatcher.Prepare<ArticleSearchAction>()
-            .With(p => p.SortBy, "publishedAt:desc")
-            .DispatchAsync();
+        var prepper = _dispatcher.Prepare<ArticleSearchAction>()
+            .With(p => p.SortBy, "publishedAt:desc");
+        if (Category != default)
+            prepper.With(p => p.Category, Category);
+        await prepper.DispatchAsync();
     }
 }

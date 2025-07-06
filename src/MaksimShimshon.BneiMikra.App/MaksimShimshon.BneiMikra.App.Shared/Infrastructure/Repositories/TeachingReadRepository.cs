@@ -29,7 +29,7 @@ internal class TeachingReadRepository : ITeachingsReadRepository
     public async Task<SearchResultEntity<TeachingEntity>?> Search(int page = 1)
     {
         var query = StrapiQueryBuilder.Create();
-
+        query.Populate("article");
         query.Paginate(page, 10);
         string url = query.ToQueryString("teachings");
         var result = await _strapiClient.GetAsync<TeachingResponse>(url);

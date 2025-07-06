@@ -15,7 +15,7 @@ internal class ArticleGetOneEffect : IEffect<ArticleGetOneAction>
     {
         await dispatcher.Prepare<ArticleGetOneResultAction>()
             .With(p => p.IsLoading, true)
-            .UsingSynchronousMode()
+            .Sync()
             .DispatchAsync();
         try
         {

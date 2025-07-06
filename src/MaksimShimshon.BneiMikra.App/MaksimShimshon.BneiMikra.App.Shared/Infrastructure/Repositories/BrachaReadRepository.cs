@@ -51,7 +51,7 @@ internal class BrachaReadRepository : IBrachaReadRepository
         query.Paginate(page, 10);
         if (!string.IsNullOrWhiteSpace(keywords))
             query.Search(keywords);
-        string url = query.ToQueryString("articles");
+        string url = query.ToQueryString("blessings");
         var result = await _strapiClient.GetAsync<BrachaResponse>(url);
         if (result == default)
             throw new AppUnknownException("ApiUnknownException", _appResourceProvider.GetString(() => ApplicationResource.HttpStatusCodeUnknown));

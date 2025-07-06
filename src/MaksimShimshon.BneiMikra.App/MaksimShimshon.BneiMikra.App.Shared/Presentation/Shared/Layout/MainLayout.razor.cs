@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
+using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Layout;
 public partial class MainLayout : LayoutComponentBase
@@ -28,9 +29,13 @@ public partial class MainLayout : LayoutComponentBase
     };
 
 
+    private MainLayoutViewModel ViewModel { get; set; } = default!;
+    protected override async Task OnInitializedAsync()
+    {
 
+    }
 
-
+    private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
     private bool IsLoadedApp { get; set; }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -41,6 +46,9 @@ public partial class MainLayout : LayoutComponentBase
             IsDarkMode = await MudThemeService.GetSystemDarkModeAsync();
             IsReady = true;
             StateHasChanged();
+            var vmHook = SwizzleFact.CreateOrGet<MainLayoutViewModel>(() => this, ShouldUpdate);
+            ViewModel = vmHook.GetViewModel<MainLayoutViewModel>()!;
+            await ViewModel.LoadAsync();
         }
     }
 }
