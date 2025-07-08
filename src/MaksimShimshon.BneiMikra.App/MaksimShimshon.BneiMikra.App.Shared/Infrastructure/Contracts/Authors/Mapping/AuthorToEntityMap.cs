@@ -6,20 +6,12 @@ using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Articles;
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Authors.Mapping;
 internal class AuthorToEntityMap : ICoreMapHandler<AuthorResponse, AuthorEntity>
 {
-    private readonly ICoreMap _coreMap;
-
-    public AuthorToEntityMap(ICoreMap coreMap)
-    {
-        _coreMap = coreMap;
-    }
-    public AuthorEntity Handler(AuthorResponse data) => new()
+    public AuthorEntity Handler(AuthorResponse data, ICoreMap alsoMap) => new()
     {
         Email = data.Email,
         Id = data.DocumentId,
         Name = data.Name,
-        InfoParts = data.Biography != default ? _coreMap.MapTo<ArticleResponse, AuthorEntity>(data.Biography).InfoParts : new List<BlockComponent>()
+        InfoParts = data.Biography != default ? alsoMap.MapTo<ArticleResponse, AuthorEntity>(data.Biography).InfoParts : new List<BlockComponent>()
     };
 
-    public async Task<AuthorEntity> HandlerAsync(AuthorResponse data)
-        => await Task.FromResult(Handler(data));
 }

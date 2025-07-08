@@ -8,13 +8,8 @@ using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Services.Implementation
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Brachot.Mapping;
 internal class BrachaToEntityMap : ICoreMapHandler<BrachaResponse, BrachaEntity>
 {
-    private readonly ICoreMap _coreMap;
 
-    public BrachaToEntityMap(ICoreMap coreMap)
-    {
-        _coreMap = coreMap;
-    }
-    public BrachaEntity Handler(BrachaResponse data) => new()
+    public BrachaEntity Handler(BrachaResponse data, ICoreMap alsoMap) => new()
     {
         Id = data.DocumentId,
         Name = data.Name,
@@ -23,10 +18,8 @@ internal class BrachaToEntityMap : ICoreMapHandler<BrachaResponse, BrachaEntity>
         {
             Hebrew = data.Hebrew,
             Translated = data.Translated,
-            TanakhReferences = _coreMap.MapEachTo<TanakhReferenceResponse, TanakhReferenceEntity>(data.TanakhReferences ?? new List<TanakhReferenceResponse>()).ToList(),
+            TanakhReferences = alsoMap.MapEachTo<TanakhReferenceResponse, TanakhReferenceEntity>(data.TanakhReferences ?? new List<TanakhReferenceResponse>()).ToList(),
         }
     };
 
-    public async Task<BrachaEntity> HandlerAsync(BrachaResponse data)
-        => await Task.FromResult(Handler(data));
 }

@@ -6,14 +6,9 @@ using MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Services.Implementation
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Articles.Mapping;
 internal class ArticleToEntityMap : ICoreMapHandler<ArticleResponse, ArticleEntity>
 {
-    private readonly ICoreMap _coreMap;
 
-    public ArticleToEntityMap(ICoreMap coreMap)
-    {
-        _coreMap = coreMap;
-    }
 
-    public ArticleEntity Handler(ArticleResponse data) => new()
+    public ArticleEntity Handler(ArticleResponse data, ICoreMap alsoMap) => new()
     {
         Id = data.DocumentId,
         Description = data.Description,
@@ -24,16 +19,14 @@ internal class ArticleToEntityMap : ICoreMapHandler<ArticleResponse, ArticleEnti
             data.Category.Slug
         } : new() { },
         LastRevision = data.UpdatedAt,
-        Author = data.Author != default ? _coreMap.MapTo<AuthorLiteResponse, ArticleAuthorDetailsEntity>(data.Author) : default,
+        Author = data.Author != default ? alsoMap.MapTo<AuthorLiteResponse, ArticleAuthorDetailsEntity>(data.Author) : default,
         Details = data.Blocks != default ? new()
         {
             BodyParts = data.Blocks.SkipWhile(p => !BlockMapper.Matches.ContainsKey(p.Component))
-                .Select(p => BlockMapper.Matches[p.Component](_coreMap, p.RawContent)).ToList()
+                .Select(p => BlockMapper.Matches[p.Component](alsoMap, p.RawContent)).ToList()
         } : default
     };
 
-    public async Task<ArticleEntity> HandlerAsync(ArticleResponse data)
-        => await Task.FromResult(Handler(data));
 
 
 }

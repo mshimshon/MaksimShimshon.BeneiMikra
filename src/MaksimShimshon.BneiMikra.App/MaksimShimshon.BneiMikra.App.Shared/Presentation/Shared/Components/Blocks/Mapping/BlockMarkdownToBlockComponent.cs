@@ -9,7 +9,7 @@ internal class BlockMarkdownToBlockComponent : ICoreMapHandler<BlockMarkdownResp
     {
 
     }
-    public BlockComponent Handler(BlockMarkdownResponse data)
+    public BlockComponent Handler(BlockMarkdownResponse data, ICoreMap alsoMap)
     {
         return new()
         {
@@ -21,6 +21,4 @@ internal class BlockMarkdownToBlockComponent : ICoreMapHandler<BlockMarkdownResp
         };
     }
 
-    public async Task<BlockComponent> HandlerAsync(BlockMarkdownResponse data)
-        => await Task.FromResult(Handler(data));
 }

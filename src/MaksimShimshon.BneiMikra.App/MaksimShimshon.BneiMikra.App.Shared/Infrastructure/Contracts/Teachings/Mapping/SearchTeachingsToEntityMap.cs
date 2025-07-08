@@ -6,19 +6,11 @@ using Strapi.Net.Dto;
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Contracts.Teachings.Mapping;
 internal class SearchTeachingsToEntityMap : ICoreMapHandler<StrapiResponse<TeachingResponse>, SearchResultEntity<TeachingEntity>>
 {
-    private readonly ICoreMap _coreMap;
-
-    public SearchTeachingsToEntityMap(ICoreMap coreMap)
-    {
-        _coreMap = coreMap;
-    }
-    public SearchResultEntity<TeachingEntity> Handler(StrapiResponse<TeachingResponse> data)
+    public SearchResultEntity<TeachingEntity> Handler(StrapiResponse<TeachingResponse> data, ICoreMap alsoMap)
         => new SearchResultEntity<TeachingEntity>()
         {
-            Entities = _coreMap.MapEachTo<TeachingResponse, TeachingEntity>(data.Data),
+            Entities = alsoMap.MapEachTo<TeachingResponse, TeachingEntity>(data.Data),
             Page = data.Meta?.Pagination?.Page ?? 1,
             TotalPage = data.Meta?.Pagination?.PageCount ?? 1
         };
-    public async Task<SearchResultEntity<TeachingEntity>> HandlerAsync(StrapiResponse<TeachingResponse> data)
-        => await Task.FromResult(Handler(data));
 }
