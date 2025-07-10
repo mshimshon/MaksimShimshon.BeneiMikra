@@ -16,7 +16,7 @@ internal class AuthorGetOneEffect : IEffect<AuthorGetOneAction>
     {
         await dispatcher.Prepare<AuthorGetOneResultAction>()
             .With(p => p.IsLoading, true)
-            .UsingSynchronousMode()
+            .Await()
             .DispatchAsync();
         try
         {

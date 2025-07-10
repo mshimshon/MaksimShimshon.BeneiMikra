@@ -17,7 +17,7 @@ internal class ArticleSearchEffect : IEffect<ArticleSearchAction>
         {
             await dispatcher.Prepare<ArticleSearchResultAction>()
                 .With(p => p.IsLoading, true)
-                .Sync()
+                .Await()
                 .DispatchAsync();
 
             var result = await _mediator.Send(new GetManyArticlesQuery()

@@ -17,7 +17,7 @@ internal class BrachaGetOneEffect : IEffect<BrachaGetOneAction>
         {
             await dispatcher.Prepare<BrachaGetOneResultAction>()
                 .With(p => p.IsLoading, true)
-                .UsingSynchronousMode()
+                .Await()
                 .DispatchAsync();
             var result = await _mediator.Send(new GetBrachaByIdQuery(action.DocumentId));
             await dispatcher.Prepare<BrachaGetOneResultAction>()

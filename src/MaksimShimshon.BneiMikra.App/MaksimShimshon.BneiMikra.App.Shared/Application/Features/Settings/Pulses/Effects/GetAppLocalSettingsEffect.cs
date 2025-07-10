@@ -15,7 +15,7 @@ internal class GetAppLocalSettingsEffect : IEffect<GetAppLocalSettingsAction>
         try
         {
             await dispatcher.Prepare<AppSettingsStartLoadingAction>()
-                .UsingSynchronousMode().DispatchAsync();
+                .Await().DispatchAsync();
             var result = await _appSettingsReadRepository.LoadLocalSettings();
             await dispatcher.Prepare<GetAppLocalSettingsResultAction>()
                 .With(p => p.Result, result)

@@ -15,7 +15,7 @@ internal class GetAppSettingsEffect : IEffect<GetAppSettingsAction>
         try
         {
             await dispatcher.Prepare<AppSettingsStartLoadingAction>()
-                .UsingSynchronousMode().DispatchAsync();
+                .Await().DispatchAsync();
             var result = await _appSettingsReadRepository.LoadSettings();
             await dispatcher.Prepare<GetAppSettingsResultAction>()
                 .With(p => p.Result, result)
