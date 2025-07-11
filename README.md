@@ -36,6 +36,13 @@ If you're not, may this offer you an honest window into who we truly are.
 
 > "We are not Rabbinic. We are not a sect. We are Israelites seeking Torah truth — directly from Scripture as B'nei Mikra (Children of the Scriptures)."
 
+## Special Thanks
+None of these groups are associated in any way to this project, but they have helped me in my journey through their incredible work for modernizing Karaite Scriptures.
+- [Karaite Jews of America](https://www.karaites.org)
+- [Karaite Press Store](https://the-karaite-press.myshopify.com/)
+- [The Ancients Blue](https://www.theancientsblue.com/)
+
+
 # Development
 ### Clean Architecture
 This project uses clean architecture for its front-end so structural is very important for contributors.
