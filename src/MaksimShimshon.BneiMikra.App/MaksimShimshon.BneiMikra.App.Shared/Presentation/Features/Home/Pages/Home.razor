@@ -1,0 +1,39 @@
+@inherits ComponentBase
+@page "/"
+@using MaksimShimshon.BneiMikra.App.Shared.Application.Resources
+@using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Articles.Components
+@using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components
+@using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components.Blocks
+@using Microsoft.AspNetCore.Components.Web
+@using MudBlazor
+@using SwizzleV
+@inject IDispatcher Dispatcher
+@inject ISwizzleFactory SwizzleFact
+<PageTitle>@("B'nei Mikra - Home")</PageTitle>
+
+<MudGrid>
+    @if (_viewModel.IsLoading)
+    {
+        <MudItem xs="12">
+            <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
+        </MudItem>
+
+    }
+    else if (_viewModel.LatestArticles.Result != default && _viewModel.LatestArticles.Result.Entities.Count > 0)
+    {
+        @foreach (var item in _viewModel.LatestArticles.Result.Entities)
+        {
+            <MudItem xs="12" sm="6" md="4" lg="3">
+                <ArticleLiteItem Data=item />
+            </MudItem>
+        }
+    }
+    else
+    {
+        <MudItem xs="12">
+            <MudText>
+                @AppResourceProvider.GetString(() => ApplicationResource.HttpStatusNotFoundDescription)
+            </MudText>
+        </MudItem>
+    }
+</MudGrid>

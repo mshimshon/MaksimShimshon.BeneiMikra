@@ -1,0 +1,18 @@
+@using MudBlazor
+@inherits ComponentBase
+
+<MudCard Class="d-flex justify-center ">
+    <MudCardHeader>
+        <CardHeaderContent>
+            <MudText Typo="Typo.h6">@Data.Title</MudText>
+        </CardHeaderContent>
+    </MudCardHeader>
+    <MudCardContent>
+        <MudText Typo="Typo.body2">@Data.Description</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudButton Href=@($"/article/{Data.Id}") Variant="Variant.Text" Color="Color.Primary">
+            Read more
+        </MudButton>
+    </MudCardActions>
+</MudCard>

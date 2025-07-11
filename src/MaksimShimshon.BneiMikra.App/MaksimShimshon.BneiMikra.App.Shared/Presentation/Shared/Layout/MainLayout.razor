@@ -1,0 +1,20 @@
+﻿@using MudBlazor
+@inherits LayoutComponentBase
+<MudThemeProvider Theme=@MyCustomTheme IsDarkMode=@IsDarkMode @ref=MudThemeService />
+<MudPopoverProvider/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
+@if (IsReady)
+{
+    <MudLayout >
+        <AppTopBar />
+        <MainMenu />
+
+
+        <MudMainContent Class="main-content">
+            @Body
+        </MudMainContent>
+    </MudLayout>
+
+}

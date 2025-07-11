@@ -1,0 +1,14 @@
+<MudPaper Square=true Style="padding:0.8em; margin:0.5em">
+    <blockquote cite=@(Cite ?? "")>
+        <MudText Typo=@Typo.caption>
+            @($"\"{(MarkupString)Quote}\"")
+        </MudText>
+        @if (!string.IsNullOrWhiteSpace(Cite))
+        {
+            <br/>
+            <cite>
+                @($"—{Cite}")
+            </cite>
+        }
+    </blockquote>
+</MudPaper>

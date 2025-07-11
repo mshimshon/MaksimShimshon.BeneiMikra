@@ -1,0 +1,38 @@
+@inherits ComponentBase
+@page "/article/{Id}"
+@using MaksimShimshon.BneiMikra.App.Shared.Application.Resources
+@using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components
+@using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components.Blocks
+@using Microsoft.AspNetCore.Components.Web
+@using MudBlazor
+@using SwizzleV
+@inject IDispatcher Dispatcher
+@inject ISwizzleFactory SwizzleFact
+<PageTitle>@($"B'nei Mikra - {Id}")</PageTitle>
+<MudGrid Justify=@Justify.Center>
+    @if (_articleViewModel.IsLoading)
+    {
+        <MudItem xs="12">
+            <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
+        </MudItem>
+    }
+    else if (_articleViewModel.State.Result != default && _articleViewModel.State.Result.Details != default)
+    {
+        <MudItem xs="12" md="6">
+            <MudText Align=@Align.Center Typo=Typo.h3>@_articleViewModel.State.Result.Title</MudText>
+            <MudText Align=@Align.Center Typo=Typo.body1>@_articleViewModel.State.Result.Description</MudText>
+        </MudItem>
+        <MudFlexBreak />
+        <MudItem md="6">
+            <BlockRenderer Blocks=@_articleViewModel.State.Result.Details.BodyParts />
+        </MudItem>
+    }
+    else
+    {
+        <MudItem xs="12">
+            <MudText>
+                @AppResourceProvider.GetString(() => ApplicationResource.HttpStatusNotFoundDescription)
+            </MudText>
+        </MudItem>
+    }
+</MudGrid>

@@ -1,0 +1,37 @@
+@inherits ComponentBase
+@page "/author/{Id}"
+@using MaksimShimshon.BneiMikra.App.Shared.Application.Resources
+@using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components
+@using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components.Blocks
+@using Microsoft.AspNetCore.Components.Web
+@using MudBlazor
+@using SwizzleV
+@inject IDispatcher Dispatcher
+@inject ISwizzleFactory SwizzleFact
+<PageTitle>@($"B'nei Mikra - ")</PageTitle>
+<MudGrid>
+
+    <MudItem xs="10">
+        @if (_viewModel.IsLoading)
+        {
+            <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
+
+        }
+        else if (_viewModel.ViewState.Author != default && _viewModel.ViewState.Author.InfoParts.Count > 0)
+        {
+            <MudText Typo=@Typo.h5>
+                @_viewModel.ViewState.Author.Name
+            </MudText>
+
+            <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
+            <BlockRenderer Blocks=@_viewModel.ViewState.Author.InfoParts />
+        }
+        else
+        {
+            <MudText Typo=@Typo.body1>
+                @_viewModel.ApplicationResourceProvider.GetString(() => ApplicationResource.GenericIncompleSection)
+            </MudText>
+        }
+
+    </MudItem>
+</MudGrid>

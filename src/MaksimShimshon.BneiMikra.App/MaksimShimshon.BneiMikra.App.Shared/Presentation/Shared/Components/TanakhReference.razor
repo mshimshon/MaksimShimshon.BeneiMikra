@@ -1,0 +1,20 @@
+@inherits ComponentBase
+
+@if (DirectPrint)
+{
+    <MudPaper Square=true Outlined=true Style="padding: 0.8em;margin: 0.5em;">
+        <MudText Typo=@Typo.subtitle2>
+            @($"{(UseShortName ? ViewModel.ReferenceAbreviation : ViewModel.RefereneceName)}:")
+        </MudText>
+        <TanakhReferencePrint BookName=@Data.Reference.Book Chapiter=@Data.Reference.Chapiter Verse=@Data.Reference.Verse />
+    </MudPaper>
+
+}
+else
+{
+    <MudChip T="string" Color="Color.Primary" OnClose=OpenDialog CloseIcon="@Icons.Material.Filled.Link">
+        @(UseShortName ? ViewModel.ReferenceAbreviation : ViewModel.RefereneceName)
+    </MudChip>
+
+}
+

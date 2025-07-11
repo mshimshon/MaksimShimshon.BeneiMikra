@@ -1,10 +1,9 @@
 ﻿using Foundation;
 
-namespace MaksimShimshon.BneiMikra.App
+namespace MaksimShimshon.BneiMikra.App;
+
+[Register("AppDelegate")]
+public class AppDelegate : MauiUIApplicationDelegate
 {
-    [Register("AppDelegate")]
-    public class AppDelegate : MauiUIApplicationDelegate
-    {
-        protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
-    }
+    protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
 }

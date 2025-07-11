@@ -1,0 +1,14 @@
+@using MudBlazor
+<MudCard>
+    <MudCardHeader>
+        <CardHeaderContent>
+            <MudText Typo="Typo.h6">
+                @Data.Name
+            </MudText>
+        </CardHeaderContent>
+        <CardHeaderActions>
+            @* <MudIconButton Icon=@Gender Color=Color.Secondary Disabled=true /> *@
+            <MudIconButton Href=@($"/bracha/{Data.Id}") Icon="@Icons.Material.Filled.Link" Color="Color.Primary" />
+        </CardHeaderActions>
+    </MudCardHeader>
+</MudCard>

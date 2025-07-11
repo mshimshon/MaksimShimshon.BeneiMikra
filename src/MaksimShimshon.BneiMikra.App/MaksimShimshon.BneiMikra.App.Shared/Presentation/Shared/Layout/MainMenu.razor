@@ -1,0 +1,54 @@
+@inherits ComponentBase
+<MudDrawer @ref=Menu Open=@ViewModel.MainMenuState.IsOpened OpenChanged=@ViewModel.OnMenuExternalChanged
+           Overlay=true OverlayAutoClose=true>
+    <MudNavMenu >
+        <MudNavLink Ripple=true Href="/" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home" OnClick=@(()=>AutoClose("/"))>
+            @ApplicationResourceProvider.GetString(() => ApplicationResource.MainMenuHome)
+        </MudNavLink>
+        <MudNavGroup Ripple=true Title=@ApplicationResourceProvider.GetString(() => ApplicationResource.MainMenuArticleCategories) Icon=@Icons.Material.Filled.Article Expanded="true">
+            <MudNavLink Ripple=true Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Newspaper" OnClick=@(()=>AutoClose("/?cat=news"))>
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryNews)
+            </MudNavLink>
+            <MudNavLink Ripple=true Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Book" OnClick=@(()=>AutoClose("/?cat=scripture"))>
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryScripture)
+            </MudNavLink>
+            <MudNavLink Ripple=true Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.NaturePeople" OnClick=@(()=>AutoClose("/?cat=stories"))>
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryStories)
+            </MudNavLink>
+            <MudNavLink Ripple=true Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Handshake" OnClick=@(()=>AutoClose("/?cat=consensus"))>
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryConsensus)
+            </MudNavLink>
+            <MudNavLink Ripple=true Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.QuestionMark" OnClick=@(()=>AutoClose("/?cat=essays"))>
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryEssays)
+            </MudNavLink>
+            <MudNavLink Ripple=true Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.History" OnClick=@(()=>AutoClose("/?cat=history"))>
+                @ApplicationResourceProvider.GetString(() => ApplicationResource.ArticleCategoryHistory)
+            </MudNavLink>
+        </MudNavGroup>
+        @if (ViewModel.TeachingState.Result != default && ViewModel.TeachingState.Result.Entities.Count > 0)
+        {
+            <MudNavGroup Ripple=true Title=@ApplicationResourceProvider.GetString(() => ApplicationResource.MainMenuTeachings) 
+                Icon=@Icons.Material.Filled.School Expanded="true">
+                @foreach (var teaching in (ViewModel.TeachingState.Result.Entities))
+                {
+                    <MudNavLink Ripple=true Match="NavLinkMatch.Prefix"
+                                OnClick=@(()=>AutoClose($"/article/{teaching.ArticleId}"))>
+                        @teaching.Name
+                    </MudNavLink>
+                }
+            </MudNavGroup>
+        }
+        <MudNavLink Ripple=true Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Star" OnClick=@(()=>AutoClose("/brachot"))>
+            @ApplicationResourceProvider.GetString(() => ApplicationResource.MainMenuBlessing)
+        </MudNavLink>
+        @* <MudNavGroup Ripple=true Title=@ApplicationResourceProvider.GetString(() => ApplicationResource.MainMenuSupport) Icon=@Icons.Material.Filled.Store Expanded="true"> *@
+        @*     <MudNavLink Ripple=true Match="NavLinkMatch.Prefix" OnClick=@(()=>AutoClose($"/chalef"))> *@
+        @*         @ApplicationResourceProvider.GetString(() => ApplicationResource.MainMenuChalef) *@
+        @*     </MudNavLink> *@
+        @* </MudNavGroup> *@
+        @* <MudNavLink Ripple=true Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Girl" OnClick=@(()=>AutoClose(""))> *@
+        @*     @ApplicationResourceProvider.GetString(() => ApplicationResource.MainMenuAbout) *@
+        @* </MudNavLink> *@
+    </MudNavMenu>
+
+</MudDrawer>

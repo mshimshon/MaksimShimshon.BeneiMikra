@@ -3,7 +3,6 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
 namespace MaksimShimshon.BneiMikra.App
-{
     internal class Program : MauiApplication
     {
         protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
@@ -14,4 +13,3 @@ namespace MaksimShimshon.BneiMikra.App
             app.Run(args);
         }
     }
-}
