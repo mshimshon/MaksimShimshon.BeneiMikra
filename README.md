@@ -1,4 +1,4 @@
-﻿# BeneiMikra  
+﻿# B'nei Mikra Application
 
 **BeneiMikra** is an open-source front-end project created to share, preserve, and providing accurate information on Karaite Jewish beliefs, culture, and traditions — directly from a Karaite perspective. 
 This initiative is both personal and communal: it's my own journey as a Torah-loving Karaite, and an invitation for others to contribute. 
