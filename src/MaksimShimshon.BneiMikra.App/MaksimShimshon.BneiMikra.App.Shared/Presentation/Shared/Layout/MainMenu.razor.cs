@@ -10,6 +10,7 @@ public partial class MainMenu : ComponentBase
     [Inject] private NavigationManager Navigator { get; set; } = default!;
     private MudDrawer Menu { get; set; } = default!;
     private MainMenuViewModel ViewModel { get; set; } = default!;
+
     protected override async Task OnInitializedAsync()
     {
         var vmHook = SwizzleFact.CreateOrGet<MainMenuViewModel>(() => this, ShouldUpdate);

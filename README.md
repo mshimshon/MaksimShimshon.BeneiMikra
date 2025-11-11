@@ -7,7 +7,7 @@ This project invites Karaite and non-Karaite alike to explore our way of life wi
 For too long, Karaite Judaism has been explained by outsiders who often mischaracterize or diminish our practices. 
 **BeneiMikra** aims to change that. It is a tool to **educate**, **connect**, and **inspire** through insights and Karaite teachings.
 
-## 🔹 What the app will include:
+## What the app will include:
 - **Personal Essays & Reflections**  
   On Torah living, challenges faced by converts, diaspora identity, and walking a Karaite path in modern times.
 
