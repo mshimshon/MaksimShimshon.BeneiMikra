@@ -54,7 +54,7 @@ internal class ArticleReadRepository : IArticleReadRepository
     {
         var query = StrapiQueryBuilder.Create();
 
-
+        query.Populate("category");
         if (!string.IsNullOrWhiteSpace(category))
             query.Filter<ArticleResponse>(p => p.Category!, p => p.ToLower(), Strapi.Net.Enums.StrapiFilterOperator.Equal, category);
         else
