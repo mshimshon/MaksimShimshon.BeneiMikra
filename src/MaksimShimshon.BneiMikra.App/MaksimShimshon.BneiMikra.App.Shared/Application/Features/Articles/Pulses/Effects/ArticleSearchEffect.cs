@@ -23,7 +23,7 @@ internal class ArticleSearchEffect : IEffect<ArticleSearchAction>
             var result = await _mediator.Send(new GetManyArticlesQuery()
             {
                 Categories = action.Category,
-                Keywords = action.Category,
+                //Keywords = action.Category,
                 Page = action.Page
             });
 
