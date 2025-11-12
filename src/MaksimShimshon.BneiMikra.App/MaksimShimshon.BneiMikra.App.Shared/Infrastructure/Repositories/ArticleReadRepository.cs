@@ -54,10 +54,11 @@ internal class ArticleReadRepository : IArticleReadRepository
     {
         var query = StrapiQueryBuilder.Create();
 
-        query.Filter<ArticleResponse>(p => p.Category!, p => p.ToLower(), Strapi.Net.Enums.StrapiFilterOperator.IsNull, "false");
 
         if (!string.IsNullOrWhiteSpace(category))
             query.Filter<ArticleResponse>(p => p.Category!, p => p.ToLower(), Strapi.Net.Enums.StrapiFilterOperator.Equal, category);
+        else
+            query.Filter<ArticleResponse>(p => p.Category!, p => p.ToLower(), Strapi.Net.Enums.StrapiFilterOperator.IsNull, "false");
 
         if (!string.IsNullOrWhiteSpace(sortBy))
             query.AddSort(sortBy);
