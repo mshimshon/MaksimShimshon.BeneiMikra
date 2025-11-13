@@ -21,7 +21,8 @@
     <PackageReference Include="MudBlazor" Version="8.7.0" />
     <PackageReference Include="MudBlazor.Markdown" Version="8.7.0" />
     <PackageReference Include="MudBlazor.ThemeManager" Version="3.0.0" />
-    <PackageReference Include="StatePulse.Net" Version="1.0.1" />
+    <PackageReference Include="StatePulse.Net" Version="1.0.1.1" />
+    <PackageReference Include="StatePulse.Net.Abstractions" Version="1.0.1" />
 	<PackageReference Include="Strapi.Net" Version="1.0.0" />
 	<PackageReference Include="SwizzleV" Version="0.9.120" />
   </ItemGroup>
