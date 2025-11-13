@@ -23,7 +23,7 @@ internal class StrapiClient : IStrapiClient
 #if DEBUG
         _client.BaseAddress = new("http://localhost:1337/api/");
 #else
-        _client.BaseAddress = new("https://bneimikra.fiscorax.com/api/");
+        _client.BaseAddress = new("https://api.bneimikra.com/api/");
 #endif
     }
     private async Task<TResult?> RequestHandler<TResult>(Func<Task<TResult>> call)
