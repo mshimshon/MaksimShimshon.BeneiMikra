@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MaksimShimshon.BneiMikra.App.Wasm",
   "resources": {
-    "hash": "sha256-NMD35IAgjNq8miaGhcLFlT49k86BpxfRH56IIx9SN7k=",
+    "hash": "sha256-Gz8ho+2q/V+xU8ErS+3wA1QmqfFIgVU0zbVBVsJitpM=",
     "fingerprinting": {
       "CoreMap.ftmicmn5gd.wasm": "CoreMap.wasm",
       "FluentValidation.2fwp8qd62z.wasm": "FluentValidation.wasm",
@@ -62,8 +62,8 @@
       "System.Threading.ff2vmnk05t.wasm": "System.Threading.wasm",
       "netstandard.6h1pmkzwiz.wasm": "netstandard.wasm",
       "System.Private.CoreLib.q1p86yiqaz.wasm": "System.Private.CoreLib.wasm",
-      "MaksimShimshon.BneiMikra.App.Shared.vuqlzno88a.wasm": "MaksimShimshon.BneiMikra.App.Shared.wasm",
-      "MaksimShimshon.BneiMikra.App.Wasm.kaqq747g4c.wasm": "MaksimShimshon.BneiMikra.App.Wasm.wasm",
+      "MaksimShimshon.BneiMikra.App.Shared.c9qhm7qrsj.wasm": "MaksimShimshon.BneiMikra.App.Shared.wasm",
+      "MaksimShimshon.BneiMikra.App.Wasm.e4n7ln2pdb.wasm": "MaksimShimshon.BneiMikra.App.Wasm.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.9ih887ebfz.js": "dotnet.native.js",
       "dotnet.native.21mns4qp4i.wasm": "dotnet.native.wasm",
@@ -148,8 +148,8 @@
       "System.Text.RegularExpressions.hca9xljw09.wasm": "sha256-oQFuLISD/XR6hMGfEBM3wHmL2nVEnGJyPBotfmdp5OQ=",
       "System.Threading.ff2vmnk05t.wasm": "sha256-C/AUG9JZAC5iks6D3bDfW96IeOqOyh+0V7svrdir2HA=",
       "netstandard.6h1pmkzwiz.wasm": "sha256-uql/6tEx53Zjty/zXjzEPuHcT6njnWk1ISy4VbEhQ2I=",
-      "MaksimShimshon.BneiMikra.App.Shared.vuqlzno88a.wasm": "sha256-yUW/8ixV/dOo4F1MmMt4WMPqHJKJyrAYjepIN1O8I9U=",
-      "MaksimShimshon.BneiMikra.App.Wasm.kaqq747g4c.wasm": "sha256-ZJFtEW5bBovR41Xgh+QYmG3VbOO0rQdVwfspPvwhgaI="
+      "MaksimShimshon.BneiMikra.App.Shared.c9qhm7qrsj.wasm": "sha256-0K5Ek6LwXszt9Rn+/8kI9eoF9ciIiYviwTEmX3J56hc=",
+      "MaksimShimshon.BneiMikra.App.Wasm.e4n7ln2pdb.wasm": "sha256-Mj5g6ipd9yHnaaEAIUHVh480hSU/T0h0rrVqjG6ZwgE="
     },
     "libraryInitializers": {
       "_content/BlazorWasmPreRendering.Build/BlazorWasmPreRendering.Build.lfyg69o9wu.lib.module.js": "sha256-UVy3L6kXaa89JN6tg+EbiLCuVLpkmxOoG6sAi7Bb9uc="
