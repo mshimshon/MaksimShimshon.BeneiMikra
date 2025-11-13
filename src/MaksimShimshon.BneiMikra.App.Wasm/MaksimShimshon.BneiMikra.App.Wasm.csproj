@@ -16,9 +16,5 @@
   <ItemGroup>
     <ProjectReference Include="..\MaksimShimshon.BneiMikra.App\MaksimShimshon.BneiMikra.App.Shared\MaksimShimshon.BneiMikra.App.Shared.csproj" />
   </ItemGroup>
-	<ItemGroup>
-		<TrimmerRootAssembly Include="StatePulse.Net" />
-		<TrimmerRootAssembly Include="StatePulse.Net.Abstractions" />
-	</ItemGroup>
 
 </Project>
