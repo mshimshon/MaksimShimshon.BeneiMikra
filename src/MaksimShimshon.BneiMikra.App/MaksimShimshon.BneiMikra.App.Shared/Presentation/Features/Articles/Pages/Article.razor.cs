@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Components;
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Articles.Pages;
 public partial class Article : ComponentBase
 {
-    [Parameter] public string Id { set; get; }
+    [Parameter] public string Id { set; get; } = default!;
     private ArticleViewModel _articleViewModel = default!;
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
 

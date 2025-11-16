@@ -18,6 +18,9 @@ public partial class BlockMarkdown
         var vmHook =
             SwizzleFact.CreateOrGet<BlockMarkdownViewModel>(() => this, ShouldUpdate);
         ViewModel = vmHook.GetViewModel<BlockMarkdownViewModel>()!;
+
+        ViewModel.Body = Body;
+        await ViewModel.Initialize();
     }
 
     private async Task ShouldUpdate() => await _swizzleViewModel.SpreadChanges(() => this);
