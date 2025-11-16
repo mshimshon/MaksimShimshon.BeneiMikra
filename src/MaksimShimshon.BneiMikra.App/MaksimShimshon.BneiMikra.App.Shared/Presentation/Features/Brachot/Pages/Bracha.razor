@@ -28,7 +28,7 @@
             <MudText Align=@Align.Center Typo=@Typo.subtitle1>
                 @AppResourceProvider.GetString(() => ApplicationResource.BrachaTitle)
             </MudText>
-            <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
+            <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle Invisible=false />
 
             <MudPaper Style="padding:1em">
                 <HebrewSentence Hebrew=@_viewModel.ViewState.Result.Details.Hebrew 
