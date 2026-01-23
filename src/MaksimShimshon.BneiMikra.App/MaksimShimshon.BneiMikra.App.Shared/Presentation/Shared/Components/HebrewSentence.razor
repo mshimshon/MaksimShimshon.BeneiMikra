@@ -43,7 +43,12 @@
             {
                 <TanakhReference Data=@item />
             }
+            <Divider VerticalSpacing="1em" Invisible />
+            <MudAlert Severity=@Severity.Warning>
+                @AppResourceProvider.GetString(() => ApplicationResource.TanakhReferenceMistakeWarning)
+        </MudAlert>
         </MudItem>
+        
     }
 </MudGrid>
 

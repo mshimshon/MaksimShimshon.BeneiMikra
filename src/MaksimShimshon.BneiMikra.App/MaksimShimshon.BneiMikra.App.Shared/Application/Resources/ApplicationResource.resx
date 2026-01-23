@@ -393,4 +393,7 @@
   <data name="HttpStatusCodeBadRequest" xml:space="preserve">
     <value>Cannot process request 'Bad Request'.</value>
   </data>
+  <data name="TanakhReferenceMistakeWarning" xml:space="preserve">
+    <value>I have referenced each part with the best of my knowledge, if you find where i was wrong please do let me know.</value>
+  </data>
 </root>

@@ -19,7 +19,7 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Application.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class ApplicationResource {
@@ -214,7 +214,7 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Application.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bad Request.
+        ///   Looks up a localized string similar to Cannot process request &apos;Bad Request&apos;..
         /// </summary>
         public static string HttpStatusCodeBadRequest {
             get {
@@ -849,6 +849,15 @@ namespace MaksimShimshon.BneiMikra.App.Shared.Application.Resources {
         public static string TanakhBookYirmeyahuShort {
             get {
                 return ResourceManager.GetString("TanakhBookYirmeyahuShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I have referenced each part with the best of my knowledge, if you find where i was wrong please do let me know..
+        /// </summary>
+        public static string TanakhReferenceMistakeWarning {
+            get {
+                return ResourceManager.GetString("TanakhReferenceMistakeWarning", resourceCulture);
             }
         }
         
