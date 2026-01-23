@@ -2,12 +2,23 @@
 
 @if (DirectPrint)
 {
-    <MudPaper Square=true Outlined=true Style="padding: 0.8em;margin: 0.5em;">
+    @if (UseNoMudPaper)
+    {
         <MudText Typo=@Typo.subtitle2>
             @($"{(UseShortName ? ViewModel.ReferenceAbreviation : ViewModel.RefereneceName)}:")
         </MudText>
-        <TanakhReferencePrint BookName=@Data.Reference.Book Chapiter=@Data.Reference.Chapiter Verse=@Data.Reference.Verse />
-    </MudPaper>
+        <TanakhReferencePrint BookName=@Data.Reference.Book Chapiter=@Data.Reference.Chapiter Verse=@Data.Reference.Verse ShowTranslation />
+    }
+    else
+    {
+        <MudPaper Square=true Outlined=true Style="padding: 0.8em;margin: 0.5em;">
+            <MudText Typo=@Typo.subtitle2>
+                @($"{(UseShortName ? ViewModel.ReferenceAbreviation : ViewModel.RefereneceName)}:")
+            </MudText>
+            <TanakhReferencePrint BookName=@Data.Reference.Book Chapiter=@Data.Reference.Chapiter Verse=@Data.Reference.Verse ShowTranslation />
+        </MudPaper>
+    }
+
 
 }
 else

@@ -13,6 +13,7 @@ public partial class TanakhReference : ComponentBase
     [Parameter] public TanakhReferenceEntity Data { get; set; } = default!;
     [Parameter] public bool UseShortName { get; set; } = false;
     [Parameter] public bool DirectPrint { get; set; }
+    [Parameter] public bool UseNoMudPaper { get; set; }
     private TanakhReferenceViewModel ViewModel { get; set; } = default!;
     protected override async Task OnInitializedAsync()
     {
