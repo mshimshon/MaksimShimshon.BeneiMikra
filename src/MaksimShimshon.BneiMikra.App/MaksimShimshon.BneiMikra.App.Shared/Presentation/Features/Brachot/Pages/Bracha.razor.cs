@@ -4,9 +4,10 @@ using MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Brachot.ViewMode
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Features.Brachot.Pages;
+
 public partial class Bracha
 {
-    [Parameter] public string Id { set; get; }
+    [Parameter] public string Id { set; get; } = default!;
     private BrachaViewModel _viewModel = default!;
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
     protected override async Task OnInitializedAsync()

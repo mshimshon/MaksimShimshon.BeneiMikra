@@ -11,6 +11,7 @@ using Strapi.Net;
 using Strapi.Net.Dto;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Infrastructure.Repositories;
+
 internal class BrachaReadRepository : IBrachaReadRepository
 {
     private readonly IStrapiClient _strapiClient;
@@ -27,7 +28,11 @@ internal class BrachaReadRepository : IBrachaReadRepository
     }
     public async Task<BrachaEntity?> GetById(string id)
     {
-        var result = await _strapiClient.GetAsync<BrachaResponse>($"blessings/{id}");
+        var query = StrapiQueryBuilder.Create();
+        query.PopulateAll();
+        string url = query.ToQueryString($"blessings/{id}");
+
+        var result = await _strapiClient.GetAsync<BrachaResponse>(url);
         if (result == default)
             throw new AppUnknownException("ApiUnknownException", _appResourceProvider.GetString(() => ApplicationResource.HttpStatusCodeUnknown));
         if (result.Error != default)

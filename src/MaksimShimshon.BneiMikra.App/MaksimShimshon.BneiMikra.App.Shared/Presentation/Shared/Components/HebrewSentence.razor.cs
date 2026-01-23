@@ -5,12 +5,16 @@ using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components;
+
 public partial class HebrewSentence : ComponentBase
 {
     [Parameter] public string Hebrew { get; set; } = default!;
     [Parameter] public string? Translation { get; set; }
     [Parameter] public List<TanakhReferenceEntity>? ScripturalReferences { get; set; }
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
+
+    [Parameter] public bool TranslationShown { get; set; }
+    [Parameter] public bool CanHideTranslation { get; set; }
 
     private HebrewSentenceViewModel ViewModel { get; set; } = default!;
     protected override async Task OnInitializedAsync()
@@ -21,6 +25,10 @@ public partial class HebrewSentence : ComponentBase
         ViewModel = vmHook.GetViewModel<HebrewSentenceViewModel>()!;
         ViewModel.Hebrew = Hebrew;
         await ViewModel.Initialize();
+    }
+
+    protected override void OnParametersSet()
+    {
     }
     private async Task ShouldUpdate() => await InvokeAsync(StateHasChanged);
 }

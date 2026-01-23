@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
+
 internal class HebrewSentenceViewModel
 {
     private readonly ITransliterationProvider _transliterationProvider;
@@ -16,7 +17,6 @@ internal class HebrewSentenceViewModel
 
     public async Task Initialize()
     {
-        Transliteration = (MarkupString)await _transliterationProvider.TransliterateAsync(Hebrew);
+        Transliteration = (MarkupString)_transliterationProvider.Transliterate(Hebrew);
     }
-
 }

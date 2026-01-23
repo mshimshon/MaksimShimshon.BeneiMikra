@@ -5,6 +5,7 @@ using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components;
+
 public partial class TanakhReferencePrint : ComponentBase
 {
     [Parameter]
@@ -19,6 +20,8 @@ public partial class TanakhReferencePrint : ComponentBase
     [Parameter]
     public string? Note { get; set; }
 
+    [Parameter]
+    public bool ShowTranslation { get; set; }
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;
 
 

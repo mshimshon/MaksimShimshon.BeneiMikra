@@ -1,21 +1,53 @@
+@using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components.Blocks
 @inherits ComponentBase
-
-<MudText dir="rtl" lang="he" Align=@Align.Right> @ViewModel.Hebrew </MudText>
-<Divider VerticalSpacing="0.3em" Invisible=true />
-<MudText Align=@Align.Left>@ViewModel.Transliteration)
-</MudText>
-@if (!string.IsNullOrWhiteSpace(Translation))
-{
-    <Divider VerticalSpacing="0.3em" Invisible=true />
-    <MudText Align=@Align.Left> @Translation </MudText>
-}
-
-@if (ScripturalReferences != default && ScripturalReferences.Count > 0)
-{
-    <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
-    @foreach (var item in ScripturalReferences)
+<MudGrid>
+    <MudItem xs="12" md="6">
+        <MudText dir="ltr" lang="he" Align=@Align.Right Style="white-space: pre-line;unicode-bidi:isolate;">
+            <BlockMarkdown Body=@(((MarkupString)ViewModel.Hebrew).ToString()) />
+        </MudText>
+    </MudItem>
+    <MudItem xs="12" md="6">
+        <MudText Align=@Align.Left Style="white-space: pre-line;unicode-bidi:isolate;">
+            @(ViewModel.Transliteration)
+        </MudText>
+    </MudItem>
+    @if (!string.IsNullOrWhiteSpace(Translation))
     {
-        <TanakhReference Data=@item />
-    }
+        <MudItem xs="12">
+            <MudStack Spacing="2">
+                @if (CanHideTranslation)
+                {
+                    <MudButton OnClick=@(() => TranslationShown = !TranslationShown)>
+                        @(TranslationShown ? "Hide English" : "Show English")
+                    </MudButton>
+                }
 
-}
+                <MudCollapse Expanded=@TranslationShown>
+                    <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
+                    <MudText Align=@Align.Center Style="white-space: pre-line;unicode-bidi:isolate;">
+                        <BlockMarkdown Body=@(((MarkupString)Translation).ToString()) />
+
+                    </MudText>
+                </MudCollapse>
+            </MudStack>
+
+
+
+        </MudItem>
+    }
+    @if (ScripturalReferences != default && ScripturalReferences.Count > 0)
+    {
+        <MudItem xs="12">
+            <Divider VerticalSpacing="1em" DividerType=@DividerType.Middle />
+            @foreach (var item in ScripturalReferences)
+            {
+                <TanakhReference Data=@item />
+            }
+        </MudItem>
+    }
+</MudGrid>
+
+
+
+
+

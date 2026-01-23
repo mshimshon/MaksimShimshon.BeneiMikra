@@ -10,7 +10,9 @@
 }
 else if (ViewModel.TanakhVerse != default)
 {
-    <HebrewSentence Hebrew=@ViewModel.TanakhVerse.Hebrew Translation=@ViewModel.TanakhVerse.Translated />
+    <HebrewSentence Hebrew=@ViewModel.TanakhVerse.Hebrew Translation=@ViewModel.TanakhVerse.Translated 
+        TranslationShown =@ShowTranslation 
+        CanHideTranslation=false />
     @if (!string.IsNullOrWhiteSpace(Note))
     {
         <Divider VerticalSpacing="1em" />

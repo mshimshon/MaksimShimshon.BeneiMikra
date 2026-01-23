@@ -5,6 +5,7 @@ using MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.ViewModels;
 using Microsoft.AspNetCore.Components;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Shared.Components;
+
 public partial class TanakhReference : ComponentBase
 {
     [Inject] private IResourceProvider<ApplicationResource> AppResourceProvider { get; set; } = default!;

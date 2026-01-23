@@ -1,11 +1,10 @@
 ﻿using MaksimShimshon.BneiMikra.App.Shared.Presentation.Services.Interfaces;
 
 namespace MaksimShimshon.BneiMikra.App.Shared.Presentation.Services.Implementation.Transliterator;
+
 internal class TransliterationProvider : ITransliterationProvider
 {
     public string Transliterate(string hebrewText, TransliteratorSchema? schema = null)
-        => TransliterateAsync(hebrewText, schema).GetAwaiter().GetResult();
-    public async Task<string> TransliterateAsync(string hebrewText, TransliteratorSchema? schema = null)
     {
         if (schema == default) schema = new();
         if (string.IsNullOrWhiteSpace(hebrewText)) return "";
@@ -15,6 +14,14 @@ internal class TransliterationProvider : ITransliterationProvider
 
         while (i < hebrewText.Length)
         {
+            var currentChar = hebrewText[i];
+
+            if (currentChar == '\r' || currentChar == '\n')
+            {
+                output.Add(currentChar.ToString());
+                i++;
+                continue;
+            }
             // Check for special word match (greedy)
             var matchedSpecial = false;
             foreach (var kvp in schema.SpecialWords)
@@ -49,7 +56,6 @@ internal class TransliterationProvider : ITransliterationProvider
             if (matchedCombo)
                 continue;
 
-            var currentChar = hebrewText[i];
 
 
             // Handle niqqud (vowel marks)
@@ -72,6 +78,7 @@ internal class TransliterationProvider : ITransliterationProvider
             i++;
         }
 
-        return await Task.FromResult(string.Join("", output));
+        return string.Join("", output);
     }
+
 }
