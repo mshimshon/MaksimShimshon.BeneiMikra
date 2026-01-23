@@ -8,7 +8,7 @@
     </MudItem>
     <MudItem xs="12" md="6">
         <MudText Align=@Align.Left Style="white-space: pre-line;unicode-bidi:isolate;">
-            @(ViewModel.Transliteration)
+            <BlockMarkdown Body=@(ViewModel.Transliteration.ToString()) />
         </MudText>
     </MudItem>
     @if (!string.IsNullOrWhiteSpace(Translation))

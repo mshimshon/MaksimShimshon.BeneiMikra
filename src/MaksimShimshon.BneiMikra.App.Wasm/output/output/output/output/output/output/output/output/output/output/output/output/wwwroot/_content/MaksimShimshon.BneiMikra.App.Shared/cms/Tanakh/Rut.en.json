@@ -1,0 +1,767 @@
+[
+  {
+    "Hebrew": "וַיְהִ֗י בִּימֵי֙ שְׁפֹ֣ט הַשֹּׁפְטִ֔ים וַיְהִ֥י רָעָ֖ב בָּאָ֑רֶץ וַיֵּ֨לֶךְ אִ֜ישׁ מִבֵּ֧ית לֶ֣חֶם יְהוּדָ֗ה לָגוּר֙ בִּשְׂדֵ֣י מוֹאָ֔ב ה֥וּא וְאִשְׁתּ֖וֹ וּשְׁנֵ֥י בָנָֽיו׃",
+    "Translated": "In the days when the chieftains ruled, there was a famine in the land; and a man of Bethlehem in Judah, with his wife and two sons, went to reside in the country of Moab.",
+    "Transliteration": "vayehiy viymey shefot hashofetiym vayehiy raav vaarets vayelekhe iysh miveyt lechem yehudah lagur vishedey mvoav hu veishetvo usheney vanayv",
+    "Chapter": 1,
+    "Verse": 1,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְשֵׁ֣ם הָאִ֣ישׁ אֱֽלִימֶ֡לֶךְ וְשֵׁם֩ אִשְׁתּ֨וֹ נׇעֳמִ֜י וְשֵׁ֥ם שְׁנֵֽי־בָנָ֣יו <b>׀</b> מַחְל֤וֹן וְכִלְיוֹן֙ אֶפְרָתִ֔ים מִבֵּ֥ית לֶ֖חֶם יְהוּדָ֑ה וַיָּבֹ֥אוּ שְׂדֵֽי־מוֹאָ֖ב וַיִּֽהְיוּ־שָֽׁם׃",
+    "Translated": "The man’s name was Elimelech, his wife’s name was Naomi, and his two sons were named Mahlon and Chilion—Ephrathites of Bethlehem in Judah. They came to the country of Moab and remained there.",
+    "Transliteration": "veshem haiysh eliymelekhe veshem ishetvo nׇomiy veshem sheney-vanayv <b></b> machelvon vekhileyvon eferatiym miveyt lechem yehudah vayavou shedey-mvoav vayiheyu-sham",
+    "Chapter": 1,
+    "Verse": 2,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיָּ֥מׇת אֱלִימֶ֖לֶךְ אִ֣ישׁ נׇעֳמִ֑י וַתִּשָּׁאֵ֥ר הִ֖יא וּשְׁנֵ֥י בָנֶֽיהָ׃",
+    "Translated": "Elimelech, Naomi’s husband, died; and she was left with her two sons.",
+    "Transliteration": "vayamׇt eliymelekhe iysh nׇomiy vatishaer hiy usheney vaneyha",
+    "Chapter": 1,
+    "Verse": 3,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיִּשְׂא֣וּ לָהֶ֗ם נָשִׁים֙ מֹֽאֲבִיּ֔וֹת שֵׁ֤ם הָאַחַת֙ עׇרְפָּ֔ה וְשֵׁ֥ם הַשֵּׁנִ֖ית ר֑וּת וַיֵּ֥שְׁבוּ שָׁ֖ם כְּעֶ֥שֶׂר שָׁנִֽים׃",
+    "Translated": "They married Moabite women, one named Orpah and the other Ruth, and they lived there about ten years.",
+    "Transliteration": "vayisheu lahem nashiym moaviyyvot shem haachat ׇrefah veshem hasheniyt rut vayeshevu sham kheesher shaniym",
+    "Chapter": 1,
+    "Verse": 4,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיָּמֻ֥תוּ גַם־שְׁנֵיהֶ֖ם מַחְל֣וֹן וְכִלְי֑וֹן וַתִּשָּׁאֵר֙ הָֽאִשָּׁ֔ה מִשְּׁנֵ֥י יְלָדֶ֖יהָ וּמֵאִישָֽׁהּ׃",
+    "Translated": "Then those two—Mahlon and Chilion—also died; so the woman was left without her two sons and without her husband.",
+    "Transliteration": "vayamutu gam-sheneyhem machelvon vekhileyvon vatishaer haishah misheney yeladeyha umeiyshah",
+    "Chapter": 1,
+    "Verse": 5,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתָּ֤קׇם הִיא֙ וְכַלֹּתֶ֔יהָ וַתָּ֖שׇׁב מִשְּׂדֵ֣י מוֹאָ֑ב כִּ֤י שָֽׁמְעָה֙ בִּשְׂדֵ֣ה מוֹאָ֔ב כִּֽי־פָקַ֤ד יְהֹוָה֙ אֶת־עַמּ֔וֹ לָתֵ֥ת לָהֶ֖ם לָֽחֶם׃",
+    "Translated": "She started out with her daughters-in-law to return from the country of Moab; for in the country of Moab she had heard that the L<small>ORD</small> had taken note of His people and given them food.",
+    "Transliteration": "vatakׇm hiy vekhaloteyha vatashׇv mishedey mvoav khiy shameah vishedeh mvoav khiy-fakad yehovah et-amvo latet lahem lachem",
+    "Chapter": 1,
+    "Verse": 6,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֵּצֵ֗א מִן־הַמָּקוֹם֙ אֲשֶׁ֣ר הָֽיְתָה־שָּׁ֔מָּה וּשְׁתֵּ֥י כַלּוֹתֶ֖יהָ עִמָּ֑הּ וַתֵּלַ֣כְנָה בַדֶּ֔רֶךְ לָשׁ֖וּב אֶל־אֶ֥רֶץ יְהוּדָֽה׃",
+    "Translated": "Accompanied by her two daughters-in-law, she left the place where she had been living; and they set out on the road back to the land of Judah.",
+    "Transliteration": "vatetse min-hamakvom asher hayetah-shamah ushetey khalvoteyha imah vatelakhenah vaderekhe lashuv el-erets yehudah",
+    "Chapter": 1,
+    "Verse": 7,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֤אמֶר נׇעֳמִי֙ לִשְׁתֵּ֣י כַלֹּתֶ֔יהָ לֵ֣כְנָה שֹּׁ֔בְנָה אִשָּׁ֖ה לְבֵ֣ית אִמָּ֑הּ <span class=\"mam-kq\"><span class=\"mam-kq-k\">(יעשה)</span> <span class=\"mam-kq-q\">[יַ֣עַשׂ]</span></span> יְהֹוָ֤ה עִמָּכֶם֙ חֶ֔סֶד כַּאֲשֶׁ֧ר עֲשִׂיתֶ֛ם עִם־הַמֵּתִ֖ים וְעִמָּדִֽי׃",
+    "Translated": "But Naomi said to her two daughters-in-law, “Turn back, each of you to her mother’s house. May the L<small>ORD</small> deal kindly with you, as you have dealt with the dead and with me!",
+    "Transliteration": "vatomer nׇomiy lishetey khaloteyha lekhenah shovenah ishah leveyt imah <span class=\"mam-kq\"><span class=\"mam-kq-k\">(yshh)</span> <span class=\"mam-kq-q\">[yaash]</span></span> yehovah imakhem chesed khaasher ashiytem im-hametiym veimadiy",
+    "Chapter": 1,
+    "Verse": 8,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "יִתֵּ֤ן יְהֹוָה֙ לָכֶ֔ם וּמְצֶ֣אןָ מְנוּחָ֔ה אִשָּׁ֖ה בֵּ֣ית אִישָׁ֑הּ וַתִּשַּׁ֣ק לָהֶ֔ן וַתִּשֶּׂ֥אנָה קוֹלָ֖ן וַתִּבְכֶּֽינָה׃",
+    "Translated": "May the L<small>ORD</small> grant that each of you find security in the house of a husband!” And she kissed them farewell. They broke into weeping",
+    "Transliteration": "yiten yehovah lakhem umetsena menuchah ishah veyt iyshah vatishak lahen vatishenah kvolan vativekheynah",
+    "Chapter": 1,
+    "Verse": 9,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּאמַ֖רְנָה־לָּ֑הּ כִּֽי־אִתָּ֥ךְ נָשׁ֖וּב לְעַמֵּֽךְ׃",
+    "Translated": "and said to her, “No, we will return with you to your people.”",
+    "Transliteration": "vatomarenah-lah khiy-itakhe nashuv leamekhe",
+    "Chapter": 1,
+    "Verse": 10,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֤אמֶר נׇעֳמִי֙ שֹׁ֣בְנָה בְנֹתַ֔י לָ֥מָּה תֵלַ֖כְנָה עִמִּ֑י הַעֽוֹד־לִ֤י בָנִים֙ בְּֽמֵעַ֔י וְהָי֥וּ לָכֶ֖ם לַאֲנָשִֽׁים׃",
+    "Translated": "But Naomi replied, “Turn back, my daughters! Why should you go with me? Have I any more sons in my body who might be husbands for you?",
+    "Transliteration": "vatomer nׇomiy shovenah venotay lamah telakhenah imiy havod-liy vaniym vemeay vehayu lakhem laanashiym",
+    "Chapter": 1,
+    "Verse": 11,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "שֹׁ֤בְנָה בְנֹתַי֙ לֵ֔כְןָ כִּ֥י זָקַ֖נְתִּי מִהְי֣וֹת לְאִ֑ישׁ כִּ֤י אָמַ֙רְתִּי֙ יֶשׁ־לִ֣י תִקְוָ֔ה גַּ֣ם הָיִ֤יתִי הַלַּ֙יְלָה֙ לְאִ֔ישׁ וְגַ֖ם יָלַ֥דְתִּי בָנִֽים׃",
+    "Translated": "Turn back, my daughters, for I am too old to be married. Even if I thought there was hope for me, even if I were married tonight and I also bore sons,",
+    "Transliteration": "shovenah venotay lekhena khiy zakanetiy miheyvot leiysh khiy amaretiy yesh-liy tikevah gam hayiytiy halayelah leiysh vegam yaladetiy vaniym",
+    "Chapter": 1,
+    "Verse": 12,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "הֲלָהֵ֣ן <b>׀</b> תְּשַׂבֵּ֗רְנָה עַ֚ד אֲשֶׁ֣ר יִגְדָּ֔לוּ הֲלָהֵן֙ תֵּעָגֵ֔נָה לְבִלְתִּ֖י הֱי֣וֹת לְאִ֑ישׁ אַ֣ל בְּנֹתַ֗י כִּֽי־מַר־לִ֤י מְאֹד֙ מִכֶּ֔ם כִּֽי־יָצְאָ֥ה בִ֖י יַד־יְהֹוָֽה׃",
+    "Translated": "should you wait for them to grow up? Should you on their account debar yourselves from marriage? Oh no, my daughters! My lot is far more bitter than yours, for the hand of the L<small>ORD</small> has struck out against me.”",
+    "Transliteration": "halahen <b></b> teshaverenah ad asher yigedalu halahen teagenah leviletiy heyvot leiysh al venotay khiy-mar-liy meod mikhem khiy-yatseah viy yad-yehovah",
+    "Chapter": 1,
+    "Verse": 13,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתִּשֶּׂ֣נָה קוֹלָ֔ן וַתִּבְכֶּ֖ינָה ע֑וֹד וַתִּשַּׁ֤ק עׇרְפָּה֙ לַחֲמוֹתָ֔הּ וְר֖וּת דָּ֥בְקָה בָּֽהּ׃",
+    "Translated": "They broke into weeping again, and Orpah kissed her mother-in-law farewell. But Ruth clung to her.",
+    "Transliteration": "vatishenah kvolan vativekheynah vod vatishak ׇrefah lachamvotah verut davekah vah",
+    "Chapter": 1,
+    "Verse": 14,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֗אמֶר הִנֵּה֙ שָׁ֣בָה יְבִמְתֵּ֔ךְ אֶל־עַמָּ֖הּ וְאֶל־אֱלֹהֶ֑יהָ שׁ֖וּבִי אַחֲרֵ֥י יְבִמְתֵּֽךְ׃",
+    "Translated": "So she said, “See, your sister-in-law has returned to her people and her gods. Go follow your sister-in-law.”",
+    "Transliteration": "vatomer hineh shavah yevimetekhe el-amah veel-eloheyha shuviy acharey yevimetekhe",
+    "Chapter": 1,
+    "Verse": 15,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֤אמֶר רוּת֙ אַל־תִּפְגְּעִי־בִ֔י לְעׇזְבֵ֖ךְ לָשׁ֣וּב מֵאַחֲרָ֑יִךְ כִּ֠י אֶל־אֲשֶׁ֨ר תֵּלְכִ֜י אֵלֵ֗ךְ וּבַאֲשֶׁ֤ר תָּלִ֙ינִי֙ אָלִ֔ין עַמֵּ֣ךְ עַמִּ֔י וֵאלֹהַ֖יִךְ אֱלֹהָֽי׃",
+    "Translated": "But Ruth replied, “Do not urge me to leave you, to turn back and not follow you. For wherever you go, I will go; wherever you lodge, I will lodge; your people shall be my people, and your God my God.",
+    "Transliteration": "vatomer rut al-tifegeiy-viy leׇzevekhe lashuv meacharayiikhe khiy el-asher telekhiy elekhe uvaasher taliyniy aliyn amekhe amiy velohayiikhe elohay",
+    "Chapter": 1,
+    "Verse": 16,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "בַּאֲשֶׁ֤ר תָּמ֙וּתִי֙ אָמ֔וּת וְשָׁ֖ם אֶקָּבֵ֑ר כֹּה֩ יַעֲשֶׂ֨ה יְהֹוָ֥ה לִי֙ וְכֹ֣ה יוֹסִ֔יף כִּ֣י הַמָּ֔וֶת יַפְרִ֖יד בֵּינִ֥י וּבֵינֵֽךְ׃",
+    "Translated": "Where you die, I will die, and there I will be buried. Thus and more may the L<small>ORD</small> do to me if anything but death parts me from you.”",
+    "Transliteration": "vaasher tamutiy amut vesham ekaver khoh yaasheh yehovah liy vekhoh yvosiyf khiy hamavet yaferiyd veyniy uveynekhe",
+    "Chapter": 1,
+    "Verse": 17,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֵּ֕רֶא כִּֽי־מִתְאַמֶּ֥צֶת הִ֖יא לָלֶ֣כֶת אִתָּ֑הּ וַתֶּחְדַּ֖ל לְדַבֵּ֥ר אֵלֶֽיהָ׃",
+    "Translated": "When [Naomi] saw how determined she was to go with her, she ceased to argue with her;",
+    "Transliteration": "vatere khiy-miteametset hiy lalekhet itah vatechedal ledaver eleyha",
+    "Chapter": 1,
+    "Verse": 18,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֵּלַ֣כְנָה שְׁתֵּיהֶ֔ם עַד־בּוֹאָ֖נָה בֵּ֣ית לָ֑חֶם וַיְהִ֗י כְּבוֹאָ֙נָה֙ בֵּ֣ית לֶ֔חֶם וַתֵּהֹ֤ם כׇּל־הָעִיר֙ עֲלֵיהֶ֔ן וַתֹּאמַ֖רְנָה הֲזֹ֥את נׇעֳמִֽי׃",
+    "Translated": "and the two went on until they reached Bethlehem.<br/>When they arrived in Bethlehem, the whole city buzzed with excitement over them. The women said, “Can this be Naomi?”",
+    "Transliteration": "vatelakhenah sheteyhem ad-vvoanah veyt lachem vayehiy khevvoanah veyt lechem vatehom khׇl-haiyr aleyhen vatomarenah hazot nׇomiy",
+    "Chapter": 1,
+    "Verse": 19,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֣אמֶר אֲלֵיהֶ֔ן אַל־תִּקְרֶ֥אנָה לִ֖י נׇעֳמִ֑י קְרֶ֤אןָ לִי֙ מָרָ֔א כִּֽי־הֵמַ֥ר שַׁדַּ֛י לִ֖י מְאֹֽד׃",
+    "Translated": "“Do not call me Naomi,” she replied. “Call me Mara, for Shaddai has made my lot very bitter.",
+    "Transliteration": "vatomer aleyhen al-tikerenah liy nׇomiy kerena liy mara khiy-hemar shaday liy meod",
+    "Chapter": 1,
+    "Verse": 20,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "אֲנִי֙ מְלֵאָ֣ה הָלַ֔כְתִּי וְרֵיקָ֖ם הֱשִׁיבַ֣נִי יְהֹוָ֑ה לָ֣מָּה תִקְרֶ֤אנָה לִי֙ נׇעֳמִ֔י וַֽיהֹוָה֙ עָ֣נָה בִ֔י וְשַׁדַּ֖י הֵ֥רַֽע לִֽי׃",
+    "Translated": "I went away full, and the L<small>ORD</small> has brought me back empty. How can you call me Naomi, when the L<small>ORD</small> has dealt harshly with me, when Shaddai has brought misfortune upon me!”",
+    "Transliteration": "aniy meleah halakhetiy vereykam heshiyvaniy yehovah lamah tikerenah liy nׇomiy vayhovah anah viy veshaday hera liy",
+    "Chapter": 1,
+    "Verse": 21,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתָּ֣שׇׁב נׇעֳמִ֗י וְר֨וּת הַמּוֹאֲבִיָּ֤ה כַלָּתָהּ֙ עִמָּ֔הּ הַשָּׁ֖בָה מִשְּׂדֵ֣י מוֹאָ֑ב וְהֵ֗מָּה בָּ֚אוּ בֵּ֣ית לֶ֔חֶם בִּתְחִלַּ֖ת קְצִ֥יר שְׂעֹרִֽים׃",
+    "Translated": "Thus Naomi returned from the country of Moab; she returned with her daughter-in-law Ruth the Moabite. They arrived in Bethlehem at the beginning of the barley harvest.",
+    "Transliteration": "vatashׇv nׇomiy verut hamvoaviyah khalatah imah hashavah mishedey mvoav vehemah vau veyt lechem vitechilat ketsiyr sheoriym",
+    "Chapter": 1,
+    "Verse": 22,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וּֽלְנׇעֳמִ֞י <span class=\"mam-kq\"><span class=\"mam-kq-k\">(מידע)</span> <span class=\"mam-kq-q\">[מוֹדָ֣ע]</span></span> לְאִישָׁ֗הּ אִ֚ישׁ גִּבּ֣וֹר חַ֔יִל מִמִּשְׁפַּ֖חַת אֱלִימֶ֑לֶךְ וּשְׁמ֖וֹ בֹּֽעַז׃",
+    "Translated": "Now Naomi had a kinsman on her husband’s side, a man of substance, of the family of Elimelech, whose name was Boaz.",
+    "Transliteration": "ulenׇomiy <span class=\"mam-kq\"><span class=\"mam-kq-k\">(myd)</span> <span class=\"mam-kq-q\">[mvoda]</span></span> leiyshah iysh givvor chayiil mimishefachat eliymelekhe ushemvo voaz",
+    "Chapter": 2,
+    "Verse": 1,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֩אמֶר֩ ר֨וּת הַמּוֹאֲבִיָּ֜ה אֶֽל־נׇעֳמִ֗י אֵלְכָה־נָּ֤א הַשָּׂדֶה֙ וַאֲלַקֳּטָ֣ה בַֽשִּׁבֳּלִ֔ים אַחַ֕ר אֲשֶׁ֥ר אֶמְצָא־חֵ֖ן בְּעֵינָ֑יו וַתֹּ֥אמֶר לָ֖הּ לְכִ֥י בִתִּֽי׃",
+    "Translated": "Ruth the Moabite said to Naomi, “I would like to go to the fields and glean among the ears of grain, behind someone who may show me kindness.” “Yes, daughter, go,” she replied;",
+    "Transliteration": "vatomer rut hamvoaviyah el-nׇomiy elekhah-na hashadeh vaalakotah vashivoliym achar asher emetsa-chen veeynayv vatomer lah lekhiy vitiy",
+    "Chapter": 2,
+    "Verse": 2,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֵּ֤לֶךְ וַתָּבוֹא֙ וַתְּלַקֵּ֣ט בַּשָּׂדֶ֔ה אַחֲרֵ֖י הַקֹּצְרִ֑ים וַיִּ֣קֶר מִקְרֶ֔הָ חֶלְקַ֤ת הַשָּׂדֶה֙ לְבֹ֔עַז אֲשֶׁ֖ר מִמִּשְׁפַּ֥חַת אֱלִימֶֽלֶךְ׃",
+    "Translated": "and off she went. She came and gleaned in a field, behind the reapers; and, as luck would have it, it was the piece of land belonging to Boaz, who was of Elimelech’s family.",
+    "Transliteration": "vatelekhe vatavvo vatelaket vashadeh acharey hakotseriym vayiker mikereha chelekat hashadeh levoaz asher mimishefachat eliymelekhe",
+    "Chapter": 2,
+    "Verse": 3,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְהִנֵּה־בֹ֗עַז בָּ֚א מִבֵּ֣ית לֶ֔חֶם וַיֹּ֥אמֶר לַקּוֹצְרִ֖ים יְהֹוָ֣ה עִמָּכֶ֑ם וַיֹּ֥אמְרוּ ל֖וֹ יְבָרֶכְךָ֥ יְהֹוָֽה׃",
+    "Translated": "Presently Boaz arrived from Bethlehem. He greeted the reapers, “The L<small>ORD</small> be with you!” And they responded, “The L<small>ORD</small> bless you!”",
+    "Transliteration": "vehineh-voaz va miveyt lechem vayomer lakvotseriym yehovah imakhem vayomeru lvo yevarekhekha yehovah",
+    "Chapter": 2,
+    "Verse": 4,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֤אמֶר בֹּ֙עַז֙ לְנַֽעֲר֔וֹ הַנִּצָּ֖ב עַל־הַקּוֹצְרִ֑ים לְמִ֖י הַנַּעֲרָ֥ה הַזֹּֽאת׃",
+    "Translated": "Boaz said to the servant who was in charge of the reapers, “Whose girl is that?”",
+    "Transliteration": "vayomer voaz lenaarvo hanitsav al-hakvotseriym lemiy hanaarah hazot",
+    "Chapter": 2,
+    "Verse": 5,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיַּ֗עַן הַנַּ֛עַר הַנִּצָּ֥ב עַל־הַקּוֹצְרִ֖ים וַיֹּאמַ֑ר נַעֲרָ֤ה מֽוֹאֲבִיָּה֙ הִ֔יא הַשָּׁ֥בָה עִֽם־נׇעֳמִ֖י מִשְּׂדֵ֥י מוֹאָֽב׃",
+    "Translated": "The servant in charge of the reapers replied, “She is a Moabite girl who came back with Naomi from the country of Moab.",
+    "Transliteration": "vayaan hanaar hanitsav al-hakvotseriym vayomar naarah mvoaviyah hiy hashavah im-nׇomiy mishedey mvoav",
+    "Chapter": 2,
+    "Verse": 6,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֗אמֶר אֲלַקֳּטָה־נָּא֙ וְאָסַפְתִּ֣י בָעֳמָרִ֔ים אַחֲרֵ֖י הַקּוֹצְרִ֑ים וַתָּב֣וֹא וַֽתַּעֲמ֗וֹד מֵאָ֤ז הַבֹּ֙קֶר֙ וְעַד־עַ֔תָּה זֶ֛ה שִׁבְתָּ֥הּ הַבַּ֖יִת מְעָֽט׃",
+    "Translated": "She said, ‘Please let me glean and gather among the sheaves behind the reapers.’ She has been on her feet ever since she came this morning. She has rested but little in the hut.”",
+    "Transliteration": "vatomer alakotah-na veasafetiy vaomariym acharey hakvotseriym vatavvo vataamvod meaz havoker vead-atah zeh shivetah havayiit meat",
+    "Chapter": 2,
+    "Verse": 7,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֩אמֶר֩ בֹּ֨עַז אֶל־ר֜וּת הֲל֧וֹא שָׁמַ֣עַתְּ בִּתִּ֗י אַל־תֵּֽלְכִי֙ לִלְקֹט֙ בְּשָׂדֶ֣ה אַחֵ֔ר וְגַ֛ם לֹ֥א תַעֲבוּרִ֖י מִזֶּ֑ה וְכֹ֥ה תִדְבָּקִ֖ין עִם־נַעֲרֹתָֽי׃",
+    "Translated": "Boaz said to Ruth, “Listen to me, daughter. Don’t go to glean in another field. Don’t go elsewhere, but stay here close to my girls.",
+    "Transliteration": "vayomer voaz el-rut halvo shamaate vitiy al-telekhiy lilekot veshadeh acher vegam lo taavuriy mizeh vekhoh tidevakiyn im-naarotay",
+    "Chapter": 2,
+    "Verse": 8,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "עֵינַ֜יִךְ בַּשָּׂדֶ֤ה אֲשֶׁר־יִקְצֹרוּן֙ וְהָלַ֣כְתְּ אַחֲרֵיהֶ֔ן הֲל֥וֹא צִוִּ֛יתִי אֶת־הַנְּעָרִ֖ים לְבִלְתִּ֣י נׇגְעֵ֑ךְ וְצָמִ֗ת וְהָלַכְתְּ֙ אֶל־הַכֵּלִ֔ים וְשָׁתִ֕ית מֵאֲשֶׁ֥ר יִשְׁאֲב֖וּן הַנְּעָרִֽים׃",
+    "Translated": "Keep your eyes on the field they are reaping, and follow them. I have ordered the men not to molest you. And when you are thirsty, go to the jars and drink some of [the water] that the men have drawn.”",
+    "Transliteration": "eynayiikhe vashadeh asher-yiketsorun vehalakhete achareyhen halvo tsiviytiy et-haneariym leviletiy nׇgeekhe vetsamit vehalakhete el-hakheliym veshatiyt measher yisheavun haneariym",
+    "Chapter": 2,
+    "Verse": 9,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתִּפֹּל֙ עַל־פָּנֶ֔יהָ וַתִּשְׁתַּ֖חוּ אָ֑רְצָה וַתֹּ֣אמֶר אֵלָ֗יו מַדּ֩וּעַ֩ מָצָ֨אתִי חֵ֤ן בְּעֵינֶ֙יךָ֙ לְהַכִּירֵ֔נִי וְאָנֹכִ֖י נׇכְרִיָּֽה׃",
+    "Translated": "She prostrated herself with her face to the ground, and said to him, “Why are you so kind as to single me out, when I am a foreigner?”",
+    "Transliteration": "vatifol al-faneyha vatishetachu aretsah vatomer elayv madua matsatiy chen veeyneykha lehakhiyreniy veanokhiy nׇkheriyah",
+    "Chapter": 2,
+    "Verse": 10,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיַּ֤עַן בֹּ֙עַז֙ וַיֹּ֣אמֶר לָ֔הּ הֻגֵּ֨ד הֻגַּ֜ד לִ֗י כֹּ֤ל אֲשֶׁר־עָשִׂית֙ אֶת־חֲמוֹתֵ֔ךְ אַחֲרֵ֖י מ֣וֹת אִישֵׁ֑ךְ וַתַּעַזְבִ֞י אָבִ֣יךְ וְאִמֵּ֗ךְ וְאֶ֙רֶץ֙ מֽוֹלַדְתֵּ֔ךְ וַתֵּ֣לְכִ֔י אֶל־עַ֕ם אֲשֶׁ֥ר לֹא־יָדַ֖עַתְּ תְּמ֥וֹל שִׁלְשֽׁוֹם׃",
+    "Translated": "Boaz said in reply, “I have been told of all that you did for your mother-in-law after the death of your husband, how you left your father and mother and the land of your birth and came to a people you had not known before.",
+    "Transliteration": "vayaan voaz vayomer lah huged hugad liy khol asher-ashiyt et-chamvotekhe acharey mvot iyshekhe vataazeviy aviykhe veimekhe veerets mvoladetekhe vatelekhiy el-am asher lo-yadaate temvol shileshvom",
+    "Chapter": 2,
+    "Verse": 11,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "יְשַׁלֵּ֥ם יְהֹוָ֖ה פׇּעֳלֵ֑ךְ וּתְהִ֨י מַשְׂכֻּרְתֵּ֜ךְ שְׁלֵמָ֗ה מֵעִ֤ם יְהֹוָה֙ אֱלֹהֵ֣י יִשְׂרָאֵ֔ל אֲשֶׁר־בָּ֖את לַחֲס֥וֹת תַּחַת־כְּנָפָֽיו׃",
+    "Translated": "May the L<small>ORD</small> reward your deeds. May you have a full recompense from the L<small>ORD</small>, the God of Israel, under whose wings you have sought refuge!”",
+    "Transliteration": "yeshalem yehovah fׇolekhe utehiy mashekhuretekhe shelemah meim yehovah elohey yisherael asher-vat lachasvot tachat-khenafayv",
+    "Chapter": 2,
+    "Verse": 12,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַ֠תֹּ֠אמֶר אֶמְצָא־חֵ֨ן בְּעֵינֶ֤יךָ אֲדֹנִי֙ כִּ֣י נִֽחַמְתָּ֔נִי וְכִ֥י דִבַּ֖רְתָּ עַל־לֵ֣ב שִׁפְחָתֶ֑ךָ וְאָֽנֹכִי֙ לֹ֣א אֶהְיֶ֔ה כְּאַחַ֖ת שִׁפְחֹתֶֽיךָ׃",
+    "Translated": "She answered, “You are most kind, my lord, to comfort me and to speak gently to your maidservant—though I am not so much as one of your maidservants.”",
+    "Transliteration": "vatomer emetsa-chen veeyneykha adoniy khiy nichametaniy vekhiy divareta al-lev shifechatekha veanokhiy lo eheyeh kheachat shifechoteykha",
+    "Chapter": 2,
+    "Verse": 13,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֩אמֶר֩ לָ֨הֿ בֹ֜עַז לְעֵ֣ת הָאֹ֗כֶל גֹּ֤שִֽׁי הֲלֹם֙ וְאָכַ֣לְתְּ מִן־הַלֶּ֔חֶם וְטָבַ֥לְתְּ פִּתֵּ֖ךְ בַּחֹ֑מֶץ וַתֵּ֙שֶׁב֙ מִצַּ֣ד הַקֹּצְרִ֔ים וַיִּצְבׇּט־לָ֣הּ קָלִ֔י וַתֹּ֥אכַל וַתִּשְׂבַּ֖ע וַתֹּתַֽר׃",
+    "Translated": "At mealtime, Boaz said to her, “Come over here and partake of the meal, and dip your morsel in the vinegar.” So she sat down beside the reapers. He handed her roasted grain, and she ate her fill and had some left over.",
+    "Transliteration": "vayomer lahֿ voaz leet haokhel goshiy halom veakhalete min-halechem vetavalete fitekhe vachomets vateshev mitsad hakotseriym vayitsevׇt-lah kaliy vatokhal vatisheva vatotar",
+    "Chapter": 2,
+    "Verse": 14,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתָּ֖קׇם לְלַקֵּ֑ט וַיְצַו֩ בֹּ֨עַז אֶת־נְעָרָ֜יו לֵאמֹ֗ר גַּ֣ם בֵּ֧ין הָעֳמָרִ֛ים תְּלַקֵּ֖ט וְלֹ֥א תַכְלִימֽוּהָ׃",
+    "Translated": "When she got up again to glean, Boaz gave orders to his workers, “You are not only to let her glean among the sheaves, without interference,",
+    "Transliteration": "vatakׇm lelaket vayetsav voaz et-nearayv lemor gam veyn haomariym telaket velo takheliymuha",
+    "Chapter": 2,
+    "Verse": 15,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְגַ֛ם שֹׁל־תָּשֹׁ֥לּוּ לָ֖הּ מִן־הַצְּבָתִ֑ים וַעֲזַבְתֶּ֥ם וְלִקְּטָ֖ה וְלֹ֥א תִגְעֲרוּ־בָֽהּ׃",
+    "Translated": "but you must also pull some [stalks] out of the heaps and leave them for her to glean, and not scold her.”",
+    "Transliteration": "vegam shol-tasholu lah min-hatsevatiym vaazavetem veliketah velo tigearu-vah",
+    "Chapter": 2,
+    "Verse": 16,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתְּלַקֵּ֥ט בַּשָּׂדֶ֖ה עַד־הָעָ֑רֶב וַתַּחְבֹּט֙ אֵ֣ת אֲשֶׁר־לִקֵּ֔טָה וַיְהִ֖י כְּאֵיפָ֥ה שְׂעֹרִֽים׃",
+    "Translated": "She gleaned in the field until evening. Then she beat out what she had gleaned—it was about an <i>ephah</i> of barley—",
+    "Transliteration": "vatelaket vashadeh ad-haarev vatachevot et asher-liketah vayehiy kheeyfah sheoriym",
+    "Chapter": 2,
+    "Verse": 17,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתִּשָּׂא֙ וַתָּב֣וֹא הָעִ֔יר וַתֵּ֥רֶא חֲמוֹתָ֖הּ אֵ֣ת אֲשֶׁר־לִקֵּ֑טָה וַתּוֹצֵא֙ וַתִּתֶּן־לָ֔הּ אֵ֥ת אֲשֶׁר־הוֹתִ֖רָה מִשׇּׂבְעָֽהּ׃",
+    "Translated": "and carried it back with her to the town. When her mother-in-law saw what she had gleaned, and when she also took out and gave her what she had left over after eating her fill,",
+    "Transliteration": "vatisha vatavvo haiyr vatere chamvotah et asher-liketah vatvotse vatiten-lah et asher-hvotirah mishׇveah",
+    "Chapter": 2,
+    "Verse": 18,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֩אמֶר֩ לָ֨הּ חֲמוֹתָ֜הּ אֵיפֹ֨ה לִקַּ֤טְתְּ הַיּוֹם֙ וְאָ֣נָה עָשִׂ֔ית יְהִ֥י מַכִּירֵ֖ךְ בָּר֑וּךְ וַתַּגֵּ֣ד לַחֲמוֹתָ֗הּ אֵ֤ת אֲשֶׁר־עָֽשְׂתָה֙ עִמּ֔וֹ וַתֹּ֗אמֶר שֵׁ֤ם הָאִישׁ֙ אֲשֶׁ֨ר עָשִׂ֧יתִי עִמּ֛וֹ הַיּ֖וֹם בֹּֽעַז׃",
+    "Translated": "her mother-in-law asked her, “Where did you glean today? Where did you work? Blessed be he who took such generous notice of you!” So she told her mother-in-law whom she had worked with, saying, “The name of the man with whom I worked today is Boaz.”",
+    "Transliteration": "vatomer lah chamvotah eyfoh likatete hayyvom veanah ashiyt yehiy makhiyrekhe varukhe vataged lachamvotah et asher-ashetah imvo vatomer shem haiysh asher ashiytiy imvo hayyvom voaz",
+    "Chapter": 2,
+    "Verse": 19,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֨אמֶר נׇעֳמִ֜י לְכַלָּתָ֗הּ בָּר֥וּךְ הוּא֙ לַיהֹוָ֔ה אֲשֶׁר֙ לֹא־עָזַ֣ב חַסְדּ֔וֹ אֶת־הַחַיִּ֖ים וְאֶת־הַמֵּתִ֑ים וַתֹּ֧אמֶר לָ֣הּ נׇעֳמִ֗י קָר֥וֹב לָ֙נוּ֙ הָאִ֔ישׁ מִֽגֹּאֲלֵ֖נוּ הֽוּא׃",
+    "Translated": "Naomi said to her daughter-in-law, “Blessed be he of the L<small>ORD</small>, who has not failed in His kindness to the living or to the dead! For,” Naomi explained to her daughter-in-law, “the man is related to us; he is one of our redeeming kinsmen.”",
+    "Transliteration": "vatomer nׇomiy lekhalatah varukhe hu layhovah asher lo-azav chasedvo et-hachayiym veet-hametiym vatomer lah nׇomiy karvov lanu haiysh migoalenu hu",
+    "Chapter": 2,
+    "Verse": 20,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֖אמֶר ר֣וּת הַמּוֹאֲבִיָּ֑ה גַּ֣ם <b>׀</b> כִּי־אָמַ֣ר אֵלַ֗י עִם־הַנְּעָרִ֤ים אֲשֶׁר־לִי֙ תִּדְבָּקִ֔ין עַ֣ד אִם־כִּלּ֔וּ אֵ֥ת כׇּל־הַקָּצִ֖יר אֲשֶׁר־לִֽי׃",
+    "Translated": "Ruth the Moabite said, “He even told me, ‘Stay close by my workers until all my harvest is finished.’”",
+    "Transliteration": "vatomer rut hamvoaviyah gam <b></b> khiy-amar elay im-haneariym asher-liy tidevakiyn ad im-khilu et khׇl-hakatsiyr asher-liy",
+    "Chapter": 2,
+    "Verse": 21,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֥אמֶר נׇעֳמִ֖י אֶל־ר֣וּת כַּלָּתָ֑הּ ט֣וֹב בִּתִּ֗י כִּ֤י תֵצְאִי֙ עִם־נַ֣עֲרוֹתָ֔יו וְלֹ֥א יִפְגְּעוּ־בָ֖ךְ בְּשָׂדֶ֥ה אַחֵֽר׃",
+    "Translated": "And Naomi answered her daughter-in-law Ruth, “It is best, daughter, that you go out with his girls, and not be annoyed in some other field.”",
+    "Transliteration": "vatomer nׇomiy el-rut khalatah tvov vitiy khiy tetseiy im-naarvotayv velo yifegeu-vakhe veshadeh acher",
+    "Chapter": 2,
+    "Verse": 22,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתִּדְבַּ֞ק בְּנַעֲר֥וֹת בֹּ֙עַז֙ לְלַקֵּ֔ט עַד־כְּל֥וֹת קְצִֽיר־הַשְּׂעֹרִ֖ים וּקְצִ֣יר הַחִטִּ֑ים וַתֵּ֖שֶׁב אֶת־חֲמוֹתָֽהּ׃",
+    "Translated": "So she stayed close to the maidservants of Boaz, and gleaned until the barley harvest and the wheat harvest were finished. Then she stayed at home with her mother-in-law.",
+    "Transliteration": "vatidevak venaarvot voaz lelaket ad-khelvot ketsiyr-hasheoriym uketsiyr hachitiym vateshev et-chamvotah",
+    "Chapter": 2,
+    "Verse": 23,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֥אמֶר לָ֖הּ נׇעֳמִ֣י חֲמוֹתָ֑הּ בִּתִּ֕י הֲלֹ֧א אֲבַקֶּשׁ־לָ֛ךְ מָנ֖וֹחַ אֲשֶׁ֥ר יִֽיטַב־לָֽךְ׃",
+    "Translated": "Naomi, her mother-in-law, said to her, “Daughter, I must seek a home for you, where you may be happy.",
+    "Transliteration": "vatomer lah nׇomiy chamvotah vitiy halo avakesh-lakhe manvocha asher yiytav-lakhe",
+    "Chapter": 3,
+    "Verse": 1,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְעַתָּ֗ה הֲלֹ֥א בֹ֙עַז֙ מֹֽדַעְתָּ֔נוּ אֲשֶׁ֥ר הָיִ֖ית אֶת־נַעֲרוֹתָ֑יו הִנֵּה־ה֗וּא זֹרֶ֛ה אֶת־גֹּ֥רֶן הַשְּׂעֹרִ֖ים הַלָּֽיְלָה׃",
+    "Translated": "Now there is our kinsman Boaz, whose girls you were close to. He will be winnowing barley on the threshing floor tonight.",
+    "Transliteration": "veatah halo voaz modaetanu asher hayiyt et-naarvotayv hineh-hu zoreh et-goren hasheoriym halayelah",
+    "Chapter": 3,
+    "Verse": 2,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְרָחַ֣צְתְּ <b>׀</b> וָסַ֗כְתְּ וְשַׂ֧מְתְּ <span class=\"mam-kq\"><span class=\"mam-kq-k\">(שמלתך)</span> <span class=\"mam-kq-q\">[שִׂמְלֹתַ֛יִךְ]</span></span> עָלַ֖יִךְ <span class=\"mam-kq\"><span class=\"mam-kq-k\">(וירדתי)</span> <span class=\"mam-kq-q\">[וְיָרַ֣דְתְּ]</span></span> הַגֹּ֑רֶן אַל־תִּוָּדְעִ֣י לָאִ֔ישׁ עַ֥ד כַּלֹּת֖וֹ לֶאֱכֹ֥ל וְלִשְׁתּֽוֹת׃",
+    "Translated": "So bathe, anoint yourself, dress up, and go down to the threshing floor. But do not disclose yourself to the man until he has finished eating and drinking.",
+    "Transliteration": "verachatsete <b></b> vasakhete veshamete <span class=\"mam-kq\"><span class=\"mam-kq-k\">(shmltkh)</span> <span class=\"mam-kq-q\">[shimelotayiikhe]</span></span> alayiikhe <span class=\"mam-kq\"><span class=\"mam-kq-k\">(vyrdty)</span> <span class=\"mam-kq-q\">[veyaradete]</span></span> hagoren al-tivadeiy laiysh ad khalotvo leekhol velishetvot",
+    "Chapter": 3,
+    "Verse": 3,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וִיהִ֣י בְשׇׁכְב֗וֹ וְיָדַ֙עַתְּ֙ אֶת־הַמָּקוֹם֙ אֲשֶׁ֣ר יִשְׁכַּב־שָׁ֔ם וּבָ֛את וְגִלִּ֥ית מַרְגְּלֹתָ֖יו <span class=\"mam-kq\"><span class=\"mam-kq-k\">(ושכבתי)</span> <span class=\"mam-kq-q\">[וְשָׁכָ֑בְתְּ]</span></span> וְהוּא֙ יַגִּ֣יד לָ֔ךְ אֵ֖ת אֲשֶׁ֥ר תַּעֲשִֽׂין׃",
+    "Translated": "When he lies down, note the place where he lies down, and go over and uncover his feet and lie down. He will tell you what you are to do.”",
+    "Transliteration": "viyhiy veshׇkhevvo veyadaate et-hamakvom asher yishekhav-sham uvat vegiliyt maregelotayv <span class=\"mam-kq\"><span class=\"mam-kq-k\">(vshkhvty)</span> <span class=\"mam-kq-q\">[veshakhavete]</span></span> vehu yagiyd lakhe et asher taashiyn",
+    "Chapter": 3,
+    "Verse": 4,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֖אמֶר אֵלֶ֑יהָ כֹּ֛ל אֲשֶׁר־תֹּאמְרִ֥י <span class=\"mam-kq-q\">[אֵלַ֖י]</span> אֶעֱשֶֽׂה׃",
+    "Translated": "She replied, “I will do everything you tell me.”",
+    "Transliteration": "vatomer eleyha khol asher-tomeriy <span class=\"mam-kq-q\">[elay]</span> eesheh",
+    "Chapter": 3,
+    "Verse": 5,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֵּ֖רֶד הַגֹּ֑רֶן וַתַּ֕עַשׂ כְּכֹ֥ל אֲשֶׁר־צִוַּ֖תָּה חֲמוֹתָֽהּ׃",
+    "Translated": "She went down to the threshing floor and did just as her mother-in-law had instructed her.",
+    "Transliteration": "vatered hagoren vataash khekhol asher-tsivatah chamvotah",
+    "Chapter": 3,
+    "Verse": 6,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֨אכַל בֹּ֤עַז וַיֵּשְׁתְּ֙ וַיִּיטַ֣ב לִבּ֔וֹ וַיָּבֹ֕א לִשְׁכַּ֖ב בִּקְצֵ֣ה הָעֲרֵמָ֑ה וַתָּבֹ֣א בַלָּ֔ט וַתְּגַ֥ל מַרְגְּלֹתָ֖יו וַתִּשְׁכָּֽב׃",
+    "Translated": "Boaz ate and drank, and in a cheerful mood went to lie down beside the grainpile. Then she went over stealthily and uncovered his feet and lay down.",
+    "Transliteration": "vayokhal voaz vayeshete vayiytav livvo vayavo lishekhav viketseh haaremah vatavo valat vategal maregelotayv vatishekhav",
+    "Chapter": 3,
+    "Verse": 7,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַֽיְהִי֙ בַּחֲצִ֣י הַלַּ֔יְלָה וַיֶּחֱרַ֥ד הָאִ֖ישׁ וַיִּלָּפֵ֑ת וְהִנֵּ֣ה אִשָּׁ֔ה שֹׁכֶ֖בֶת מַרְגְּלֹתָֽיו׃",
+    "Translated": "In the middle of the night, the man gave a start and pulled back—there was a woman lying at his feet!",
+    "Transliteration": "vayehiy vachatsiy halayelah vayecherad haiysh vayilafet vehineh ishah shokhevet maregelotayv",
+    "Chapter": 3,
+    "Verse": 8,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֖אמֶר מִי־אָ֑תְּ וַתֹּ֗אמֶר אָֽנֹכִי֙ ר֣וּת אֲמָתֶ֔ךָ וּפָרַשְׂתָּ֤ כְנָפֶ֙ךָ֙ עַל־אֲמָ֣תְךָ֔ כִּ֥י גֹאֵ֖ל אָֽתָּה׃",
+    "Translated": "“Who are you?” he asked. And she replied, “I am your handmaid Ruth. Spread your robe over your handmaid, for you are a redeeming kinsman.”",
+    "Transliteration": "vayomer miy-ate vatomer anokhiy rut amatekha ufarasheta khenafekha al-amatekha khiy goel atah",
+    "Chapter": 3,
+    "Verse": 9,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֗אמֶר בְּרוּכָ֨ה אַ֤תְּ לַֽיהֹוָה֙ בִּתִּ֔י הֵיטַ֛בְתְּ חַסְדֵּ֥ךְ הָאַחֲר֖וֹן מִן־הָרִאשׁ֑וֹן לְבִלְתִּי־לֶ֗כֶת אַֽחֲרֵי֙ הַבַּ֣חוּרִ֔ים אִם־דַּ֖ל וְאִם־עָשִֽׁיר׃",
+    "Translated": "He exclaimed, “Be blessed of the L<small>ORD</small>, daughter! Your latest deed of loyalty is greater than the first, in that you have not turned to younger men, whether poor or rich.",
+    "Transliteration": "vayomer verukhah ate layhovah vitiy heytavete chasedekhe haacharvon min-harishvon leviletiy-lekhet acharey havachuriym im-dal veim-ashiyr",
+    "Chapter": 3,
+    "Verse": 10,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְעַתָּ֗ה בִּתִּי֙ אַל־תִּ֣ירְאִ֔י כֹּ֥ל אֲשֶׁר־תֹּאמְרִ֖י אֶעֱשֶׂה־לָּ֑ךְ כִּ֤י יוֹדֵ֙עַ֙ כׇּל־שַׁ֣עַר עַמִּ֔י כִּ֛י אֵ֥שֶׁת חַ֖יִל אָֽתְּ׃",
+    "Translated": "And now, daughter, have no fear. I will do in your behalf whatever you ask, for all the elders of my town know what a fine woman you are.",
+    "Transliteration": "veatah vitiy al-tiyreiy khol asher-tomeriy eesheh-lakhe khiy yvodea khׇl-shaar amiy khiy eshet chayiil ate",
+    "Chapter": 3,
+    "Verse": 11,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְעַתָּה֙ כִּ֣י אׇמְנָ֔ם כִּ֥י <span class=\"mam-kq-k\">(אם)</span> גֹאֵ֖ל אָנֹ֑כִי וְגַ֛ם יֵ֥שׁ גֹּאֵ֖ל קָר֥וֹב מִמֶּֽנִּי׃",
+    "Translated": "But while it is true I am a redeeming kinsman, there is another redeemer closer than I.",
+    "Transliteration": "veatah khiy ׇmenam khiy <span class=\"mam-kq-k\">(m)</span> goel anokhiy vegam eish goel karvov mimeniy",
+    "Chapter": 3,
+    "Verse": 12,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "לִ֣י<big>נִ</big>י <b>׀</b> הַלַּ֗יְלָה וְהָיָ֤ה בַבֹּ֙קֶר֙ אִם־יִגְאָלֵ֥ךְ טוֹב֙ יִגְאָ֔ל וְאִם־לֹ֨א יַחְפֹּ֧ץ לְגׇאֳלֵ֛ךְ וּגְאַלְתִּ֥יךְ אָנֹ֖כִי חַי־יְהֹוָ֑ה שִׁכְבִ֖י עַד־הַבֹּֽקֶר׃",
+    "Translated": "Stay for the night. Then in the morning, if he will act as a redeemer, good! let him redeem. But if he does not want to act as redeemer for you, I will do so myself, as the L<small>ORD</small> lives! Lie down until morning.”",
+    "Transliteration": "liy<big>ni</big>y <b></b> halayelah vehayah vavoker im-yigealekhe tvov yigeal veim-lo yachefots legׇolekhe ugealetiykhe anokhiy chay-yehovah shikheviy ad-havoker",
+    "Chapter": 3,
+    "Verse": 13,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתִּשְׁכַּ֤ב <span class=\"mam-kq-trivial\">מַרְגְּלוֹתָו֙</span> עַד־הַבֹּ֔קֶר וַתָּ֕קׇם <span class=\"mam-kq\"><span class=\"mam-kq-k\">(בטרום)</span> <span class=\"mam-kq-q\">[בְּטֶ֛רֶם]</span></span> יַכִּ֥יר אִ֖ישׁ אֶת־רֵעֵ֑הוּ וַיֹּ֙אמֶר֙ אַל־יִוָּדַ֔ע כִּי־בָ֥אָה הָאִשָּׁ֖ה הַגֹּֽרֶן׃",
+    "Translated": "So she lay at his feet until dawn. She rose before one person could distinguish another, for he thought, “Let it not be known that the woman came to the threshing floor.”",
+    "Transliteration": "vatishekhav <span class=\"mam-kq-trivial\">maregelvotav</span> ad-havoker vatakׇm <span class=\"mam-kq\"><span class=\"mam-kq-k\">(vtrvm)</span> <span class=\"mam-kq-q\">[veterem]</span></span> yakhiyr iysh et-reehu vayomer al-yivada khiy-vaah haishah hagoren",
+    "Chapter": 3,
+    "Verse": 14,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֗אמֶר הָ֠בִ֠י הַמִּטְפַּ֧חַת אֲשֶׁר־עָלַ֛יִךְ וְאֶחֳזִי־בָ֖הּ וַתֹּ֣אחֶז בָּ֑הּ וַיָּ֤מׇד שֵׁשׁ־שְׂעֹרִים֙ וַיָּ֣שֶׁת עָלֶ֔יהָ וַיָּבֹ֖א הָעִֽיר׃",
+    "Translated": "And he said, “Hold out the shawl you are wearing.” She held it while he measured out six measures of barley, and he put it on her back.<br/>When she got back to the town,",
+    "Transliteration": "vayomer haviy hamitefachat asher-alayiikhe veechoziy-vah vatochez vah vayamׇd shesh-sheoriym vayashet aleyha vayavo haiyr",
+    "Chapter": 3,
+    "Verse": 15,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתָּבוֹא֙ אֶל־חֲמוֹתָ֔הּ וַתֹּ֖אמֶר מִי־אַ֣תְּ בִּתִּ֑י וַתַּ֨גֶּד־לָ֔הּ אֵ֛ת כׇּל־אֲשֶׁ֥ר עָשָׂה־לָ֖הּ הָאִֽישׁ׃",
+    "Translated": "she came to her mother-in-law, who asked, “How is it with you, daughter?” She told her all that the man had done for her;",
+    "Transliteration": "vatavvo el-chamvotah vatomer miy-ate vitiy vataged-lah et khׇl-asher ashah-lah haiysh",
+    "Chapter": 3,
+    "Verse": 16,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֕אמֶר שֵׁשׁ־הַשְּׂעֹרִ֥ים הָאֵ֖לֶּה נָ֣תַן לִ֑י כִּ֚י אָמַ֣ר <span class=\"mam-kq-q\">[אֵלַ֔י]</span> אַל־תָּב֥וֹאִי רֵיקָ֖ם אֶל־חֲמוֹתֵֽךְ׃",
+    "Translated": "and she added, “He gave me these six measures of barley, saying to me, ‘Do not go back to your mother-in-law empty-handed.’”",
+    "Transliteration": "vatomer shesh-hasheoriym haeleh natan liy khiy amar <span class=\"mam-kq-q\">[elay]</span> al-tavvoiy reykam el-chamvotekhe",
+    "Chapter": 3,
+    "Verse": 17,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּ֙אמֶר֙ שְׁבִ֣י בִתִּ֔י עַ֚ד אֲשֶׁ֣ר תֵּֽדְעִ֔ין אֵ֖יךְ יִפֹּ֣ל דָּבָ֑ר כִּ֣י לֹ֤א יִשְׁקֹט֙ הָאִ֔ישׁ כִּֽי־אִם־כִּלָּ֥ה הַדָּבָ֖ר הַיּֽוֹם׃",
+    "Translated": "And Naomi said, “Stay here, daughter, till you learn how the matter turns out. For the man will not rest, but will settle the matter today.”",
+    "Transliteration": "vatomer sheviy vitiy ad asher tedeiyn eykhe yifol davar khiy lo yishekot haiysh khiy-im-khilah hadavar hayyvom",
+    "Chapter": 3,
+    "Verse": 18,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וּבֹ֨עַז עָלָ֣ה הַשַּׁ֘עַר֮ וַיֵּ֣שֶׁב שָׁם֒ וְהִנֵּ֨ה הַגֹּאֵ֤ל עֹבֵר֙ אֲשֶׁ֣ר דִּבֶּר־בֹּ֔עַז וַיֹּ֛אמֶר ס֥וּרָה שְׁבָה־פֹּ֖ה פְּלֹנִ֣י אַלְמֹנִ֑י וַיָּ֖סַר וַיֵּשֵֽׁב׃",
+    "Translated": "Meanwhile, Boaz had gone to the gate and sat down there. And now the redeemer whom Boaz had mentioned passed by. He called, “Come over and sit down here, So-and-so!” And he came over and sat down.",
+    "Transliteration": "uvoaz alah hashaar vayeshev sham vehineh hagoel over asher diver-voaz vayomer surah shevah-foh feloniy alemoniy vayasar vayeshev",
+    "Chapter": 4,
+    "Verse": 1,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיִּקַּ֞ח עֲשָׂרָ֧ה אֲנָשִׁ֛ים מִזִּקְנֵ֥י הָעִ֖יר וַיֹּ֣אמֶר שְׁבוּ־פֹ֑ה וַיֵּשֵֽׁבוּ׃",
+    "Translated": "Then [Boaz] took ten elders of the town and said, “Be seated here”; and they sat down.",
+    "Transliteration": "vayikach asharah anashiym mizikeney haiyr vayomer shevu-foh vayeshevu",
+    "Chapter": 4,
+    "Verse": 2,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֙אמֶר֙ לַגֹּאֵ֔ל חֶלְקַת֙ הַשָּׂדֶ֔ה אֲשֶׁ֥ר לְאָחִ֖ינוּ לֶאֱלִימֶ֑לֶךְ מָכְרָ֣ה נׇעֳמִ֔י הַשָּׁ֖בָה מִשְּׂדֵ֥ה מוֹאָֽב׃",
+    "Translated": "He said to the redeemer, “Naomi, now returned from the country of Moab, must sell the piece of land which belonged to our kinsman Elimelech.",
+    "Transliteration": "vayomer lagoel chelekat hashadeh asher leachiynu leeliymelekhe makherah nׇomiy hashavah mishedeh mvoav",
+    "Chapter": 4,
+    "Verse": 3,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַאֲנִ֨י אָמַ֜רְתִּי אֶגְלֶ֧ה אׇזְנְךָ֣ לֵאמֹ֗ר קְ֠נֵ֠ה נֶ֥גֶד הַיֹּשְׁבִים֮ וְנֶ֣גֶד זִקְנֵ֣י עַמִּי֒ אִם־תִּגְאַל֙ גְּאָ֔ל וְאִם־לֹ֨א יִגְאַ֜ל הַגִּ֣ידָה לִּ֗י <span class=\"mam-kq\"><span class=\"mam-kq-k\">(ואדע)</span> <span class=\"mam-kq-q\">[וְאֵֽדְעָה֙]</span></span> כִּ֣י אֵ֤ין זוּלָֽתְךָ֙ לִגְא֔וֹל וְאָנֹכִ֖י אַחֲרֶ֑יךָ וַיֹּ֖אמֶר אָנֹכִ֥י אֶגְאָֽל׃",
+    "Translated": "I thought I should disclose the matter to you and say: Acquire it in the presence of those seated here and in the presence of the elders of my people. If you are willing to redeem it, redeem! But if you will not redeem, tell me, that I may know. For there is no one to redeem but you, and I come after you.” “I am willing to redeem it,” he replied.",
+    "Transliteration": "vaaniy amaretiy egeleh ׇzenekha lemor keneh neged hayosheviym veneged zikeney amiy im-tigeal geal veim-lo yigeal hagiydah liy <span class=\"mam-kq\"><span class=\"mam-kq-k\">(vd)</span> <span class=\"mam-kq-q\">[veedeah]</span></span> khiy eyn zulatekha ligevol veanokhiy achareykha vayomer anokhiy egeal",
+    "Chapter": 4,
+    "Verse": 4,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֣אמֶר בֹּ֔עַז בְּיוֹם־קְנוֹתְךָ֥ הַשָּׂדֶ֖ה מִיַּ֣ד נׇעֳמִ֑י וּ֠מֵאֵ֠ת ר֣וּת הַמּוֹאֲבִיָּ֤ה אֵֽשֶׁת־הַמֵּת֙ <span class=\"mam-kq\"><span class=\"mam-kq-k\">(קניתי)</span> <span class=\"mam-kq-q\">[קָנִ֔יתָ]</span></span> לְהָקִ֥ים שֵׁם־הַמֵּ֖ת עַל־נַחֲלָתֽוֹ׃",
+    "Translated": "Boaz continued, “When you acquire the property from Naomi and from Ruth the Moabite, you must also acquire the wife of the deceased, so as to perpetuate the name of the deceased upon his estate.”",
+    "Transliteration": "vayomer voaz veyvom-kenvotekha hashadeh miyad nׇomiy umeet rut hamvoaviyah eshet-hamet <span class=\"mam-kq\"><span class=\"mam-kq-k\">(knyty)</span> <span class=\"mam-kq-q\">[kaniyta]</span></span> lehakiym shem-hamet al-nachalatvo",
+    "Chapter": 4,
+    "Verse": 5,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֣אמֶר הַגֹּאֵ֗ל לֹ֤א אוּכַל֙ <span class=\"mam-kq\"><span class=\"mam-kq-k\">(לגאול)</span> <span class=\"mam-kq-q\">[לִגְאׇל־]</span></span>לִ֔י פֶּן־אַשְׁחִ֖ית אֶת־נַחֲלָתִ֑י גְּאַל־לְךָ֤ אַתָּה֙ אֶת־גְּאֻלָּתִ֔י כִּ֥י לֹא־אוּכַ֖ל לִגְאֹֽל׃",
+    "Translated": "The redeemer replied, “Then I cannot redeem it for myself, lest I impair my own estate. You take over my right of redemption, for I am unable to exercise it.”",
+    "Transliteration": "vayomer hagoel lo ukhal <span class=\"mam-kq\"><span class=\"mam-kq-k\">(lgvl)</span> <span class=\"mam-kq-q\">[ligeׇl-]</span></span>liy fen-ashechiyt et-nachalatiy geal-lekha atah et-geulatiy khiy lo-ukhal ligeol",
+    "Chapter": 4,
+    "Verse": 6,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְזֹאת֩ לְפָנִ֨ים בְּיִשְׂרָאֵ֜ל עַל־הַגְּאֻלָּ֤ה וְעַל־הַתְּמוּרָה֙ לְקַיֵּ֣ם כׇּל־דָּבָ֔ר שָׁלַ֥ף אִ֛ישׁ נַעֲל֖וֹ וְנָתַ֣ן לְרֵעֵ֑הוּ וְזֹ֥את הַתְּעוּדָ֖ה בְּיִשְׂרָאֵֽל׃",
+    "Translated": "Now this was formerly done in Israel in cases of redemption or exchange: to validate any transaction, one man would take off his sandal and hand it to the other. Such was the practice in Israel.",
+    "Transliteration": "vezot lefaniym veyisherael al-hageulah veal-hatemurah lekayem khׇl-davar shalaf iysh naalvo venatan lereehu vezot hateudah veyisherael",
+    "Chapter": 4,
+    "Verse": 7,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֧אמֶר הַגֹּאֵ֛ל לְבֹ֖עַז קְנֵה־לָ֑ךְ וַיִּשְׁלֹ֖ף נַעֲלֽוֹ׃",
+    "Translated": "So when the redeemer said to Boaz, “Acquire for yourself,” he drew off his sandal.",
+    "Transliteration": "vayomer hagoel levoaz keneh-lakhe vayishelof naalvo",
+    "Chapter": 4,
+    "Verse": 8,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֩אמֶר֩ בֹּ֨עַז לַזְּקֵנִ֜ים וְכׇל־הָעָ֗ם עֵדִ֤ים אַתֶּם֙ הַיּ֔וֹם כִּ֤י קָנִ֙יתִי֙ אֶת־כׇּל־אֲשֶׁ֣ר לֶאֱלִימֶ֔לֶךְ וְאֵ֛ת כׇּל־אֲשֶׁ֥ר לְכִלְי֖וֹן וּמַחְל֑וֹן מִיַּ֖ד נׇעֳמִֽי׃",
+    "Translated": "And Boaz said to the elders and to the rest of the people, “You are witnesses today that I am acquiring from Naomi all that belonged to Elimelech and all that belonged to Chilion and Mahlon.",
+    "Transliteration": "vayomer voaz lazekeniym vekhׇl-haam ediym atem hayyvom khiy kaniytiy et-khׇl-asher leeliymelekhe veet khׇl-asher lekhileyvon umachelvon miyad nׇomiy",
+    "Chapter": 4,
+    "Verse": 9,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְגַ֣ם אֶת־ר֣וּת הַמֹּאֲבִיָּה֩ אֵ֨שֶׁת מַחְל֜וֹן קָנִ֧יתִי לִ֣י לְאִשָּׁ֗ה לְהָקִ֤ים שֵׁם־הַמֵּת֙ עַל־נַ֣חֲלָת֔וֹ וְלֹֽא־יִכָּרֵ֧ת שֵׁם־הַמֵּ֛ת מֵעִ֥ם אֶחָ֖יו וּמִשַּׁ֣עַר מְקוֹמ֑וֹ עֵדִ֥ים אַתֶּ֖ם הַיּֽוֹם׃",
+    "Translated": "I am also acquiring Ruth the Moabite, the wife of Mahlon, as my wife, so as to perpetuate the name of the deceased upon his estate, that the name of the deceased may not disappear from among his kinsmen and from the gate of his home town. You are witnesses today.”",
+    "Transliteration": "vegam et-rut hamoaviyah eshet machelvon kaniytiy liy leishah lehakiym shem-hamet al-nachalatvo velo-yikharet shem-hamet meim echayv umishaar mekvomvo ediym atem hayyvom",
+    "Chapter": 4,
+    "Verse": 10,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיֹּ֨אמְר֜וּ כׇּל־הָעָ֧ם אֲשֶׁר־בַּשַּׁ֛עַר וְהַזְּקֵנִ֖ים עֵדִ֑ים יִתֵּן֩ יְהֹוָ֨ה אֶֽת־הָאִשָּׁ֜ה הַבָּאָ֣ה אֶל־בֵּיתֶ֗ךָ כְּרָחֵ֤ל <small>׀</small> וּכְלֵאָה֙ אֲשֶׁ֨ר בָּנ֤וּ שְׁתֵּיהֶם֙ אֶת־בֵּ֣ית יִשְׂרָאֵ֔ל וַעֲשֵׂה־חַ֣יִל בְּאֶפְרָ֔תָה וּקְרָא־שֵׁ֖ם בְּבֵ֥ית לָֽחֶם׃",
+    "Translated": "All the people at the gate and the elders answered, “We are. May the L<small>ORD</small> make the woman who is coming into your house like Rachel and Leah, both of whom built up the House of Israel! Prosper in Ephrathah and perpetuate your name in Bethlehem!",
+    "Transliteration": "vayomeru khׇl-haam asher-vashaar vehazekeniym ediym yiten yehovah et-haishah havaah el-veytekha kherachel <small></small> ukheleah asher vanu sheteyhem et-veyt yisherael vaasheh-chayiil veeferatah ukera-shem veveyt lachem",
+    "Chapter": 4,
+    "Verse": 11,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וִיהִ֤י בֵֽיתְךָ֙ כְּבֵ֣ית פֶּ֔רֶץ אֲשֶׁר־יָלְדָ֥ה תָמָ֖ר לִיהוּדָ֑ה מִן־הַזֶּ֗רַע אֲשֶׁ֨ר יִתֵּ֤ן יְהֹוָה֙ לְךָ֔ מִן־הַֽנַּעֲרָ֖ה הַזֹּֽאת׃",
+    "Translated": "And may your house be like the house of Perez whom Tamar bore to Judah—through the offspring which the L<small>ORD</small> will give you by this young woman.”",
+    "Transliteration": "viyhiy veytekha kheveyt ferets asher-yaledah tamar liyhudah min-hazera asher yiten yehovah lekha min-hanaarah hazot",
+    "Chapter": 4,
+    "Verse": 12,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַיִּקַּ֨ח בֹּ֤עַז אֶת־רוּת֙ וַתְּהִי־ל֣וֹ לְאִשָּׁ֔ה וַיָּבֹ֖א אֵלֶ֑יהָ וַיִּתֵּ֨ן יְהֹוָ֥ה לָ֛הּ הֵרָי֖וֹן וַתֵּ֥לֶד בֵּֽן׃",
+    "Translated": "So Boaz married Ruth; she became his wife, and he cohabited with her. The L<small>ORD</small> let her conceive, and she bore a son.",
+    "Transliteration": "vayikach voaz et-rut vatehiy-lvo leishah vayavo eleyha vayiten yehovah lah herayvon vateled ven",
+    "Chapter": 4,
+    "Verse": 13,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתֹּאמַ֤רְנָה הַנָּשִׁים֙ אֶֽל־נׇעֳמִ֔י בָּר֣וּךְ יְהֹוָ֔ה אֲ֠שֶׁ֠ר לֹ֣א הִשְׁבִּ֥ית לָ֛ךְ גֹּאֵ֖ל הַיּ֑וֹם וְיִקָּרֵ֥א שְׁמ֖וֹ בְּיִשְׂרָאֵֽל׃",
+    "Translated": "And the women said to Naomi, “Blessed be the L<small>ORD</small>, who has not withheld a redeemer from you today! May his name be perpetuated in Israel!",
+    "Transliteration": "vatomarenah hanashiym el-nׇomiy varukhe yehovah asher lo hisheviyt lakhe goel hayyvom veyikare shemvo veyisherael",
+    "Chapter": 4,
+    "Verse": 14,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְהָ֤יָה לָךְ֙ לְמֵשִׁ֣יב נֶ֔פֶשׁ וּלְכַלְכֵּ֖ל אֶת־שֵׂיבָתֵ֑ךְ כִּ֣י כַלָּתֵ֤ךְ אֲֽשֶׁר־אֲהֵבַ֙תֶךְ֙ יְלָדַ֔תּוּ אֲשֶׁר־הִיא֙ ט֣וֹבָה לָ֔ךְ מִשִּׁבְעָ֖ה בָּנִֽים׃",
+    "Translated": "He will renew your life and sustain your old age; for he is born of your daughter-in-law, who loves you and is better to you than seven sons.”",
+    "Transliteration": "vehayah lakhe lemeshiyv nefesh ulekhalekhel et-sheyvatekhe khiy khalatekhe asher-ahevatekhe yeladatu asher-hiy tvovah lakhe mishiveah vaniym",
+    "Chapter": 4,
+    "Verse": 15,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתִּקַּ֨ח נׇעֳמִ֤י אֶת־הַיֶּ֙לֶד֙ וַתְּשִׁתֵ֣הוּ בְחֵיקָ֔הּ וַתְּהִי־ל֖וֹ לְאֹמֶֽנֶת׃",
+    "Translated": "Naomi took the child and held it to her bosom. She became its foster mother,",
+    "Transliteration": "vatikach nׇomiy et-hayeled vateshitehu vecheykah vatehiy-lvo leomenet",
+    "Chapter": 4,
+    "Verse": 16,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וַתִּקְרֶ֩אנָה֩ ל֨וֹ הַשְּׁכֵנ֥וֹת שֵׁם֙ לֵאמֹ֔ר יֻלַּד־בֵּ֖ן לְנׇעֳמִ֑י וַתִּקְרֶ֤אנָֽה שְׁמוֹ֙ עוֹבֵ֔ד ה֥וּא אֲבִֽי־יִשַׁ֖י אֲבִ֥י דָוִֽד׃ <span class=\"mam-spi-pe\">{פ}</span><br/>",
+    "Translated": "and the women neighbors gave him a name, saying, “A son is born to Naomi!” They named him Obed; he was the father of Jesse, father of David.",
+    "Transliteration": "vatikerenah lvo hashekhenvot shem lemor yulad-ven lenׇomiy vatikerenah shemvo voved hu aviy-yishay aviy david <span class=\"mam-spi-pe\">{f}</span><br/>",
+    "Chapter": 4,
+    "Verse": 17,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְאֵ֙לֶּה֙ תּוֹלְד֣וֹת פָּ֔רֶץ פֶּ֖רֶץ הוֹלִ֥יד אֶת־חֶצְרֽוֹן׃",
+    "Translated": "This is the line of Perez: Perez begot Hezron,",
+    "Transliteration": "veeleh tvoledvot farets ferets hvoliyd et-chetservon",
+    "Chapter": 4,
+    "Verse": 18,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְחֶצְרוֹן֙ הוֹלִ֣יד אֶת־רָ֔ם וְרָ֖ם הוֹלִ֥יד אֶת־עַמִּינָדָֽב׃",
+    "Translated": "Hezron begot Ram, Ram begot Amminadab,",
+    "Transliteration": "vechetservon hvoliyd et-ram veram hvoliyd et-amiynadav",
+    "Chapter": 4,
+    "Verse": 19,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְעַמִּֽינָדָב֙ הוֹלִ֣יד אֶת־נַחְשׁ֔וֹן וְנַחְשׁ֖וֹן הוֹלִ֥יד אֶת־שַׂלְמָֽה׃",
+    "Translated": "Amminadab begot Nahshon, Nahshon begot Salmon,",
+    "Transliteration": "veamiynadav hvoliyd et-nacheshvon venacheshvon hvoliyd et-shalemah",
+    "Chapter": 4,
+    "Verse": 20,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְשַׂלְמוֹן֙ הוֹלִ֣יד אֶת־בֹּ֔עַז וּבֹ֖עַז הוֹלִ֥יד אֶת־עוֹבֵֽד׃",
+    "Translated": "Salmon begot Boaz, Boaz begot Obed,",
+    "Transliteration": "veshalemvon hvoliyd et-voaz uvoaz hvoliyd et-voved",
+    "Chapter": 4,
+    "Verse": 21,
+    "TranslationSource": "",
+    "Book": "Rut"
+  },
+  {
+    "Hebrew": "וְעֹבֵד֙ הוֹלִ֣יד אֶת־יִשָׁ֔י וְיִשַׁ֖י הוֹלִ֥יד אֶת־דָּוִֽד׃",
+    "Translated": "Obed begot Jesse, and Jesse begot David.",
+    "Transliteration": "veoved hvoliyd et-yishay veyishay hvoliyd et-david",
+    "Chapter": 4,
+    "Verse": 22,
+    "TranslationSource": "",
+    "Book": "Rut"
+  }
+]
